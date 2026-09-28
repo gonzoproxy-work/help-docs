@@ -7,50 +7,34 @@
 **You** are the client 🍔\
 **The Proxy** is the courier 🛵
 
-You give the courier an address and a task. The courier goes on your behalf, collects the necessary information, returns it, and gives it to you. The entity providing the information never knows who the real client is — it only sees the courier.
+You give the courier an address and a task. The courier goes on your behalf, collects the necessary information, returns it, and gives it to you. The entity providing the information never knows who the real client is, it only sees the courier.
 
 ***
 
 ### 💡 What Can Proxies Do?
 
-🕵️‍♂️ **Hide your IP address** — websites see the proxy’s IP, not your real one.\
-🚫 **Bypass blocks** — useful if a site is unavailable in your country.\
-🧙‍♂️ **Mask your activity** — websites can’t pinpoint who you are.\
-🤖 **Automate tasks** — mass scraping, account registrations, auto-posting, and other tasks.
+🕵️‍♂️ **Hide your IP address**, websites see the proxy’s IP, not your real one.\
+🚫 **Bypass blocks**, useful if a site is unavailable in your country.\
+🤖 **Automate tasks**, mass scraping, account registrations, auto-posting, and other tasks.
 
 ***
 
 ### ✅ Use Cases & How GonzoProxy Helps
 
-#### 📢 Ad Campaigns
-
-* Real IPs reduce the risk of bans by up to **90%**
-* Fewer **checkpoints and selfie verifications** on Facebook and Google Ads
-* **Stable ad account performance**, even in high-risk niches
-
 #### 👥 Account Farming & Validation
 
-* Each account gets a **unique IP from the required region**
-* No **cross-account bans** during bulk registrations
-* **Longer account lifespans** without red flags
+* We recommend a **“1 proxy = 1 account”** setup
+* The exit country is set in the connection string. The dashboard also shows a city list, but the city you pick does not reach the connection string
 
 #### 🕷️ Parsing & Crawling
 
-* No blocking even under **heavy load**
-* **Automatic IP rotation** at the first sign of restriction
-* Access to **data that’s normally blocked** for datacenter proxies
+* A **sticky session** keeps one IP while that address stays available. In our own test on 14 September 2026, 51 of 90 sessions (56.7%, interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes
+* When the address drops out of the session, the next request goes out through a new IP with the same settings
 
 #### 🤖 Automation
 
-* **Direct integration** with scripts, bots, and automation tools
-* **Stable, high-speed connections** with no drops
-* Full compatibility with **anti-detect browsers** for real-user emulation
-
-#### 🔄 Multi-Account Management
-
-* **Safely manage** multiple profiles across social platforms
-* Protection against **mutual account linking and bans**
-* **Reliable long-term usage** on Facebook, Twitter, Instagram, OnlyFans, and more
+* The connection string is pasted into the proxy field of your script, bot or browser profile
+* Four protocols answer on port 10000: SOCKS5, SOCKS5h, HTTP and HTTPS. SOCKS4 and SOCKS4a do not work
 
 ***
 
@@ -67,5 +51,4 @@ You give the courier an address and a task. The courier goes on your behalf, col
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
-
+💬 Our team is always here for you! Reach out anytime.

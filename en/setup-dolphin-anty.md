@@ -1,10 +1,12 @@
 # 🐬 Setup Dolphin{anty}
 
-You’ve bought residential or mobile proxies from GonzoProxy. Now your task is simple: Quickly set them up in Dolphin{anty} and get started.
+Dolphin{anty} is an anti-detect browser that keeps each account in its own profile, and a proxy is what gives every profile a separate IP address. This page shows where to paste a GonzoProxy connection string.
 
-### 🔧 Optimal Settings in Dolphin{anty}
+***
 
-These settings work great for Facebook, TikTok, Google, crypto, and similar tasks:
+### 🔧 Profile settings in Dolphin{anty}
+
+The settings below are the ones that have to agree with the proxy you connect.
 
 #### 1. WebRTC
 
@@ -14,11 +16,9 @@ These settings work great for Facebook, TikTok, Google, crypto, and similar task
 
 
 
-* Choose **Altered** to replace your real IP with your proxy IP.
-* **Manual**: Only if you have a static IP and know what you’re doing.
-* **Off/Real**: Never use—risky, leaks your real IP.
-
-→ **Result:** Your IP matches your GonzoProxy IP without leaks.
+* **Altered**: the option to use with a proxy.
+* **Manual**: only if you set the address yourself and know what you are doing.
+* **Off / Real**: do not use them when you work through a proxy.
 
 #### 2. Canvas
 
@@ -28,19 +28,19 @@ These settings work great for Facebook, TikTok, Google, crypto, and similar task
 
 
 
-* **Noise**: For mass account creation, CPA, push, TikTok automation.
-* **Real**: For manual work, farming, or long-term accounts.
+* **Noise**: for mass account creation, CPA, push, TikTok automation.
+* **Real**: for manual work, farming, or long-term accounts.
 
-#### 3. WebGL + WebGL Metadata
+#### 3. WebGL + WebGL Info
 
 
 
 <figure><img src=".gitbook/assets/3 (4).png" alt=""><figcaption></figcaption></figure>
 
-* **WebGL:** Choose **Noise**—adds slight uniqueness but realistic.
-* **WebGL Info:** Set to **Real**, matching your GPU data. Choose **Manual** only if you’re confident about your hardware setup.
 
-→ Realistic graphics that avoid suspicion on platforms like Facebook, TikTok, etc.
+
+* **WebGL:** choose **Noise**.
+* **WebGL Info:** set to **Real**, matching your GPU data. Choose **Manual** only if you are confident about your hardware setup.
 
 #### 4. ClientRects
 
@@ -50,10 +50,8 @@ These settings work great for Facebook, TikTok, Google, crypto, and similar task
 
 
 
-* **Real**: If you’re working alone without transferring profiles.
-* **Noise**: When profiles are used on multiple devices or by multiple people (e.g., Windows → Mac).
-
-→ **Noise** helps prevent suspicion caused by differences in text rendering across OSes.
+* **Real**: if you work alone and never hand the profile over.
+* **Noise**: if the profile is used on several machines or by several people (for example Windows → Mac).
 
 #### 5. Language, Timezone, and Geo
 
@@ -63,9 +61,8 @@ These settings work great for Facebook, TikTok, Google, crypto, and similar task
 
 
 
-* Set to **Auto** when using GonzoProxy.
-* Dolphin automatically sets correct timezone, language, and location.
-* If you have a sticky IP, you can manually fix the location.
+* Set to **Auto** when using GonzoProxy, so that timezone, language and location follow the proxy address.
+* With a sticky IP you can also fix the location by hand.
 
 #### 6. Navigator (CPU, RAM, Fonts)
 
@@ -75,8 +72,9 @@ These settings work great for Facebook, TikTok, Google, crypto, and similar task
 
 
 
-* Leave this default unless you know exactly what you’re doing.
-* Facebook won't ban you for standard settings (like 2 cores, 8GB RAM), but mismatches (e.g., 1 core with Macbook M3 User-Agent) can raise flags.
+* Leave this default unless you know exactly what you are doing.
+
+***
 
 ### 🔌 Connecting proxies in Dolphin{anty}
 
@@ -91,24 +89,24 @@ login:password@host:port
 Example with GonzoProxy:
 
 ```
-Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
+Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
-You can paste up to 50 proxies at once (each on a new line).
+Put one proxy per line.
 
-* Click **Check** — Dolphin verifies proxies automatically. ✅ means ready to use.
+* Click **Check**. A ✅ means the proxy answered.
 
 #### 🔹 Where to insert proxies into your profile?
 
-* When creating/editing your profile, open the **Proxy** tab.
-* Choose the correct type: **SOCKS5** or **HTTP(S)**.
+* When creating or editing your profile, open the **Proxy** tab.
+* Choose the type: **SOCKS5** or **HTTP(S)**.
 * Paste the full proxy string without breaking it up:
 
 ```
 login:password@host:port
 ```
 
-Dolphin parses automatically—just keep the format intact.
+***
 
 ### 🧭 Sticky or Randomize IP?
 
@@ -118,45 +116,40 @@ Dolphin parses automatically—just keep the format intact.
 
 
 
-GonzoProxy provides two types of IP rotation. Choose according to your needs:
-
-*   🔒 **Sticky IP (fixed session)**\
-    Use for:
-
-    * Facebook, TikTok, Google Ads (farming, warming, regular usage)
-    * Crypto exchanges, wallets
-    * Manual tasks, long-term projects
-
-
+GonzoProxy provides two types of IP rotation. Choose according to your task.
 
 ***
 
+#### 🔒 Sticky IP (fixed session)
 
+The session hold time is set in the dashboard. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it.
 
-*   🔄 **Randomize IP (new IP every request)**\
-    Ideal for:
+Use it for:
 
-    * Mass account creation
-    * Parsing or automated software
-    * Aggressive CPA marketing
-    * Short-lived profiles
-
-
+* Facebook, TikTok, Google Ads (farming, warming, regular usage)
+* Crypto exchanges, wallets
+* Manual tasks, long-term projects
 
 ***
 
-### ✅ Final Check—You’re All Set
+#### 🔄 Randomize IP (new IP every request)
+
+The address changes on every connection or request.
+
+Use it for:
+
+* Mass account creation
+* Parsing or automated software
+* Aggressive CPA marketing
+* Short-lived profiles
+
+***
+
+### ✅ Final Check
 
 * ✅ Proxies uploaded
 * ✅ Connection tested
-* ✅ Profiles configured optimally
-
-***
-
-📦 **GonzoProxy** is your reliable IP base.\
-🐬 **Dolphin{anty}** is your interface.
-
-Work fast, work clean, avoid bans—the rest are just details.
+* ✅ Profiles configured
 
 ***
 
@@ -171,5 +164,4 @@ Work fast, work clean, avoid bans—the rest are just details.
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
-
+💬 Our team is always here for you! Reach out anytime.

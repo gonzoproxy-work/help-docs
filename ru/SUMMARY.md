@@ -25,10 +25,10 @@
 * [🔐 Настройка Undetectable](nastroika-undetectable.md)
 * [🛡️ Настройка Antik](nastroika-antik.md)
 * [🚀 Настройка BitBrowser](nastroika-bitbrowser.md)
-* [😎 Настройка Incognition](nastroika-incognition.md)
+* [😎 Настройка Incogniton](nastroika-incognition.md)
 * [🧐 Настройка MoreLogin](nastroika-morelogin.md)
 * [👾 Настройка Indigo X](nastroika-indigo-x.md)
-* [🔄 Настройка Multilogin X](nastroika-multilogin-x.md)
+* [🛡️ Настройка Multilogin X](nastroika-multilogin-x.md)
 * [🔘 Настройка Linken Sphere 2](nastroika-linken-sphere-2.md)
 * [🔑 Как активировать промокод на GonzoProxy](kak-aktivirovat-promokod-na-gonzoproxy.md)
 
@@ -38,7 +38,7 @@
 
 * [🔁 Ротация IP](rotaciya-ip.md)
 * [💸 Тарификация в GonzoProxy](tarifikaciya-v-gonzoproxy.md)
-* [👥 Cубаккаунты](cubakkaunty.md)
+* [👥 Субаккаунты](cubakkaunty.md)
 * [💰 Реферальная программа GonzoProxy](referalnaya-programma-gonzoproxy.md)
 
 ## API

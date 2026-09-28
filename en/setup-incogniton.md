@@ -1,13 +1,10 @@
 # 😎 Setup Incogniton
 
-Working with multiple accounts — in affiliate marketing, marketplaces, or ad platforms? Then you know: even with perfectly set up profiles and content, bans often happen in a couple of days. Why? 🤔\
-Modern anti-fraud systems track not just your user-agent or cookies but your entire digital "fingerprint." 🕵️‍♂️
+Working with multiple accounts in affiliate marketing, marketplaces, or ad platforms? Modern anti-fraud systems track not just your user-agent or cookies but your entire digital "fingerprint." 🕵️‍♂️
 
-[**Incogniton**](https://incogniton.com/) isn’t just a browser — it’s a powerful engine for creating profiles that look like real users. It masks WebRTC, Canvas, AudioContext, WebGL, and allows fine-tuned behavior customization.
+[**Incogniton**](https://incogniton.com/) creates separate browser profiles: for each one you can configure WebRTC, Canvas, AudioContext and WebGL.
 
-But without a solid IP 🌍 (such as **residential proxies from** [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=incogniton)), no masking will save you.
-
-> ⚠️ Bad proxy = fast ban. 🚫
+The IP for a profile 🌍 comes from your [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=incogniton) dashboard: residential proxies.
 
 ***
 
@@ -18,7 +15,7 @@ But without a solid IP 🌍 (such as **residential proxies from** [**GonzoProxy*
 You paste text into a form, and the site immediately triggers a "bot check"?\
 Here’s why: websites can detect not just that text was pasted, but _how fast_ it was entered. Instant pastes are a clear sign of a bot.
 
-The **Paste as Human Typing** feature simulates keystrokes with delays between key presses — making it look like a human is typing.
+The **Paste as Human Typing** feature simulates keystrokes with delays between key presses, making it look like a human is typing.
 
 **Usage:** Right-click → Paste as Human Typing.
 
@@ -30,7 +27,7 @@ The **Paste as Human Typing** feature simulates keystrokes with delays between k
 
 ***
 
-### 🖼️ OCR — Copy text from images
+### 🖼️ OCR / Copy text from images
 
 Built-in **OCR** lets you quickly extract text from any image. Super handy for copying promo codes, instructions, or CAPTCHA text.
 
@@ -60,7 +57,7 @@ You can freely install any extensions in Incogniton. This is important because r
 ### 🔁 Profile synchronizer
 
 If you manage dozens of profiles, manually repeating settings is a nightmare.\
-The **synchronizer** allows you to copy actions and parameters from one profile to others — saving tons of time.
+The **synchronizer** allows you to copy actions and parameters from one profile to others, saving tons of time.
 
 
 
@@ -106,7 +103,7 @@ Since version **2.2.0.0**, Incogniton allows you to:
 Get a **residential proxy** (e.g., USA) in your [GonzoProxy dashboard](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=incogniton). You’ll receive:
 
 ```
-Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
+Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
 
@@ -117,8 +114,8 @@ Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
 
 Enter in Incogniton:
 
-* **Host -** `pool.gonzoproxy.com`
-* **Port -** `1000`
+* **Host -** `connect.gonzoproxy.app`
+* **Port -** `10000`
 * **Login -** `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Password -** `RNW78Fm5`
 
@@ -141,7 +138,7 @@ Test your proxy.
 
 ### 🛠️ Step 3: Detailed settings
 
-To make your profile "last" longer, here are some recommended parameters:
+Recommended parameters for the profile:
 
 | Section       | Setting                                   | Status / Value |
 | ------------- | ----------------------------------------- | -------------- |
@@ -168,8 +165,7 @@ To make your profile "last" longer, here are some recommended parameters:
 
 ### 🍪 Step 4: Import cookies
 
-Don’t forget: **importing cookies** helps speed up profile warm-up and bypass some checks.\
-Incogniton allows quick cookie imports for any required sites.
+**Importing cookies** speeds up profile warm-up. Incogniton imports cookies for the sites you need.
 
 
 
@@ -181,18 +177,7 @@ Incogniton allows quick cookie imports for any required sites.
 
 ## Summary
 
-[**Incogniton**](https://incogniton.com/) **+** [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=incogniton) is a combo that really works.
-
-Even the best antidetect won’t save you if you have a bad proxy. But when you combine:
-
-* IP from a real device
-* Proper fingerprint setup
-* "Human-like" profile behavior
-
-— your accounts get a real shot at long-term survival.
-
-In today’s anti-fraud landscape, masking without a proxy is a ticking time bomb.\
-**Never skimp on IPs** — they’re what sites use to "see" you.
+Paste the connection string from your [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=incogniton) dashboard into the proxy fields of an [**Incogniton**](https://incogniton.com/) profile: host `connect.gonzoproxy.app`, port `10000`, and the login and password from that string.
 
 ***
 
@@ -207,4 +192,4 @@ In today’s anti-fraud landscape, masking without a proxy is a ticking time bom
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

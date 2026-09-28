@@ -1,8 +1,10 @@
 # 🔧 Очистка кэша и куки браузера
 
-Если при заходе на сайт **GonzoProxy** появляется ошибка типа **«Сессия истекла»** или другая проблема — попробуйте очистить кэш и куки браузера.
+Если при входе в личный кабинет **GonzoProxy** появляется ошибка типа **«Сессия истекла»** или другая проблема, попробуйте очистить кэш и куки браузера.
 
 Это поможет удалить устаревшие или повреждённые данные, которые могут мешать корректной работе сайта.
+
+Ниже пошаговые инструкции для разных браузеров:
 
 ***
 
@@ -14,7 +16,7 @@
 
 (также Яндекс.Браузер, Opera, Microsoft Edge и другие на базе Chromium)
 
-**1. Перейдите на сайт** [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=cookie)**.**
+**1. Откройте** [**личный кабинет GonzoProxy**](https://dashboard.gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=cookie)**.**
 
 **2. Очистка куки:**
 
@@ -77,13 +79,13 @@
 
 
 
-✅ После этого перезагрузите страницу (**Ctrl + R**) и попробуйте снова зайти на сайт.
+✅ После этого перезагрузите страницу (**Ctrl + R**) и попробуйте снова войти в кабинет.
 
 ***
 
 #### 🟠 Mozilla Firefox
 
-**1. Перейдите на сайт** [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=cookie)**.**
+**1. Откройте** [**личный кабинет GonzoProxy**](https://dashboard.gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=cookie)**.**
 
 **2. Очистка куки:**
 
@@ -149,12 +151,12 @@
 
 * После очистки **кэша и куки** вы выйдете из аккаунта на сайте (если вход был выполнен ранее).
 * Иногда может потребоваться **перезагрузка страницы**:
-  * **Windows/Linux** — `Ctrl + R`
-  * **macOS** — `Cmd + R`
+  * **Windows/Linux**: `Ctrl + R`
+  * **macOS**: `Cmd + R`
 
 ***
 
-### 👾 Попробовать можно здесь: [GonzoProxy.com](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=cookie)
+### 👾 Войти в кабинет: [dashboard.gonzoproxy.com](https://dashboard.gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=cookie)
 
 ***
 
@@ -165,4 +167,4 @@
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
 
-💬 Наша команда всегда на связи! Обращайтесь в любое время суток — решим любой вопрос в течение нескольких минут.
+💬 Наша команда на связи. Напишите нам, если что-то не получается.

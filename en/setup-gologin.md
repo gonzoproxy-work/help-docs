@@ -1,8 +1,6 @@
 # 🥸 Setup GoLogin
 
-Want to create tons of accounts, avoid bans, and handle traffic like a pro?\
-Then forget about "just a proxy" and "just a browser."\
-You need a real combo: GoLogin + GonzoProxy — a proven duo for arbitrage, farming, and any task where anonymity is key.
+GoLogin is an anti-detect browser that keeps each account in its own profile, and a proxy is what gives every profile a separate IP address. This page shows where to paste a GonzoProxy connection string.
 
 ***
 
@@ -12,14 +10,11 @@ You need a real combo: GoLogin + GonzoProxy — a proven duo for arbitrage, farm
 
 **Mobile IPs (3G/4G):**
 
-* Ideal for account registration
-* Perfect for mobile apps and behavior emulation
+* Account registration
+* Mobile apps and behavior emulation
 
 **Residential IPs:**
 
-Best for:
-
-* Creating accounts without bans
 * SEO promotion
 * Ads (Google Ads, Facebook)
 * Quick checkouts (sneakers, PS5, etc.)
@@ -29,10 +24,8 @@ Best for:
 
 #### 2. IP Rotation (for residential proxies)
 
-* **Sticky IP** — one IP for 30 sec to 7 days\
-  Great for social media, crypto, warm-up sessions. Stability = trust.
-* **Random IP** — new IP for every request\
-  Perfect for scraping, parsing, and automation.
+* **Sticky IP.** The session hold time is set in the dashboard. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it. Used for social media, crypto and warm-up sessions.
+* **Random IP.** A new address for every request. Used for scraping, parsing and automation.
 
 ***
 
@@ -40,7 +33,7 @@ Best for:
 
 Let’s say you bought US residential proxies from GonzoProxy and received this string:
 
-`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000`
+`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
 
 
@@ -50,9 +43,9 @@ Let’s say you bought US residential proxies from GonzoProxy and received this 
 
 Here's what you use:
 
-* Supports both protocols: HTTPS / SOCKS5
-* Host: `pool.gonzoproxy.com`
-* Port: `1000`
+* Protocols: HTTPS / SOCKS5
+* Host: `connect.gonzoproxy.app`
+* Port: `10000`
 * Login: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * Password: `RNW78Fm5`
 
@@ -86,8 +79,8 @@ Click **Check Proxy**.
 
 
 
-* Enable and spoof to proxy IP
-* ❌ Do NOT disable completely — it’s a red flag
+* Enable it and spoof it to the proxy IP
+* Do not switch it off completely
 
 ***
 
@@ -115,35 +108,35 @@ Click **Check Proxy**.
 
 ***
 
-### 📋 "Other Settings" in GoLogin
+#### 📋 "Other Settings" in GoLogin
 
-| Setting                                             | Recommended Value                                                  | Why It Matters                                               |
-| --------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------ |
-| **User-Agent**                                      | Match proxy (Android UA for mobile, Windows/macOS for residential) | Must reflect device and IP type                              |
-| **Screen Resolution**                               | 360×740 (mobile) / 1920×1080 (desktop)                             | Mismatch can flag detection                                  |
-| **Languages**                                       | Based on IP (e.g. `fr-FR, en-US`)                                  | Language must match IP geo                                   |
-| **Platform**                                        | Android, Win32, MacIntel                                           | Based on selected OS                                         |
-| **CPU Threads**                                     | Mobile: 4–8Desktop: 8–16                                           | Matches real-world devices                                   |
-| **RAM**                                             | Mobile: 3–6 GBDesktop: 8–16 GB                                     | Must be device-appropriate                                   |
-| **Fonts**                                           | Enable font spoofingRoboto (mobile) / Segoe UI (desktop)           | Missing fonts = obvious fake                                 |
-| **Media Device Masking**                            | Enable                                                             | Prevents exposure of real audio/video fingerprints           |
-| **Canvas**                                          | Enable noise                                                       | Needs to differ, but not be broken                           |
-| **ClientRects**                                     | Enable noise                                                       | Uniform values = pattern detection                           |
-| **AudioContext**                                    | Enable noise                                                       | Widely used fingerprint                                      |
-| **WebGL Image**                                     | Enable noise                                                       | Helps blur unique rendering signature                        |
-| **WebGL Vendor**                                    | Qualcomm (mobile) / Intel, NVIDIA (desktop)                        | Should align with proxy/device type                          |
-| **WebGL Renderer**                                  | Adreno 650, Mali-G78, Intel UHD, GT 1030, etc.                     | Don’t mismatch GPU and device                                |
-| **Local Storage**                                   | Enable                                                             | Required for realistic session behavior                      |
-| **Extension Storage**                               | Enable                                                             | Especially if using custom extensions                        |
-| **Vulnerable Browser Plugins**                      | Disable                                                            | Enabling opens you up to fingerprinting                      |
-| **Block Active Sessions**                           | Enable                                                             | Prevents one profile running on multiple machines            |
-| **Enable Google Services**                          | Enable                                                             | Makes Chrome behavior more believable                        |
-| **Save Bookmarks / History / Passwords / Sessions** | All enabled                                                        | Simulates natural browsing sessions                          |
-| **System Extensions**                               | Disable                                                            | May reveal real OS if transferring profiles between machines |
+| Setting                                             | Recommended Value                                                          |
+| --------------------------------------------------- | -------------------------------------------------------------------------- |
+| **User-Agent**                                      | Match proxy (Android UA for mobile, Windows/macOS for residential)         |
+| **Screen Resolution**                               | 360×740 (mobile) / 1920×1080 (desktop)                                     |
+| **Languages**                                       | Based on IP (e.g. `fr-FR, en-US`)                                          |
+| **Platform**                                        | `Android`, `Win32`, `MacIntel`                                             |
+| **CPU Threads**                                     | <p>Mobile: 4-8</p><p>Desktop: 8-16</p>                                     |
+| **RAM**                                             | <p>Mobile: 3-6 GB</p><p>Desktop: 8-16 GB</p>                               |
+| **Fonts**                                           | <p>Enable font spoofing</p><p>Roboto (mobile) / Segoe UI (desktop)</p>     |
+| **Media Device Masking**                            | Enable                                                                     |
+| **Canvas**                                          | Enable noise                                                               |
+| **ClientRects**                                     | Enable noise                                                               |
+| **AudioContext**                                    | Enable noise                                                               |
+| **WebGL Image**                                     | Enable noise                                                               |
+| **WebGL Vendor**                                    | `Qualcomm` (mobile) / `Intel`, `NVIDIA` (desktop)                          |
+| **WebGL Renderer**                                  | `Adreno 650`, `Mali-G78`, `Intel UHD`, `GT 1030`, etc.                     |
+| **Local Storage**                                   | Enable                                                                     |
+| **Extension Storage**                               | Enable                                                                     |
+| **Vulnerable Browser Plugins**                      | Disable                                                                    |
+| **Block Active Sessions**                           | Enable                                                                     |
+| **Enable Google Services**                          | Enable                                                                     |
+| **Save Bookmarks / History / Passwords / Sessions** | All enabled                                                                |
+| **System Extensions**                               | Disable                                                                    |
 
 ***
 
-### 🔌 Extensions
+#### 🔌 Extensions
 
 
 
@@ -152,29 +145,6 @@ Click **Check Proxy**.
 
 
 Install extensions in advance if your workflow requires them.
-
-***
-
-### 🚨 Anti-Ban Checklist: What NOT to Do
-
-* ❌ One proxy ≠ multiple profiles. One IP = one profile, always.
-* ❌ Don’t reuse Canvas or WebGL. It leaves a fingerprint trail.
-* ❌ Timezone + Language + UA must match — or you're flagged.
-* ❌ Never reuse IPs (especially for Facebook) — instant bans.
-
-***
-
-### ✅ Why GoLogin + GonzoProxy Works
-
-* Clean, high-quality IP addresses
-* Advanced fingerprint spoofing
-* Full control over browser environment
-
-Want to scale up safely, preserve your accounts, and work like a pro?\
-This combo is for you.
-
-🧠 Set it → Check it → Launch it → Keep it alive.\
-Work like a pro.
 
 ***
 
@@ -189,4 +159,4 @@ Work like a pro.
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

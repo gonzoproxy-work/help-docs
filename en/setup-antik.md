@@ -1,10 +1,8 @@
 # 🛡️ Setup Antik
 
-[**Antik Browser**](https://antik-browser.com/) is a powerful antidetect browser designed for smooth and secure management of multiple accounts on Google Ads, social media platforms, online marketplaces, gambling sites, and crypto exchanges.
+[**Antik Browser**](https://antik-browser.com/) is an antidetect browser for managing multiple accounts on Google Ads, social media platforms, online marketplaces, gambling sites, and crypto exchanges.
 
-Thanks to its use of real device fingerprints and an advanced data spoofing system, your accounts stay "alive" much longer compared to other antidetect solutions.
-
-In this guide, we’ll walk you through the key features of Antik Browser, show how to create 10 browser profiles using **residential proxies** from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik), and explain why high-quality proxies are critical for keeping your accounts safe.
+In this guide, we’ll walk you through the key features of Antik Browser and show how to create 10 browser profiles using **residential proxies** from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik).
 
 ***
 
@@ -44,7 +42,7 @@ Extensions are organized into groups for quick search and installation.
 
 ### 3️⃣ Restore deleted profiles
 
-If you accidentally delete a profile — don’t worry!\
+If you accidentally delete a profile, don’t worry!\
 The "Trash" tab lets you easily restore any deleted profile or permanently clear unneeded data.
 
 
@@ -57,8 +55,7 @@ The "Trash" tab lets you easily restore any deleted profile or permanently clear
 
 ### 🚀 Creating profiles with GonzoProxy
 
-To avoid account bans, it’s crucial to use proxies from real devices — residential or mobile proxies, not datacenter ones.\
-[**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik) is ideal for this, offering maximum reliability and security.
+Create the proxies in [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik), residential or mobile, and paste the connection string into the profile.
 
 #### 🔧 General Profile Settings in Antik Browser:
 
@@ -75,7 +72,7 @@ Default, Facebook, Google, Tik-Tok, Crypto, SMM-Marketing, Matched Betting
 
 
 
-Go to [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik) and create your proxies — for example, choose **USA**.
+Go to [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik) and create your proxies, for example, choose **USA**.
 
 
 
@@ -125,13 +122,11 @@ You can also set a start page, add a note, and upload cookies.
 
 ### 📌 Create 10 profiles: Step-by-Step Guide
 
-Let’s show how easy it is to create **10 profiles** with **GonzoProxy**:
-
 #### ✅ Step 1: Configure Parameters
 
 * Select number of profiles (10)
 * Set names and folder for easy management
-* User Agent, CPU, Memory — random settings
+* User Agent, CPU, Memory: random settings
 * Label for required extensions: Default, Facebook, Google, TikTok, Crypto, SMM-Marketing, Matched Betting
 * Enable all advanced protection settings (Canvas, WebGL, WebRTC, etc.)
 
@@ -154,17 +149,17 @@ login:password@ip:port
 Example:
 
 ```
-Gonzoj9CiIi_c_US_s_573228HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000  
-Gonzoj9CiIi_c_US_s_882282HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000  
-Gonzoj9CiIi_c_US_s_140456HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
+Gonzoj9CiIi_c_US_s_573228HPF_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000  
+Gonzoj9CiIi_c_US_s_882282HPF_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000  
+Gonzoj9CiIi_c_US_s_140456HPF_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
 Paste them in bulk into Antik Browser like this:
 
 ```
-socks5://Gonzoj9CiIi_c_US_s_573228HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000  
-socks5://Gonzoj9CiIi_c_US_s_882282HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000  
-socks5://Gonzoj9CiIi_c_US_s_140456HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
+socks5://Gonzoj9CiIi_c_US_s_573228HPF_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000  
+socks5://Gonzoj9CiIi_c_US_s_882282HPF_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000  
+socks5://Gonzoj9CiIi_c_US_s_140456HPF_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
 
@@ -173,7 +168,9 @@ socks5://Gonzoj9CiIi_c_US_s_140456HPF_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
 
 
 
-Now click **Create** and test if all proxies are working.
+#### ✅ Step 3: Check the proxies
+
+Click **Create** and run the check for all proxies.
 
 
 
@@ -181,17 +178,12 @@ Now click **Create** and test if all proxies are working.
 
 
 
-#### ✅ Test Passed — All Proxies Work Perfectly!
-
 ***
 
-### 🔥 Warming up Cookies: Why it matters
-
-**Warming up cookies** is essential to make your profile appear natural to platforms.\
-This lowers the risk of bans and improves platform trust in your accounts.
+### 🔥 Warming up cookies
 
 Antik Browser includes a **Cookie Bot** feature.\
-Simply go to the profile settings, enable the Cookie Bot, and add websites for warming up.
+Go to the profile settings, enable the Cookie Bot, and add the websites the bot will open.
 
 
 
@@ -228,19 +220,8 @@ nytimes.com
 
 
 
-Great — your profile is now warmed up!\
+Great, your profile is now warmed up!\
 Repeat the process for your other profiles.
-
-***
-
-### 🎯 Summary
-
-By using **Antik Browser** with high-quality proxies from **GonzoProxy**, you get a **comprehensive and reliable solution** for managing multiple accounts with minimal risk of bans.
-
-✅ [Antik Browser](https://antik-browser.com/) gives you advanced anonymity and easy profile management.\
-✅ [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=antik) provides trustworthy, real-device proxies that protect your accounts from suspicion and bans.
-
-Choosing this combo means investing in **security, efficiency, and stability** for your business! 🚀
 
 ***
 
@@ -255,4 +236,4 @@ Choosing this combo means investing in **security, efficiency, and stability** f
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

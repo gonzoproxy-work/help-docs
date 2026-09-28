@@ -1,9 +1,9 @@
 # 🧐 Setup MoreLogin
 
-In today's digital world, anonymity and security are key factors for successful online activity. This article will detail how to use the MoreLogin platform as effectively as possible, along with real-device residential proxies from [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=morelogin).
+This page shows how to set up a profile in MoreLogin and connect residential proxies from [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=morelogin) to it.
 
 \
-[MoreLogin](https://www.morelogin.com/register/?from=GONZO20) is a powerful tool for managing multiple browser profiles, each of which appears as a unique physical device. This makes it indispensable for professionals in digital marketing, traffic arbitrage, e-commerce, and SMM.
+[MoreLogin](https://www.morelogin.com/register/?from=GONZO20) manages multiple browser profiles, each with its own fingerprint settings and its own proxy. It is used in digital marketing, traffic arbitrage, e-commerce and SMM.
 
 ***
 
@@ -42,7 +42,7 @@ If you want necessary apps to automatically install on each new cloud phone, con
 Synchronize and manage multiple browser profiles simultaneously.
 
 \
-In the cloud phone – bulk operations, text input, and file uploads are available only for Model X.
+In the cloud phone, bulk operations, text input, and file uploads are available only for Model X.
 
 
 
@@ -64,13 +64,11 @@ Automatically schedule video posts to TikTok, Instagram, Facebook Video, Faceboo
 
 
 
-> Full documentation is available [here](https://support.morelogin.com/en/articles/10326957-automated-video-publishing).
-
 ***
 
 ### 👥 Team management
 
-The team collaboration feature allows you to safely add members by assigning them different roles:
+The team collaboration feature lets you add members and assign them different roles:
 
 | Role                     | Functional privileges                                                                                               | Data privileges                                          |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
@@ -89,25 +87,27 @@ The team collaboration feature allows you to safely add members by assigning the
 
 ### 👉 Go to advanced profile creation
 
-**Basic settings:**\
-– Enter profile name\
-– Select Chrome browser\
-– Select operating system (Windows/macOS/Android/iOS)\
-– Leave the UA field unchanged\
-– Enable end-to-end encryption if desired\
-– Enable Canvas fingerprinting technology
+**Basic settings:**
+
+* Enter profile name
+* Select Chrome browser
+* Select operating system (Windows/macOS/Android/iOS)
+* Leave the UA field unchanged
+* Enable end-to-end encryption if desired
+* Enable Canvas fingerprinting technology
 
 ***
 
 ### 🌐 Proxy configuration
 
-**–** Get residential proxies from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=morelogin), for example — USA. You will receive a string:
+* Get residential proxies from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=morelogin), for example: USA. You will receive a string:
 
-`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000`
+`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
 <figure><img src=".gitbook/assets/7 (7).png" alt=""><figcaption></figcaption></figure>
 
-\
+
+
 – Enter the proxy credentials and test functionality
 
 
@@ -122,17 +122,18 @@ The team collaboration feature allows you to safely add members by assigning the
 
 ### 🔐 Authorization and cookies
 
-– Enter login credentials for accounts (Facebook, Google, eBay, Telegram, etc.)\
-– Import cookies if needed
+* Enter login credentials for accounts (Facebook, Google, eBay, Telegram, etc.)
+* Import cookies if needed
 
 ***
 
 ### 🌍 Start page
 
 After enabling, choose “Continue browsing last opened page”\
-Enable:\
-– Open the platform page with a configured account simultaneously\
-– Stay on the detection page after loading
+Enable:
+
+* Open the platform page with a configured account simultaneously
+* Stay on the detection page after loading
 
 ***
 
@@ -165,22 +166,15 @@ Enable:\
 
 ### ❌ Disable the following toggles
 
-– Disable sound playback\
-– Disable video loading\
-– Block uploading more than one file at a time
+* Disable sound playback
+* Disable video loading
+* Block uploading more than one file at a time
 
 ***
 
 ## 📌 Summary
 
-By configuring your profile using the [MoreLogin](https://www.morelogin.com/register/?from=GONZO20) platform and real-device residential proxies from [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=morelogin), you ensure:
-
-✅ Reliable protection and anonymity for your accounts\
-✅ Minimization of bans and blocking risks\
-✅ Ease in managing multiple profiles\
-✅ Significant acceleration of routine tasks and processes
-
-**Your accounts are securely protected and ready for effective online work! 🚀**
+Set up the profile in [MoreLogin](https://www.morelogin.com/register/?from=GONZO20), paste the connection string from your [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=morelogin) dashboard into the proxy fields, and run the check in the same window.
 
 ***
 
@@ -195,4 +189,4 @@ By configuring your profile using the [MoreLogin](https://www.morelogin.com/regi
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

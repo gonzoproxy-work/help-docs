@@ -1,7 +1,7 @@
 # 💸 Pricing in GonzoProxy
 
 Choose the proxy type you need and pay **only for what you use**.\
-Simple and transparent pricing — **no hidden fees or small print**. 📊
+Billing is **per gigabyte**, and the current packages are always on the [pricing page](https://gonzoproxy.com/pricing). 📊
 
 ***
 
@@ -14,49 +14,43 @@ You **pay only for traffic**, not for the number of proxies created.
 
 **1️⃣ Buy traffic (in gigabytes)**
 
-📉 The larger the volume, the lower the price:
+📉 The larger the package, the lower the price per gigabyte:
 
 ```
-• 1–24 GB       — $6.5 / GB  
-• 25–49 GB      — $5.5 / GB  
-• 50–99 GB      — $4.5 / GB  
-• 100–249 GB    — $3.9 / GB  
-• 250–499 GB    — $3.2 / GB  
-• 500–999 GB    — $2.75 / GB  
-• 1000–1499 GB  — $2.5 / GB  
-• 1500–1999 GB  — $2.4 / GB  
-• 2000–2499 GB  — $2.3 / GB  
-• 2500–2999 GB  — $2.2 / GB  
-• 3000–4999 GB  — $2.1 / GB  
-• 5000+ GB      — $2.0 / GB  
+• Start        1 GB       $6.50     ($6.50 / GB)
+• Specialist   25 GB      $137      ($5.50 / GB)
+• Team Lead    50 GB      $225      ($4.50 / GB)
+• Team         500 GB     $1375     ($2.75 / GB)
+• Enterprise   1 TB                 ($2.50 / GB)
 ```
+
+The remaining packages and the current prices are listed on the [pricing page](https://gonzoproxy.com/pricing).
 
 **2️⃣ Use proxies as much as you need**
 
-* You can create an **unlimited number of proxies** — whether it's 10 or 1000.
-* Payment is **only for traffic**.
+* Payment is **only for traffic**, not for the number of proxies you create.
 
-**3️⃣ Traffic validity — unlimited**
+**3️⃣ Traffic you have not used**
 
-* Gigabytes **don't expire**.
-* You can use them anytime ⏳.
+* When you buy the next package, your **unused traffic balance carries over to the new package**.
 
 ***
 
 ### 📱 Mobile Proxies
 
-These proxies come with **mobile operator IPs**.\
-You pay **for the number of days**, and the traffic is **unlimited**.
+These proxies come with **mobile operator IPs**.
 
-📌 Perfect for tasks where **maximum realism in behavior** is crucial.
+Usage is counted in gigabytes and charged against the balance of the mobile pool.\
+Current prices are on the [pricing page](https://gonzoproxy.com/pricing).
 
-#### 💰 Available Plans:
+***
 
-* 3 days — $7
-* 7 days — $15
-* 30 days — $45
+### 🖥️ Datacenter Proxies
 
-❗ Proxies work **for the entire paid period** with no traffic limits.
+These proxies come with **datacenter IP addresses**.
+
+Usage is counted in gigabytes and charged against the balance of the datacenter pool.\
+Current prices are on the [pricing page](https://gonzoproxy.com/pricing).
 
 ***
 
@@ -71,5 +65,4 @@ You pay **for the number of days**, and the traffic is **unlimited**.
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
-
+💬 Our team is always here for you! Reach out anytime.

@@ -2,12 +2,12 @@
 
 Client documentation
 
-**Version:** 1.2 **Status:** Production
+**Status:** Production
 
 This documentation combines two API sections:
 
-* **A. Proxy generation and reference lists** — base URL `https://api.gonzoproxy.app/functions/v1/proxy-api`
-* **B. Sub-account management** — base URL `https://api.gonzoproxy.app/functions/v1`
+* **A. Proxy generation and reference lists**: base URL `https://api.gonzoproxy.app/functions/v1/proxy-api`
+* **B. Sub-account management**: base URL `https://api.gonzoproxy.app/functions/v1`
 
 ***
 
@@ -81,6 +81,14 @@ Passed in the JSON request body.
 | `password`     | `string`  | Custom password                     |
 | `rg_id`        | `string`  | Additional sticky-session parameter |
 | `session_rand` | `string`  | Random seed for sticky sessions     |
+
+**Choosing the pool**
+
+The pool a proxy is issued from (residential, mobile, datacenter) is set by a request parameter. If that parameter is not sent, `/generate` still returns a working connection string, but it can belong to a different pool than the one you need: the string connects, and the product behind it is not the one you asked for. Check which pool the returned string belongs to before you move it into production.
+
+**About `ttl`**
+
+`ttl` asks for a session lifetime, it does not guarantee one. In our own run on 14 September 2026, 51 of 90 sessions (56.7%, Wilson interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes. Handle an address change in your code instead of assuming the session survives.
 
 ### A.2 Reference lists for filters
 
@@ -416,7 +424,7 @@ Error format:
 }
 ```
 
-### Common errors (section B — sub-accounts)
+### Common errors (section B / sub-accounts)
 
 | HTTP  | Error                                                    | Description                                                           |
 | ----- | -------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -430,23 +438,5 @@ Error format:
 | `404` | `sub_account_not_found`                                  | Sub-account not found                                                 |
 | `409` | `sub_inactive`                                           | Cannot change traffic on a disabled sub-account. Run `activate` first |
 | `409` | `insufficient_parent_traffic`                            | Insufficient traffic on the main account                              |
-
-***
-
-## Rate limiting
-
-Rate limiting applies to `POST /generate`.
-
-**Current limit:** 100 requests per minute per API key.
-
-***
-
-## Compatibility
-
-This documentation matches the current API version: **1.2**. The API may receive updates without changing the core structure.
-
-
-
-
 
 <br>

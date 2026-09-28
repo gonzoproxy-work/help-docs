@@ -1,14 +1,8 @@
 # 🦑 Setup Octo Browser
 
-If you're an affiliate marketer, media buyer, or advertising specialist, you've definitely run into account bans at some point. Platforms are constantly on the lookout for suspicious activity and will block your ad accounts at the slightest hint of trouble. To get around these bans and scale your operations safely, special tools like **anti-detect browsers** are used.
+[**Octo Browser**](https://octobrowser.net/) is an anti-detect browser that keeps each account in its own profile, and a proxy is what gives every profile a separate IP address.
 
-One of the most popular and effective options is [**Octo Browser**](https://octobrowser.net/).
-
-In this guide, we'll take a detailed look at how to set up Octo Browser with [**GonzoProxy**](./) residential proxies to ensure maximum security and efficiency for your tasks.
-
-***
-
-For our readers, we have a special [**promo code GONZO30**](https://octobrowser.net/) — use it on your first Octo Browser subscription purchase to get a 30% discount.
+This guide shows how to put [**GonzoProxy**](/introduction.md) residential proxies into Octo Browser profiles.
 
 ***
 
@@ -16,14 +10,14 @@ For our readers, we have a special [**promo code GONZO30**](https://octobrowser.
 
 ### 1️⃣ Human-like typing simulation
 
-The **"Paste as Human Typing"** feature lets you paste text character by character, simulating real typing. This greatly reduces the risk of raising red flags with anti-fraud systems.
+The **"Paste as Human Typing"** feature pastes text character by character, simulating typing on a keyboard.
 
-**How to use it:**
+#### How to use it
 
 * Copy the text you need to your clipboard.
 * In Octo Browser, right-click in a text input field and select **"Type text from clipboard."**
 * Or use the hotkey: **CTRL + SHIFT + E**.
-* Octo will then automatically type out the text at variable speeds — just like a real person.
+* Octo then types the text out at a variable speed.
 
 
 
@@ -35,7 +29,7 @@ The **"Paste as Human Typing"** feature lets you paste text character by charact
 
 ### 2️⃣ Installing extensions
 
-Extensions are add-ons that expand the browser’s capabilities. You can easily install any Chrome extension in Octo Browser from the regular Chrome Web Store.
+Extensions are add-ons that expand the browser’s capabilities. You can install any Chrome extension in Octo Browser from the regular Chrome Web Store.
 
 
 
@@ -47,7 +41,7 @@ Extensions are add-ons that expand the browser’s capabilities. You can easily 
 
 ### 3️⃣ Trash bin
 
-Accidentally deleted an important profile? No worries — Octo Browser has a **Trash Bin** where deleted profiles are stored for up to **48 hours** and can be restored.
+Deleted a profile by mistake? Octo Browser has a **Trash Bin** where deleted profiles are stored for up to **48 hours** and can be restored from it.
 
 {% hint style="info" %}
 After 48 hours, profiles are permanently deleted and can’t be recovered.
@@ -63,9 +57,9 @@ After 48 hours, profiles are permanently deleted and can’t be recovered.
 
 ### 4️⃣ Cookie robot
 
-The **Cookie Robot** in Octo Browser automatically visits the URLs you provide and collects cookies and pixels. This helps your profile look more "real" and "warmed up" to anti-fraud systems.
+The **Cookie Robot** in Octo Browser visits the URLs you provide and collects cookies and pixels into the profile.
 
-**How it works:**
+#### How the Cookie Robot works
 
 * The more URLs you load, the longer the robot will run.
 * Once done, all collected cookies are saved to the profile.
@@ -81,9 +75,9 @@ The **Cookie Robot** in Octo Browser automatically visits the URLs you provide a
 
 ### 5️⃣ Webcam stream replacement
 
-This unique feature lets you **replace your webcam feed** with a pre-recorded video. (Available on Windows.)
+This feature replaces the webcam feed with a pre-recorded video. It is available on Windows.
 
-**Video file requirements:**
+#### Video file requirements
 
 * Formats: `.mp4` or `.mov`
 * Codec: `h264`
@@ -99,12 +93,12 @@ This unique feature lets you **replace your webcam feed** with a pre-recorded vi
 
 ### 6️⃣ Team collaboration
 
-Octo Browser is perfect for teamwork:\
-\
-✅ Easily share profiles, cookies, and proxies\
-✅ Fine-grained control over roles and access\
-✅ Track activity history for each team member\
-✅ Create tasks, assign team members, and set deadlines
+Octo Browser has a set of features for teamwork:
+
+* ✅ Share profiles, cookies, and proxies
+* ✅ Fine-grained control over roles and access
+* ✅ Track activity history for each team member
+* ✅ Create tasks, assign team members, and set deadlines
 
 
 
@@ -116,9 +110,9 @@ Octo Browser is perfect for teamwork:\
 
 ### 7️⃣ Profile templates
 
-**Templates** let you pre-configure profile settings, making it easy to quickly create new accounts:
+**Templates** let you pre-configure profile settings, so new profiles can be created quickly:
 
-* Proxies, extensions, tags, profile icons, start pages — all pre-set.
+* Proxies, extensions, tags, profile icons and start pages are all set in advance.
 * You can edit all profile settings except the selected operating system.
 * Templates are available with all subscription plans and can be password-protected.
 
@@ -130,7 +124,7 @@ Octo Browser is perfect for teamwork:\
 
 ***
 
-### 🛠️ Creating 20 profiles with GonzoProxy residential proxies
+## 🛠️ Creating 20 profiles with GonzoProxy residential proxies
 
 ### 📍 Step 1: Prepare proxies in [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=octobrowser\&utm_content=eng)
 
@@ -144,13 +138,13 @@ Octo Browser is perfect for teamwork:\
 * Your proxy format will look like this:
 
 ```
-Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
+Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
 * Add `socks5://` or `https://` before the proxy string:
 
 ```
-socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
+socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
 * Paste the proxies into Octo Browser.
@@ -168,7 +162,7 @@ socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
 * Set a profile name and choose an icon.
 * Assign the 20 proxies from Step 1.
 * Add tags, start pages, and bookmarks.
-* Enable protection options (noise): **WebGL, Canvas, Audio, Client Rects**.
+* Enable the noise options: **WebGL, Canvas, Audio, Client Rects**.
 * Set language, timezone, and geolocation to **"Based on IP."**
 * Install any required extensions.
 
@@ -198,23 +192,13 @@ socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000
 
 
 
-🎉 Done! You now have **20 unique and protected profiles** ready to go.
+🎉 Done. The 20 profiles are created, each with its own proxy.
 
 
 
 <figure><img src=".gitbook/assets/профили 3.png" alt=""><figcaption></figcaption></figure>
 
 
-
-***
-
-By using [**Octo Browser**](https://octobrowser.net/) together with **residential proxies from** [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=octobrowser\&utm_content=eng), you get a **powerful, safe, and proven setup** that helps you:\
-\
-✅ Avoid bans and account blocks\
-✅ Scale your ad campaigns with confidence\
-✅ Work efficiently as a team
-
-Leverage this tool to its full potential — and may your work be smoother and more profitable!
 
 ***
 
@@ -229,4 +213,4 @@ Leverage this tool to its full potential — and may your work be smoother and m
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

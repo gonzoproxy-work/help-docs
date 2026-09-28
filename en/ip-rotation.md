@@ -9,7 +9,7 @@
 
 ### 1️⃣ Sticky IP (Sticky Session)
 
-🔒 The IP remains stable for a set period — from 30 seconds to 7 days.
+🔒 A sticky session asks the gateway to hold the same exit IP for the whole session instead of changing it on every request.
 
 #### ✅ Ideal for:
 
@@ -17,8 +17,9 @@
 * 💰 Cryptocurrency-related tasks
 * ⚙️ Software usage where a stable session is important
 
-📌 This type of rotation helps avoid suspicious activity\
-and appears natural to websites.
+📌 **How long the address actually holds.** We measured this on our own account on 14 September 2026, through `connect.gonzoproxy.app:10000`. Over a horizon of 84 minutes, 51 of 90 sessions kept the same IP, that is 56.7% (Wilson interval 46.4% to 66.4%). Half of the losses happened inside the first 35 minutes.
+
+📌 Plan for that: a sticky session is a request, not a guarantee. If your job breaks when the address changes, keep a check in it and open a new session when the IP moves.
 
 ***
 
@@ -42,11 +43,7 @@ All **GonzoProxy residential proxies** work through real IP addresses from live 
 📱 When a device disconnects or goes offline, the system automatically\
 assigns you a **new IP** to keep the connection active.
 
-This is **natural behavior**, which provides:
-
-* High anonymity
-* Realism in the eyes of websites
-* Protection against blocks
+This is **normal behaviour for a residential pool**: the address belongs to a real device, and it is the device, not the gateway, that decides when it goes offline.
 
 ***
 
@@ -61,4 +58,4 @@ This is **natural behavior**, which provides:
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

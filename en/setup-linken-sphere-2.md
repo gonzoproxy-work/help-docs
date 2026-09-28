@@ -1,12 +1,12 @@
 # 🔘 Setup Linken Sphere 2
 
-If you’ve been working with traffic for a few years, you’ve surely heard of Linken Sphere — it was one of the first anti-detect browsers on the market that allowed comfortable management of dozens of accounts and successfully hid users' digital fingerprints.
+If you’ve been working with traffic for a few years, you’ve surely heard of Linken Sphere, it was one of the first anti-detect browsers on the market that let you manage dozens of accounts from one application.
 
 However, Linken Sphere hadn’t received significant updates for a long time and started to fall behind more modern competitors. The situation changed dramatically with the release of Linken Sphere Evolution a little over a year ago. The developers took customer feedback into account, updated the browser, and returned it to the level of leading solutions.
 
-But the Sphere team didn’t stop there — just recently, [Linken Sphere 2](https://ls2.app/) was introduced. This isn’t just another update — it’s a completely reimagined browser that combines everything great from previous versions and incorporates the wishes of experienced users.
+But the Sphere team didn’t stop there, just recently, [Linken Sphere 2](https://ls2.app/) was introduced. This isn’t just another update, it’s a completely reimagined browser that combines everything great from previous versions and incorporates the wishes of experienced users.
 
-📌 **Important**: stable multi-accounting work is impossible without high-quality proxies. The best ones today are residential and mobile proxies from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=linkensphere) — they protect accounts from bans and suspicion.
+📌 **Important**: a profile needs a proxy. Residential and mobile proxies for it are taken from the [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=linkensphere) dashboard.
 
 ***
 
@@ -34,7 +34,7 @@ Forget about manually generating cookies. With the new “Warming Tool,” the b
 
 #### 👥 Convenient team collaboration
 
-Linken Sphere 2 makes team collaboration as convenient as possible. Configure roles, permissions, and access directly in the browser interface. Creating teams now takes just a few seconds — simply click the anti-icon in the upper-left corner of the screen.
+Linken Sphere 2 makes team collaboration as convenient as possible. Configure roles, permissions, and access directly in the browser interface. Creating teams now takes just a few seconds, simply click the anti-icon in the upper-left corner of the screen.
 
 
 
@@ -48,7 +48,7 @@ Linken Sphere 2 makes team collaboration as convenient as possible. Configure ro
 
 #### 📱 Mobile device emulation
 
-Linken Sphere 2 allows you to emulate mobile devices — a fairly rare feature even among anti-detect browsers. To enable this mode, select **“Mobile Preset”** from the dropdown on the homepage.
+Linken Sphere 2 allows you to emulate mobile devices, a fairly rare feature even among anti-detect browsers. To enable this mode, select **“Mobile Preset”** from the dropdown on the homepage.
 
 
 
@@ -56,7 +56,7 @@ Linken Sphere 2 allows you to emulate mobile devices — a fairly rare feature e
 
 
 
-Then, when creating a new session, you can choose the desired version of Android or iOS, as well as the type of mobile browser. This allows seamless work with platforms that require mobile fingerprints, such as **Instagram** or **TikTok**.
+Then, when creating a new session, you can choose the version of Android or iOS, as well as the type of mobile browser.
 
 ***
 
@@ -101,7 +101,7 @@ You can pre-create profile templates for quick session launches. To do this, cli
 4.  Connect the proxy:
 
     * Log in to your [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=linkensphere) personal account.
-    * Select **residential proxies**.
+   * Select **residential proxies** or **mobile proxies**, depending on the preset you picked (residential in our case).
     * Set the format: `ip:port@login:password`.
 
 
@@ -110,7 +110,7 @@ You can pre-create profile templates for quick session launches. To do this, cli
 
 
 
-* Click **Create Proxy** and receive it in that format: `pool.gonzoproxy.com:1000@Gonzoj9CiIi_c_US_s_3083DDV_ttl_72h:RNW78Fm5`
+* Click **Create Proxy** and receive it in that format: `connect.gonzoproxy.app:10000@Gonzoj9CiIi_c_US_s_3083DDV_ttl_72h:RNW78Fm5`
 
 
 
@@ -126,7 +126,7 @@ You can pre-create profile templates for quick session launches. To do this, cli
 
 
 
-6. Proxies work perfectly! Don’t forget to enable **auto geolocation detection**.
+6. The proxy check passed. Don’t forget to enable **auto geolocation detection**.
 7. Add cookies, extensions, or connect **cloud sync** for teamwork.
 
 ### 🔒 Profile fingerprint settings
@@ -145,17 +145,13 @@ You can pre-create profile templates for quick session launches. To do this, cli
 
 8. Leave other settings unchanged.
 
-The profile is ready for secure and efficient work.
+The profile is ready to use.
 
 ***
 
-### ✅ Conclusion: Why choose Linken Sphere 2 and GonzoProxy?
+### ✅ Conclusion
 
-[**Linken Sphere 2**](https://ls2.app/) is not just an improvement — it’s a quality leap in multi-accounting. Simplicity, stability, and security are achieved through smart automation, team functionality, and advanced masking technologies.
-
-But even the best browser can’t perform without reliable proxies. [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=linkensphere) provides stability, reduces blocking risks, and increases account trust.
-
-If you're serious and long-term about traffic work — the **Linken Sphere 2 + GonzoProxy** combo will be your key to results. It’s the choice of those who lead, not follow.
+In [**Linken Sphere 2**](https://ls2.app/) the [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=linkensphere) connection string is pasted into the proxy field of a profile in the `ip:port@login:password` format, and the **Check** button in the same window verifies it.
 
 ***
 
@@ -170,4 +166,4 @@ If you're serious and long-term about traffic work — the **Linken Sphere 2 + G
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

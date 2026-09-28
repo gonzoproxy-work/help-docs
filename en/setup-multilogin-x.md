@@ -1,10 +1,8 @@
 # 🛡️ Setup Multilogin X
 
-You’ve probably run into situations where your accounts on platforms like Google, Facebook, or Amazon get mass-banned due to matching fingerprints or suspicious IP addresses. To avoid such bans, it's more important than ever to use **real IP addresses from real devices**, such as residential or mobile proxies from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=multilogin), combined with the powerful anti-detect browser **Multilogin X**, which completely hides your digital footprint and makes multi-accounting secure and stable.
+This page shows how to set up a profile in **Multilogin X** and connect residential or mobile proxies from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=multilogin) to it.
 
-[**Multilogin X**](https://multilogin.com/) is a complete solution that creates unique and isolated digital environments for each account. Its purpose is to protect you from bans and provide full digital anonymity.
-
-It not only masks digital fingerprints but also allows you to work with hundreds of accounts simultaneously without risking bans. Multilogin simulates real devices, keeping you invisible online. It supports team collaboration, automates routine tasks, and easily scales with your needs.
+[**Multilogin X**](https://multilogin.com/) creates a separate browser environment for each account, with its own fingerprint settings and its own proxy. It supports team collaboration, automates routine tasks and scales to a large number of profiles.
 
 > 🔍 Let’s take a closer look at why **Multilogin X** is worth your attention.
 
@@ -29,11 +27,11 @@ When you're working with multiple people on a project, clearly assigning roles i
 | Trash (delete/restore profiles) | ✅       | ✅        | 🚫       |
 | Manage users                    | ✅       | 🚫       | 🚫       |
 
-Everyone now knows exactly what they can and cannot do — no confusion, no chaos.
+Everyone now knows exactly what they can and cannot do, no confusion, no chaos.
 
 ***
 
-### 2. AI commands — automate tasks in seconds 🤖
+### 2. AI commands / automate tasks in seconds 🤖
 
 Ever wished managing hundreds of accounts could be easier? Multilogin X integrates AI tools that let you run up to 10 tasks from a single text prompt!
 
@@ -45,9 +43,9 @@ Ever wished managing hundreds of accounts could be easier? Multilogin X integrat
 
 ✅ **What you can automate:**
 
-* **Profile launch** — instantly start any number of profiles.
-* **Proxy management** — assign, change, or delete proxies with a simple command.
-* **Profile grouping** — move profiles between folders without clicking through menus.
+* **Profile launch**: instantly start any number of profiles.
+* **Proxy management**: assign, change, or delete proxies with a simple command.
+* **Profile grouping**: move profiles between folders without clicking through menus.
 
 This saves hours of manual work.
 
@@ -60,7 +58,7 @@ Multilogin X offers two data storage modes:
 | **Feature**      | **Cloud Profiles**                                                                                                                                               | **Local Profiles**                                                                                              |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | **How It Works** | Profiles are downloaded once and then quickly launched from cache. If any profile data changes after launch, it will need to sync again before the next session. | Profiles are downloaded to your device at first launch and then run from your local storage.                    |
-| **Storage**      | Both metadata and profile data are securely stored in AWS cloud, ensuring availability and safety at any time.                                                   | Profile data (cookies, extensions, etc.) is stored locally on your device. Metadata is stored in the AWS cloud. |
+| **Storage**      | Both metadata and profile data are stored in the AWS cloud.                                                   | Profile data (cookies, extensions, etc.) is stored locally on your device. Metadata is stored in the AWS cloud. |
 | **Advantages**   | Profiles are always synchronized. Ideal for team collaboration and multi-device access.                                                                          | Profiles launch instantly every time. Best suited for solo users working on a single device.                    |
 
 
@@ -69,9 +67,9 @@ You get to choose what fits your workflow best
 
 ***
 
-### 4. Paste as Human — realistic text input ✍️
+### 4. Paste as Human / realistic text input ✍️
 
-Platforms like Gmail can detect when you're pasting text instead of typing it. Multilogin X has thought of that. The **Paste as Human** feature makes pasted text appear as if it’s being typed manually — helping you stay undetected. Just right-click and choose **Paste as Human**.
+Platforms like Gmail can detect when you're pasting text instead of typing it. Multilogin X has thought of that. The **Paste as Human** feature enters the pasted text with delays between keystrokes instead of inserting it all at once. Just right-click and choose **Paste as Human**.
 
 
 
@@ -83,7 +81,7 @@ Platforms like Gmail can detect when you're pasting text instead of typing it. M
 
 ### 5. API Integration with Selenium and Puppeteer 🧰
 
-If you work with large-scale automation or manage many accounts, you’ll appreciate Multilogin X's robust API support — fully compatible with **Selenium** and **Puppeteer**.
+If you work with large-scale automation or manage many accounts, you’ll appreciate Multilogin X's robust API support, fully compatible with **Selenium** and **Puppeteer**.
 
 {% hint style="info" %}
 📚 Detailed documentation available via [link](https://multilogin.com/help/en_US/api).
@@ -93,7 +91,7 @@ If you work with large-scale automation or manage many accounts, you’ll apprec
 
 ### 🧩 How to set up a profile and connect a GonzoProxy proxy in Multilogin X
 
-Now for the fun part! Here’s a step-by-step guide to setting up a profile with a **GonzoProxy** proxy to ensure your accounts stay safe:
+Now for the fun part! Here’s a step-by-step guide to setting up a profile with a **GonzoProxy** proxy:
 
 * **Profile name**: Choose a clear, descriptive name.
 * **Load cookies**: Upload your cookies if you have them.
@@ -109,8 +107,8 @@ Now for the fun part! Here’s a step-by-step guide to setting up a profile with
 
 
 
-* You’ll get a string like this:\
-  `pool.gonzoproxy.com:1000:Gonzoj9CiIi_c_US_s_449664AHN_ttl_72h:RNW78Fm5`
+* You’ll get a string like this:
+  `connect.gonzoproxy.app:10000:Gonzoj9CiIi_c_US_s_449664AHN_ttl_72h:RNW78Fm5`
 
 
 
@@ -134,7 +132,7 @@ Now for the fun part! Here’s a step-by-step guide to setting up a profile with
 | ------------------------ | ------------------------------------------ |
 | Tags or Notes            | Optional                                   |
 | Browser                  | MimicX                                     |
-| Storage                  | Cloud — for team use Local — for solo work |
+| Storage                  | Cloud, for team use Local, for solo work   |
 | Timezone                 | Mask                                       |
 | Browser Language         | Mask                                       |
 | WebRTC                   | Mask                                       |
@@ -150,15 +148,11 @@ Now for the fun part! Here’s a step-by-step guide to setting up a profile with
 | Port Scanning Protection | Mask                                       |
 | Font Data                | Mask                                       |
 
-🎉 You’re now fully protected and ready to work with peace of mind! 🎉
-
 ***
 
 ### ✅ Conclusion
 
-By using [**Multilogin X**](https://multilogin.com/) together with high-quality proxy services like [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=multilogin), you eliminate account bans, streamline your workflows, and become virtually invisible online.
-
-Managing multiple accounts is no longer a problem — it's a safe and convenient reality. Try it yourself and see the difference! ✨
+In Multilogin X the [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=multilogin) connection string goes into the **My Proxies** section in the `ip:port:login:password` format, with the type set to **http** or **socks5**.
 
 ***
 
@@ -173,4 +167,4 @@ Managing multiple accounts is no longer a problem — it's a safe and convenient
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.
