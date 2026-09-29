@@ -82,10 +82,10 @@ Antik Browser идеально подходит для команд, работ�
 #### Поддерживаемые форматы прокси:
 
 ```
-192.168.0.1:8000
-socks5://login:password@192.168.0.1:8000
-192.168.0.1:8000:login:password
-login:password|192.168.0.22:8000
+IP:port
+socks5://login:password@IP:port
+IP:port:login:password
+login:password|IP:port
 ```
 
 Вставляем полученные прокси в профиль

@@ -108,7 +108,7 @@ The team collaboration feature lets you add members and assign them different ro
 
 
 
-– Enter the proxy credentials and test functionality
+* Enter the proxy credentials and test functionality
 
 
 

@@ -83,10 +83,10 @@ Go to [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&u
 #### Supported Proxy formats:
 
 ```
-192.168.0.1:8000  
-socks5://login:password@192.168.0.1:8000  
-192.168.0.1:8000:login:password  
-login:password|192.168.0.22:8000
+IP:port
+socks5://login:password@IP:port
+IP:port:login:password
+login:password|IP:port
 ```
 
 Paste the proxies into your profile.
