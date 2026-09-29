@@ -52,9 +52,9 @@ Our own measurement on 14 September 2026 does not show this pool to be faster th
 Two modes are available:
 
 * **New IP per request**: a new IP is issued on every request
-* **Sticky session**: the IP is held for the session and can change before the session ends
+* **Sticky session**: the IP is held for the session, up to 7 days, and can change before the session ends
 
-How long a sticky address actually holds, from our own run on 14 September 2026: over an 84-minute horizon, 51 sessions out of 90 kept the same address, that is 56.7%, with a Wilson interval of 46.4% to 66.4%. Half of the losses happened inside the first 35 minutes. We measured nothing past 84 minutes, so we promise nothing past it. The run covered all three pools at once and the pools did not separate, so this is the figure for the datacenter pool as well.
+How long a sticky address actually holds, from our own run on 14 September 2026: over an 84-minute horizon, 51 sessions out of 90 kept the same address, that is 56.7%, with a Wilson interval of 46.4% to 66.4%. Half of the losses happened inside the first 35 minutes. The run covered all three pools at once and the pools did not separate, so this is the figure for the datacenter pool as well.
 
 In sticky mode the IP also changes when the session is recreated.
 

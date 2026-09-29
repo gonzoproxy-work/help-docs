@@ -90,7 +90,7 @@ Decide how frequently the IP address should change:
 
 #### • **Sticky (Sticky Session)**
 
-* The system assigns you one address and holds it while the source device stays online
+* The system assigns you one address for the time set in **Limit Session** (up to 7 days) and holds it while the source device stays online
 * **Best for:** work tied to a single account
 * **What we measured on 14 September 2026:** over an 84-minute horizon, **51 of 90 sessions kept the same address, which is 56.7%** (Wilson interval 46.4% to 66.4%). Half of the losses happened inside the first 35 minutes.
 * In a separate 72-hour run from 7 to 10 September 2026, one session held the same address for about 69 hours. That is a single session, not a norm and not a promise.
@@ -117,7 +117,7 @@ Three protocols work on port **10000**:
 
 ### ⏳ Limit Session / Session Duration
 
-Sets how long one address stays assigned to you before it changes automatically.
+Sets how long one address stays assigned to you before it changes automatically. Set in seconds, minutes or hours, **up to 7 days** (168 hours).
 
 * After the time expires, a new IP will be assigned
 * The value is an upper bound, not a guarantee. The address can change earlier if the device goes offline. See the measured retention in the Rotation section above.

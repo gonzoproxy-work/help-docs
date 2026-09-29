@@ -122,7 +122,7 @@ GonzoProxy provides two types of IP rotation. Choose according to your task.
 
 #### 🔒 Sticky IP (fixed session)
 
-The session hold time is set in the dashboard. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it.
+The session hold time is set in the dashboard, up to 7 days. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it.
 
 Use it for:
 

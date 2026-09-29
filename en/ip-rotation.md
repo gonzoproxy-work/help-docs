@@ -9,7 +9,7 @@
 
 ### 1️⃣ Sticky IP (Sticky Session)
 
-🔒 A sticky session asks the gateway to hold the same exit IP for the whole session instead of changing it on every request.
+🔒 A sticky session asks the gateway to hold the same exit IP for the whole session instead of changing it on every request. The session length is set in the **Limit Session** field, up to 7 days.
 
 #### ✅ Ideal for:
 
