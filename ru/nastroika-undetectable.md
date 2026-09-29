@@ -141,7 +141,7 @@ Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:1000
 * **Порт:** `10000`
 * **Логин:** `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Пароль:** `RNW78Fm5`
-* **Поддерживаемые протоколы:** `HTTP`, `HTTPS`, `SOCKS5` и `SOCKS5h`
+* **Поддерживаемые протоколы:** `HTTP`, `HTTPS` и `SOCKS5`
 
 
 

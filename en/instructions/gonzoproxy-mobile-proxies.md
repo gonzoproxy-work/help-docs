@@ -17,7 +17,7 @@ The mobile pool is one of the three pools on the account, next to residential an
 ### 🔌 Connection
 
 * Gateway: `connect.gonzoproxy.app:10000`
-* Protocols answering on that port: SOCKS5, SOCKS5h, HTTP and HTTPS (real TLS to the proxy)
+* Protocols working on that port: HTTP, HTTPS (real TLS to the proxy) and SOCKS5
 * SOCKS4 and SOCKS4a do not work
 
 Paste the connection string into the proxy field of the tool you work in. The tools our customers name most often are Octo Browser, then Dolphin Anty and AdsPower equally, then curl and Python requests.
@@ -28,7 +28,7 @@ Paste the connection string into the proxy field of the tool you work in. The to
 
 The country selector of the mobile pool listed 134 countries when we read the dashboard on 14 September 2026. That is a count of countries in the selector, not a count of addresses.
 
-Selection works at country level. A city can be picked in the dashboard, but that choice does not reach the connection string, so the exit is set by country only. A customer has also reported that the carrier choice does not hold: the first page load showed the selected operator, and a reload ten seconds later showed a different access technology. We have not reproduced this ourselves.
+Besides the country you can pick a region and an operator; the choice is written into the connection string. The mobile pool has no city selection.
 
 ***
 
@@ -55,15 +55,14 @@ In the same run of 14 September 2026 the median response time of the mobile pool
 
 ### 💳 Traffic and payment
 
-* Traffic is paid by the gigabyte from the account balance, and the mobile pool draws on the same balance as the other two. The published price table is on [GonzoProxy.com](https://GonzoProxy.com); there is no separate per gigabyte price for the mobile pool.
+* Traffic is paid by the gigabyte. The mobile pool has its own per gigabyte price and its own balance (**Traffic Left**), which the other pools do not spend. The price depends on the purchase volume and is shown when you top up in the **Mobile Proxies** section.
 * Payment goes through Cryptomus, in cryptocurrency. Card payments have not worked since July 2026.
-* Unused traffic balance carries over to the new package.
+* Traffic does not expire: the gigabytes you buy stay on your balance until you use them.
 
 ***
 
 ### ⚠️ What the product does not do yet
 
-* The dashboard has no live traffic counter. After 1,523 requests in our run of 14 September 2026 it still read 0.00 GB.
 * There are no per port, per geo or per subaccount usage statistics.
 * A working proxy is not proof of a funded balance: at a zero balance 35 requests out of 36 still went through.
 * When a limit is reached the connection closes silently: TCP is accepted and then closed with no SOCKS5 reply. In our run it took about 25 minutes before connections worked again.

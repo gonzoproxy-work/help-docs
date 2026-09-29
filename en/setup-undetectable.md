@@ -134,7 +134,7 @@ Let’s say you bought US residential proxies from [GonzoProxy](https://gonzopro
 * **Port**: `10000`
 * **Login**: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Password**: `RNW78Fm5`
-* **Supported protocols**: HTTP, HTTPS, SOCKS5 and SOCKS5h
+* **Supported protocols**: HTTP, HTTPS and SOCKS5
 
 
 

@@ -37,10 +37,10 @@ Unlike **datacenter proxies**, whose addresses belong to hosting providers, thes
 
 * Buy traffic in gigabytes
 * Charging is based on **used traffic**
-* Unused traffic balance carries over to the new package
+* Traffic does not expire: the gigabytes you buy stay on your balance until you use them
 
 💲 Price per 1 GB depends on the purchase volume:\
-&#x20;      **from $6.50 per GB on the 1 GB package down to $2.50 per GB at 1 TB**
+&#x20;      **from $6.50 per GB when you buy 1 GB down to $2.50 per GB at 1 TB**
 
 <figure><img src="../.gitbook/assets/image_2025-04-21_11-44-48.png" alt=""><figcaption></figcaption></figure>
 
@@ -54,7 +54,7 @@ This is the only payment method available today. Bank cards are not accepted: ca
 
 💡 After payment, the purchased traffic will appear **in the top right corner** of your dashboard.
 
-ℹ️ The dashboard shows the balance you bought, not your consumption in real time. There is no live traffic counter yet.
+ℹ️ Usage is shown in the dashboard: traffic spent since the start of the day, week and month, the remaining balance (**Traffic Left**), and a **Traffic usage** chart below the generator.
 
 
 
@@ -80,11 +80,7 @@ Fill these fields from the top down: **country first, then region and city, and 
 * If the list comes back empty, remove the operator or pick another one. Devices leave the network, so a combination that returned addresses yesterday can return nothing today.
 * **ISP (Internet Service Provider)**: the company that provides internet access (e.g., *Comcast, AT\&T, Vodafone*)
 
-What these fields do not do today:
-
-* City selection exists in the dashboard but does not reach the connection string. Targeting works at the country level.
-* The city list is not filtered by the selected state: with California selected, the list offers Honolulu and not Los Angeles. Observed on the live dashboard on 14 September 2026.
-* Customers have reported that the selected operator does not always hold: the first page load showed the chosen operator, and a reload ten seconds later showed a different access technology. We have not reproduced this ourselves.
+Everything you select is written into the login of the connection string. For example, `c_US` is the country, `sd_443` the region (California), `city_Los-Angeles` the city, `isp_74471` the provider.
 
 ***
 
@@ -109,12 +105,11 @@ Decide how frequently the IP address should change:
 
 ### 🔧 Protocol
 
-Four protocols answer on port **10000**:
+Three protocols work on port **10000**:
 
 * **HTTP**
 * **HTTPS** (real TLS to the proxy)
 * **SOCKS5**
-* **SOCKS5h**
 
 **SOCKS4 and SOCKS4a do not work.** Checked on 14 September 2026.
 

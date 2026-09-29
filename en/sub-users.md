@@ -88,7 +88,7 @@ The **Actions** field also includes the option to delete a sub-account.
 
 
 
-**Step 2.** Configure the parameters: choose the country and set the rotation mode. Geo targeting works at country level: the city selector in the dashboard does not reach the connection string.
+**Step 2.** Configure the parameters: choose the country and set the rotation mode. You can also set the region, city and provider.
 
 <figure><img src=".gitbook/assets/8 (5).png" alt=""><figcaption></figcaption></figure>
 

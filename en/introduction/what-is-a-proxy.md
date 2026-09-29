@@ -24,7 +24,7 @@ You give the courier an address and a task. The courier goes on your behalf, col
 #### 👥 Account Farming & Validation
 
 * We recommend a **“1 proxy = 1 account”** setup
-* The exit country is set in the connection string. The dashboard also shows a city list, but the city you pick does not reach the connection string
+* The exit country, region, city and provider are set in the connection string
 
 #### 🕷️ Parsing & Crawling
 
@@ -34,7 +34,7 @@ You give the courier an address and a task. The courier goes on your behalf, col
 #### 🤖 Automation
 
 * The connection string is pasted into the proxy field of your script, bot or browser profile
-* Four protocols answer on port 10000: SOCKS5, SOCKS5h, HTTP and HTTPS. SOCKS4 and SOCKS4a do not work
+* Three protocols work on port 10000: HTTP, HTTPS and SOCKS5
 
 ***
 

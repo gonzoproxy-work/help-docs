@@ -16,9 +16,9 @@ The dashboard selector lists **198 countries** for the residential pool, **134**
 
 ### 💡 GonzoProxy Benefits
 
-* 🔄 **Unused traffic balance carries over to the new package**
+* 🔄 **Traffic does not expire.** The gigabytes you buy stay on your balance until you use them
 * ♾️ **Unlimited proxies.** Creating proxies is free, you pay only for the traffic you use
-* 🎯 **Country targeting.** The exit is selected by country; the dashboard also shows a city list, but the city you pick does not reach the connection string
+* 🎯 **Precise targeting.** Country, region, city and provider are set in the connection string
 * 📞 **24/7 Telegram support**
 * 🏢 **Registered UK company**
 

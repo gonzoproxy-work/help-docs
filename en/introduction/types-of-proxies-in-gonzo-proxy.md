@@ -1,6 +1,6 @@
 # 🌍 Types of Proxies in Gonzo Proxy
 
-This page describes the proxy types available in Gonzo Proxy: dynamic residential and mobile. In both cases you pay only for the traffic you use; there is no monthly subscription. Both types work through the same account, the same gateway and the same login format.
+This page describes the proxy types available in Gonzo Proxy: residential, mobile and datacenter. All three are rotating: the address changes on every request or holds for a sticky session. In every case you pay only for the traffic you use; there is no monthly subscription. All three types work through the same account, the same gateway and the same login format.
 
 ***
 
@@ -17,12 +17,8 @@ This page describes the proxy types available in Gonzo Proxy: dynamic residentia
 
 #### ✅ Key Benefits:
 
-* **Unused traffic balance carries over to the new package**
-* **Country targeting.** The dashboard selector lists **198 countries** for the residential pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
-
-#### ⚠️ Notes:
-
-* The dashboard also shows a city list, but the city you pick does not reach the connection string: the exit is selected by country
+* **Traffic does not expire: the gigabytes you buy stay on your balance until you use them**
+* **Precise targeting:** country, region, city and provider. The dashboard selector lists **198 countries** for the residential pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
 
 ***
 
@@ -34,8 +30,21 @@ This page describes the proxy types available in Gonzo Proxy: dynamic residentia
 
 * Mobile traffic is spent from a separate **mobile balance**, shown in the dashboard as **Traffic Left**, in gigabytes
 * Traffic does not move between pools: the mobile balance is spent by mobile connections only
-* Targeting is by **country and mobile operator**
+* Targeting is by **country, region and mobile operator**
 * The dashboard selector lists **134 countries** for the mobile pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
+
+***
+
+### 3️⃣ Datacenter Proxies 🖥️
+
+**What it is:** IP addresses of servers in data centers.
+
+#### 🔧 How it works:
+
+* As in the other two pools, the address changes on every request or holds for a sticky session
+* Datacenter traffic is spent from the separate balance of the datacenter pool, in gigabytes
+* The dashboard generator sets country, region, city and provider
+* The dashboard selector lists **112 countries** for the datacenter pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
 
 ***
 

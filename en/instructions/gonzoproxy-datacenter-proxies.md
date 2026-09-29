@@ -33,9 +33,9 @@ Our own measurement on 14 September 2026 does not show this pool to be faster th
 ### 🌍 Network parameters
 
 * 112 countries in the dashboard selector for the datacenter pool, read on 14 September 2026. That is a count of the countries you can pick, not a count of addresses
-* Targeting by country. The dashboard also offers a city selector, but the choice does not reach the connection string, so the country is what actually applies
+* The dashboard generator sets country, region, city and provider
 * One gateway for all three pools: `connect.gonzoproxy.app:10000`
-* Protocols answering on that port: SOCKS5, SOCKS5h, HTTP and HTTPS. SOCKS4 and SOCKS4a do not work
+* Protocols working on that port: HTTP, HTTPS and SOCKS5
 
 ***
 
