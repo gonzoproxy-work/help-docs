@@ -5,63 +5,58 @@
 
 <figure><img src="../.gitbook/assets/1 (10).png" alt=""><figcaption></figcaption></figure>
 
-**Residential proxies** are IP addresses from a large-scale **P2P network** connecting over **20 million real user devices** around the world.
 
-Unlike **datacenter proxies**, which are easily detected by security systems, residential proxies are **indistinguishable from real users**. This allows them to **bypass blocks, anti-fraud systems, and other restrictions** with high efficiency.
 
-***
+**Residential proxies** are IP addresses of real user devices. Your traffic leaves through the home or mobile internet connection of such a device.
 
-### ⚙️ Technology and IP Cleanliness
-
-#### 🔌 How Our Network Works:
-
-* **Unique P2P technology** — users voluntarily install our SDK application on their computers and mobile devices
-* **Mutually beneficial collaboration** — device owners share a portion of their internet bandwidth and receive rewards
-* **Direct access** — you connect through real devices, inheriting **their reputation and trust level**
+Unlike **datacenter proxies**, whose addresses belong to hosting providers, these addresses belong to ordinary consumer connections. When we read our own exit addresses on 17 September 2026, they resolved to household ISP networks: Charter, Comcast, Verizon.
 
 ***
 
-#### ✅ Why Our IPs Are Clean and Reliable:
+### ⚙️ What Follows from the Nature of the Pool
 
-* **Genuine digital history** — every IP has a natural usage pattern and reputation of a typical user
-* **Residential and mobile connections only** — we do not use datacenter/server IPs
-* **Multi-level filtering** — our system automatically removes IPs with bans, bad history, or high risk
-* **Constant pool updates** — new IPs are regularly added, while problematic ones are removed
-* **Up to 90% IP cleanliness** — the vast majority of our IPs have a **low fraud score** across verification systems
+* **The address belongs to someone else's device.** The speed of a session depends on that device and on its channel, not only on our gateway.
+* **If a session is slow, recreate the proxy.** You will get a different device, and with it a different channel.
+* **A device can go offline at any moment.** An address is yours while the device stays online. The measured numbers are in the Rotation section below.
 
 ***
 
-### ✅ Residential Proxies Help With:
+### ✅ Residential Proxies Are Used For:
 
-* Creating accounts without getting blocked
+* Registering and running accounts
 * SEO promotion
 * Managing ad accounts
-* Purchasing limited items faster than anyone
+* Buying limited-edition items
 * Developing and testing software
 
 ***
 
 ## 💰 How to Start Using Residential Proxies?
 
-#### 🔹 Step 1: Buy Traffic
+### 🔹 Step 1: Buy Traffic
 
 * Buy traffic in gigabytes
-* Traffic **has no expiration date**
 * Charging is based on **used traffic**
+* Traffic does not expire: the gigabytes you buy stay on your balance until you use them
 
 💲 Price per 1 GB depends on the purchase volume:\
-&#x20;      **from $6.5 to $2**
+&#x20;      **from $6.50 per GB when you buy 1 GB down to $2.50 per GB at 1 TB**
 
 <figure><img src="../.gitbook/assets/image_2025-04-21_11-44-48.png" alt=""><figcaption></figcaption></figure>
 
 #### 🔸 Payment Methods
 
-* 💳 **Bank Card** (instant crediting)
-* 💰 **Cryptocurrency** (supports 20+ currencies)
+* 💰 **Cryptocurrency**, through Cryptomus
+
+This is the only payment method available today. Bank cards are not accepted: card payments have not worked since July 2026.
 
 <figure><img src="../.gitbook/assets/3 (7).png" alt=""><figcaption></figcaption></figure>
 
 💡 After payment, the purchased traffic will appear **in the top right corner** of your dashboard.
+
+ℹ️ Usage is shown in the dashboard: traffic spent since the start of the day, week and month, the remaining balance (**Traffic Left**), and a **Traffic usage** chart below the generator.
+
+
 
 <figure><img src="../.gitbook/assets/4 (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -73,154 +68,124 @@ In the **Proxy Setup** window, you can generate proxies with custom parameters t
 
 ### 🌍 Country
 
-Select the country from which the IP addresses will originate.\
-**150+ countries available.**
+Select the country the exit address will belong to.\
+On 14 September 2026 the residential selector listed **198 countries**. That is the number of countries in the selector, not the size of the pool.
 
 ***
 
 ### 🏙️ City / State / ISP
 
-Fine-tune your targeting by city, region, or internet provider.
+Fill these fields from the top down: **country first, then region and city, and only then the operator.** Each following field narrows the previous one.
 
-* **ISP (Internet Service Provider)** — the company that provides internet access (e.g., _Comcast, AT\&T, Vodafone_)
-* **Recommendation:** For account-related work, choose **either a city or an ISP**, not both — this improves IP consistency if it changes
+* If the list comes back empty, remove the operator or pick another one. Devices leave the network, so a combination that returned addresses yesterday can return nothing today.
+* **ISP (Internet Service Provider)**: the company that provides internet access (e.g., *Comcast, AT\&T, Vodafone*)
+
+Everything you select is written into the login of the connection string. For example, `c_US` is the country, `sd_443` the region (California), `city_Los-Angeles` the city, `isp_74471` the provider.
 
 ***
 
-### 🔄 Rotation — IP Change Mode
+### 🔄 Rotation / IP Change Mode
 
 Decide how frequently the IP address should change:
 
 #### • **Sticky (Sticky Session)**
 
-* Keeps the same IP for up to **72 hours** or until the source device disconnects
-* **Best for:** managing accounts, ad platforms, long sessions
-* **How it works:** the system assigns you one IP and holds it as long as possible
+* The system assigns you one address for the time set in **Limit Session** (up to 7 days) and holds it while the source device stays online
+* **Best for:** work tied to a single account
+* **What we measured on 14 September 2026:** over an 84-minute horizon, **51 of 90 sessions kept the same address, which is 56.7%** (Wilson interval 46.4% to 66.4%). Half of the losses happened inside the first 35 minutes.
+* In a separate 72-hour run from 7 to 10 September 2026, one session held the same address for about 69 hours. That is a single session, not a norm and not a promise.
 
 #### • **Randomize IP**
 
 * Each request is made using a **new IP**
-* **Best for:** scraping, automation, anonymous browsing
-* **How it works:** every new request is routed through a random IP from your selected pool
+* **Best for:** scraping and automation
+* **How it works:** every new request is routed through a random address from your selected pool
 
 ***
 
 ### 🔧 Protocol
 
-Choose your connection protocol:
+Three protocols work on port **10000**:
 
-* **HTTPS**
-* **SOCKS5**\
-  All GonzoProxy residential proxies support both.
+* **HTTP**
+* **HTTPS** (real TLS to the proxy)
+* **SOCKS5**
+
+**SOCKS4 and SOCKS4a do not work.** Checked on 14 September 2026.
 
 ***
 
-### ⏳ Limit Session — Session Duration
+### ⏳ Limit Session / Session Duration
 
-Set how long one IP should remain active before it changes automatically.
+Sets how long one address stays assigned to you before it changes automatically. Set in seconds, minutes or hours, **up to 7 days** (168 hours).
 
 * After the time expires, a new IP will be assigned
-* **Recommended settings:**
-  * **24–72 hours** for stable account work
-  * **5–30 minutes** for periodic IP rotation
-  * **1–2 hours** for general use cases
+* The value is an upper bound, not a guarantee. The address can change earlier if the device goes offline. See the measured retention in the Rotation section above.
 
 ***
 
-### 🖥️ Server — Proxy Server Region
+### 🖥️ Server / Proxy Server Region
 
-Affects only **connection speed**, not the IP address itself.
+Selects the region of the gateway you connect through. The exit country is set by the **Country** field, not here.
 
-* **Standard** — auto-selects the best server based on your location
-* **Europe / Asia / USA** — choose the nearest region for optimal speed
+* **Standard**: the server is selected automatically
+* **Europe / Asia / USA**: choose the region nearest to you
 
 <figure><img src="../.gitbook/assets/6 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 🔧 Example Configuration
 
-**Goal:** Generate a proxy with an IP from **Armenia**, with a **72-hour session limit**.\
-**Result:** The system will retain the same IP as long as possible and then automatically switch to a similar IP from the same region.
+**Goal:** a proxy with an exit address in **Armenia**.\
+**How:** select Armenia in the **Country** field, leave region, city and operator empty, and generate the proxy.\
+**Result:** an address in Armenia. You keep it while the device stays online and until the **Limit Session** value runs out, whichever comes first.
 
 ***
 
-### 🌐 Step 3: Use the Proxy in an Anti-Detect Browser
+### 🌐 Step 3: Paste the Proxy into Your Tool
 
-* Load the created proxy into an anti-detect browser (e.g., **Dolphin Anty**)
+* Paste the generated connection string into the field your tool provides for it. The tools our customers name most often are Octo Browser, then Dolphin Anty and AdsPower, then curl and Python requests.
 * Create a **new profile** and set up our proxy
 * Check the proxy for functionality
 
 <figure><img src="../.gitbook/assets/7 (5).png" alt=""><figcaption></figcaption></figure>
 
-### 🔎 Step 4: Test the Proxy
 
-Check access to popular websites:
 
-* 📩 Gmail
-* 📘 Facebook
-* 💰 Binance
-* 📸 Instagram
+### 🔎 Step 4: Check the Exit Address
 
-📍 Additionally, verify the IP and country on **whoer.net** — everything works fine 🎯
+Open an IP-check page through the proxy, for example **whoer.net**, and confirm the address and the country you selected.
 
 <figure><img src="../.gitbook/assets/8 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🎉 Done!
 
-Now you can use residential proxies without any issues.
+The proxy is ready to use.
 
 ***
 
 ## 🧠 Expert Tips for Professionals
 
-Pro-level recommendations to enhance security, performance, and efficiency when using residential proxies.
+Practical recommendations for working with residential proxies.
 
 ***
 
-### 🔐 Maximizing Security
+### 🔐 Working with Accounts
 
-* **Golden Rule:**\
-  **1 proxy = 1 account** — never use the same IP for multiple accounts on the same platform.
-* **Smart Targeting:**\
-  Choose **either a city or an ISP**, but not both — this helps maintain IP consistency when addresses rotate.
-* **Rotation Strategy:**\
-  For high-risk or critical accounts, set the session limit to **24–48 hours** instead of the maximum 72.
+* **Golden Rule:**
+  **1 proxy = 1 account.** Do not use the same address for several accounts on the same platform.
+* **Targeting order:**
+  Country first, then region and city, and only then the operator. If the list comes back empty, remove the operator or pick another one.
 
 ***
 
 ### ⚙️ Performance Optimization
 
-* **Save Bandwidth:**\
-  Disable loading of images, videos, and heavy scripts — can save up to **40% of traffic usage**.
-* **Faster Scraping:**\
-  Use **multiple proxies simultaneously** to distribute load across sessions for large-scale scraping.
-* **Lower Latency:**\
-  Select **proxy servers geographically close** to your location to minimize ping and maximize speed.
-
-***
-
-### 🎯 Task-Specific Recommendations
-
-* **Ad Accounts:**\
-  Use IPs from the **same region as your target audience** for better trust and delivery.
-* **Social Media:**\
-  Maintain **consistent connection parameters** (same IP/region) per account for longevity.
-* **E-commerce & Drops:**\
-  For purchasing limited-edition items, use **different IPs from the same city** to simulate natural behavior.
-
-***
-
-### 🛠️ Technical Highlights & Support
-
-* If a source device disconnects, the system will **automatically assign a similar IP** based on your settings.
-* You can create an **unlimited number of proxies for free** — you **only pay for the traffic you consume**.
-* **Fully compatible** with all popular tools, scrapers, and platforms.
-* **24/7 support** via Telegram: [@gonzoproxy\_bot](https://t.me/gonzoproxy_bot) — average response time is just a few minutes.
-
-***
-
-### 🚀 Start Today
-
-Leverage the power of **GonzoProxy residential IPs** and say goodbye to bans, anti-fraud triggers, and restrictions.
+* **Save Bandwidth:**
+  Disable loading of images, videos, and heavy scripts. You pay for the traffic you download.
+* **Planning Parallel Sessions:**
+  Our measured median request time is 1.44 s and the p90 is 2.29 s, which works out to about 40 fetches per minute per worker at the median and about 26 at the p90. Scale by running several sessions in parallel.
+* **Slow Session:**
+  Recreate the proxy. Speed depends on the device behind the address and on its channel.
 
 ***
 
@@ -235,4 +200,4 @@ Leverage the power of **GonzoProxy residential IPs** and say goodbye to bans, an
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

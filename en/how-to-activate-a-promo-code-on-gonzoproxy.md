@@ -2,7 +2,7 @@
 
 1. Go to your account: [gonzoproxy.com](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=promocode)
 2. Navigate to the **Residential Proxies** section
-3. Click the **down arrow**
+3. Click the **down arrow** (next to the plan)
 
 
 
@@ -18,7 +18,11 @@
 
 
 
-5. Confirm — and enjoy your benefits! 🎉
+5. Confirm and enjoy your benefits! 🎉
+
+{% hint style="warning" %}
+**About refunds.** Under the refund policy, the cost of a trial period is not refundable. The same rule applies when a promo code is activated together with a balance top-up and the money is then spent from the shared account balance.
+{% endhint %}
 
 ***
 
@@ -33,4 +37,4 @@
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

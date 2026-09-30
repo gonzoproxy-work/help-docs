@@ -2,12 +2,12 @@
 
 Client documentation
 
-**Version:** 1.2 **Status:** Production
+**Status:** Production
 
 This documentation combines two API sections:
 
-* **A. Proxy generation and reference lists** — base URL `https://api.gonzoproxy.app/functions/v1/proxy-api`
-* **B. Sub-account management** — base URL `https://api.gonzoproxy.app/functions/v1`
+* **A. Proxy generation and reference lists**: base URL `https://api.gonzoproxy.app/functions/v1/proxy-api`
+* **B. Sub-account management**: base URL `https://api.gonzoproxy.app/functions/v1`
 
 ***
 
@@ -82,6 +82,14 @@ Passed in the JSON request body.
 | `rg_id`        | `string`  | Additional sticky-session parameter |
 | `session_rand` | `string`  | Random seed for sticky sessions     |
 
+**Choosing the pool**
+
+The pool a proxy is issued from (residential, mobile, datacenter) is set by a request parameter. If that parameter is not sent, `/generate` still returns a working connection string, but it can belong to a different pool than the one you need: the string connects, and the product behind it is not the one you asked for. Check which pool the returned string belongs to before you move it into production.
+
+**About `ttl`**
+
+`ttl` asks for a session lifetime of up to 7 days (for example `ttl=168` with `ttl_unit` in hours); it does not guarantee one. In our own run on 14 September 2026, 51 of 90 sessions (56.7%, Wilson interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes. Handle an address change in your code instead of assuming the session survives.
+
 ### A.2 Reference lists for filters
 
 The API lets you retrieve available countries, regions, cities, ZIP codes, and internet service providers.
@@ -143,7 +151,102 @@ Base URL:
 https://api.gonzoproxy.app/functions/v1
 ```
 
-### B.1 List sub-accounts
+### B.1 Create a sub-account
+
+Creates a new sub-account linked to your main account.
+
+Once it is created, the system automatically sets up every available product for the sub-account: `residential`, `mobile` and `server_dynamic`.
+
+```http
+POST /create-sub-account
+```
+
+#### Parameters
+
+Sent in the JSON request body.
+
+| Field              | Type     | Required | Description          |
+| ------------------ | -------- | -------- | -------------------- |
+| `email`            | `string` | Yes      | Sub-account email    |
+| `sub_account_name` | `string` | No       | Sub-account name     |
+
+#### Curl
+
+```bash
+curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/create-sub-account" \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: <your_api_key>" \
+  -d '{
+    "email": "employee@example.com",
+    "sub_account_name": "Employee 1"
+  }'
+```
+
+#### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "sub_account_name": "Employee 1",
+    "email": "employee@example.com",
+    "status": "provisioning"
+  }
+}
+```
+
+#### Response fields
+
+| Field              | Type             | Description                                                     |
+| ------------------ | ---------------- | --------------------------------------------------------------- |
+| `sub_account_name` | `string \| null` | Sub-account name                                                |
+| `email`            | `string`         | Sub-account email                                               |
+| `status`           | `string`         | Creation status: `provisioning`, `partial`, `ready` or `failed` |
+
+#### Statuses
+
+| Status         | Description                           |
+| -------------- | ------------------------------------- |
+| `provisioning` | The sub-account is being created      |
+| `partial`      | Some of the products are already set up |
+| `ready`        | All sub-account products are ready    |
+| `failed`       | Creation failed                       |
+
+#### Important
+
+Sub-account creation is asynchronous. A `success: true` response means the request was accepted and the sub-account has started to be created.
+
+Once creation is complete, the sub-account becomes available in these methods:
+
+* `POST /list-sub-accounts`
+* `POST /get-sub-account-traffic-stats`
+* `POST /sub-account-adjust`
+
+#### Possible errors
+
+| HTTP  | Error                         | Description                                         |
+| ----- | ----------------------------- | --------------------------------------------------- |
+| `400` | `email_required`              | Email is missing                                    |
+| `400` | `email_invalid`               | Email is invalid                                    |
+| `400` | `email_too_long`              | Email is too long                                   |
+| `400` | `sub_account_name_invalid`    | Sub-account name is invalid                         |
+| `400` | `sub_account_name_too_long`   | Sub-account name is too long                        |
+| `401` | `missing_x_api_key`           | API key is missing                                  |
+| `403` | `invalid_or_inactive_api_key` | API key is invalid or inactive                      |
+| `409` | `external_id_exists`          | A sub-account with this email already exists        |
+| `409` | `parent_products_incomplete`  | The main account does not have all products enabled |
+| `429` | `rate_limited`                | Sub-account creation limit exceeded                 |
+
+#### Error example
+
+```json
+{
+  "success": false,
+  "error": "email_required"
+}
+```
+
+### B.2 List sub-accounts
 
 Returns the sub-accounts linked to your main account.
 
@@ -195,7 +298,7 @@ curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/list-sub-accounts" \
 | `traffic_remaining` | `number`         | Remaining traffic in bytes        |
 | `traffic_total`     | `number \| null` | Total traffic limit in bytes      |
 
-### B.2 Sub-account traffic statistics
+### B.3 Sub-account traffic statistics
 
 Returns traffic usage statistics for a specific sub-account.
 
@@ -276,7 +379,7 @@ curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/get-sub-account-traffi
 | `bytes`             | `number`         | Traffic used during the interval              |
 | `traffic_remaining` | `number \| null` | Remaining traffic at this point, if available |
 
-### B.3 Adjust sub-account traffic or status
+### B.4 Adjust sub-account traffic or status
 
 Changes a sub-account's total traffic balance or active status.
 
@@ -286,7 +389,7 @@ POST /sub-account-adjust
 
 Supported operations: `set_traffic`, `activate`, `deactivate`
 
-#### B.3.1 Set sub-account traffic
+#### B.4.1 Set sub-account traffic
 
 `target_traffic_bytes` is the sub-account's final traffic balance, not the amount to add.
 
@@ -313,7 +416,7 @@ curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/sub-account-adjust" \
   }'
 ```
 
-#### B.3.2 Activate sub-account
+#### B.4.2 Activate sub-account
 
 ```json
 {
@@ -334,7 +437,7 @@ curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/sub-account-adjust" \
   }'
 ```
 
-#### B.3.3 Deactivate sub-account
+#### B.4.3 Deactivate sub-account
 
 When deactivated, the sub-account's remaining traffic is returned to the main account.
 
@@ -416,7 +519,7 @@ Error format:
 }
 ```
 
-### Common errors (section B — sub-accounts)
+### Common errors (section B / sub-accounts)
 
 | HTTP  | Error                                                    | Description                                                           |
 | ----- | -------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -430,23 +533,5 @@ Error format:
 | `404` | `sub_account_not_found`                                  | Sub-account not found                                                 |
 | `409` | `sub_inactive`                                           | Cannot change traffic on a disabled sub-account. Run `activate` first |
 | `409` | `insufficient_parent_traffic`                            | Insufficient traffic on the main account                              |
-
-***
-
-## Rate limiting
-
-Rate limiting applies to `POST /generate`.
-
-**Current limit:** 100 requests per minute per API key.
-
-***
-
-## Compatibility
-
-This documentation matches the current API version: **1.2**. The API may receive updates without changing the core structure.
-
-
-
-
 
 <br>

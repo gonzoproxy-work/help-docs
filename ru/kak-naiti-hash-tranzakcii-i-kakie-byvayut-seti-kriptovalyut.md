@@ -10,7 +10,7 @@
 
 ### 📌 Что такое сеть криптовалюты?
 
-Сеть криптовалюты (блокчейн) — это децентрализованная база данных, в которой записываются все транзакции определённой криптовалюты. У каждой криптовалюты своя сеть, поэтому важно указывать правильную сеть при переводе средств.
+Сеть криптовалюты (блокчейн) это децентрализованная база данных, в которой записываются все транзакции определённой криптовалюты. У каждой криптовалюты своя сеть, поэтому важно указывать правильную сеть при переводе средств.
 
 ***
 
@@ -24,22 +24,25 @@
 
 Вот самые популярные сети и криптовалюты, которые они поддерживают:
 
-* 🟠 **Bitcoin** – Bitcoin (BTC)
-* 🔷 **Ethereum** – Ethereum (ETH), USDT ERC-20, USDC ERC-20 и другие токены ERC-20
-* 💎 **Binance Smart Chain (BSC)** – BNB, USDT BEP-20, CAKE и другие токены BEP-20
-* ⚡ **Solana** – Solana (SOL), USDC, NFT и другие токены SPL
-* 🌀 **Polygon** – MATIC, USDT, USDC и другие токены
-* 💸 **XRP Ledger** – Ripple (XRP)
-* 🧠 **Cardano** – Cardano (ADA)
-* 🐶 **Dogecoin** – Dogecoin (DOGE)
-* 🪙 **TRON** – TRON (TRX), USDT TRC-20
-* 🧱 **TON** – Toncoin (TON)
+* 🟠 **Bitcoin**: Bitcoin (BTC)
+* 🔷 **Ethereum**: Ethereum (ETH), USDT ERC-20, USDC ERC-20 и другие токены ERC-20
+* 💎 **Binance Smart Chain (BSC)**: BNB, USDT BEP-20, CAKE и другие токены BEP-20
+* ⚡ **Solana**: Solana (SOL), USDC, NFT и другие токены SPL
+* 🌀 **Polygon**: MATIC, USDT, USDC и другие токены
+* 💸 **XRP Ledger**: Ripple (XRP)
+* 🧠 **Cardano**: Cardano (ADA)
+* 🐶 **Dogecoin**: Dogecoin (DOGE)
+* 🪙 **TRON**: TRON (TRX), USDT TRC-20
+* 🧱 **TON**: Toncoin (TON)
 
 ***
 
 ### 📌 Что такое блокчейн-эксплорер (сканер транзакций)?
 
-🕵️‍♂️ **Блокчейн-эксплорер** – это сайт, который позволяет просматривать и отслеживать транзакции любой криптовалюты в реальном времени.\
+🕵️‍♂️ **Блокчейн-эксплорер** это сайт, который позволяет просматривать и отслеживать транзакции любой криптовалюты в реальном времени.
+
+У каждой сети свой эксплорер, поэтому искать перевод нужно в эксплорере той сети, в которой вы его отправили.
+
 Используя **TxID** (в блокчейн-эксплорере), вы можете проверить:
 
 * 📬 Адрес отправителя и получателя
@@ -73,7 +76,7 @@
 
 
 
-* Сеть (Ethereum, BSC, Polygon) указана в MetaMask сверху.
+* Текущая сеть указана в MetaMask сверху.
 
 
 
@@ -125,7 +128,7 @@
 
 
 
-* Откройте транзакцию, найдите TxID и указанную сеть отправки (ERC-20, BEP-20 и т.д.).
+* Откройте транзакцию и найдите TxID и сеть, указанную для вывода.
 
 
 
@@ -135,9 +138,7 @@
 
 ### 📌 Популярные блокчейн-эксплореры для разных сетей
 
-Вот удобная подборка эксплореров по сетям криптовалют:
-
-***
+У каждой сети свой эксплорер. Открывайте тот, который соответствует сети перевода.
 
 #### 🟠 Bitcoin (BTC)
 
@@ -146,63 +147,45 @@
 * [BTC.com](https://btc.com/)
 * [Blockchair](https://blockchair.com/bitcoin)
 
-***
-
 #### 🔷 Ethereum (ETH)
 
 * [Etherscan.io](https://etherscan.io/)
 * [Ethplorer.io](https://ethplorer.io/)
 * [Blockchair.com](https://blockchair.com/ethereum)
 
-***
-
 #### 💎 Binance Smart Chain (BSC)
 
 * [BscScan.com](https://bscscan.com/)
 * [Ankrscan.io](https://ankrscan.io/)
-
-***
 
 #### ⚡ Solana (SOL)
 
 * [Solscan.io](https://solscan.io/)
 * [Explorer.solana.com](https://explorer.solana.com/)
 
-***
-
 #### 🌀 Polygon (MATIC)
 
 * [Polygonscan.com](https://polygonscan.com/)
-
-***
 
 #### 💸 XRP Ledger (XRP)
 
 * [XRPScan.com](https://xrpscan.com/)
 * [Bithomp.com](https://bithomp.com/)
 
-***
-
 #### 🧠 Cardano (ADA)
 
 * [CardanoScan.io](https://cardanoscan.io/)
 * [AdaScan.net](https://adascan.net/)
-
-***
 
 #### 🐶 Dogecoin (DOGE)
 
 * [Blockchair.com](https://blockchair.com/dogecoin)
 * [BlockCypher.com](https://live.blockcypher.com/doge/)
 
-***
-
 #### 🪙 TRON (TRX)
 
 * [Tronscan.org](https://tronscan.org/)
 * [TronGrid.io](https://trongrid.io/)
-
-***
 
 #### 🧱 TON (Toncoin)
 
@@ -211,7 +194,7 @@
 
 ***
 
-### 📌 Пример проверки транзакции на Ethereum:
+### 📌 Пример проверки транзакции в блокчейн-эксплорере
 
 👉 Вставьте TxID (например):\
 `0xb4bc263278d3f77a652a8d73a6bfd8ec0ba1a63923bbb4f38147fb8a943da26d`\
@@ -249,4 +232,4 @@
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
 
-💬 Наша команда всегда на связи! Обращайтесь в любое время суток — решим любой вопрос в течение нескольких минут.
+💬 Наша команда на связи. Напишите нам, если что-то не получается.

@@ -1,8 +1,8 @@
 # 👾 Setup Indigo X
 
-With the upgrade from Indigo 6 to the new Indigo X, the anti-detect browser has received a major overhaul—making it more flexible, feature-rich, and ready for professional use. Indigo X helps you create unique browser profiles, bypass anti-fraud systems, and work with dozens or even hundreds of accounts without risking bans.
+With the upgrade from Indigo 6 to the new Indigo X, the anti-detect browser has received a major overhaul: it is more flexible, has more features and is aimed at professional use. Indigo X creates separate browser profiles and lets you run many accounts from one application.
 
-Indigo X works especially well when paired with GonzoProxy residential proxies, delivering top-level anonymity, a realistic digital fingerprint, and stable access to the sites you need.
+The proxy for a profile is taken from the GonzoProxy dashboard: a residential proxy, pasted into the Proxy field of the profile.
 
 ***
 
@@ -30,15 +30,14 @@ Indigo X supports mobile profiles to mimic smartphone behavior. This is great fo
 
 * Testing mobile UIs
 * Working with device-sensitive apps and websites
-* Stronger fingerprint masking and "natural" behavior
 
-The browser pretends to be an Android device, masking its behavior like a real mobile user.
+In this mode the browser presents itself as an Android device.
 
 ***
 
 ### ⚙️ 3. Android profile settings
 
-Some settings are locked for stability and can't be changed. Here's what’s preset and what’s recommended for max masking:
+Some settings are locked for stability and can't be changed. Here's what’s preset and what’s recommended:
 
 **🔒 Default fixed settings**
 
@@ -50,7 +49,7 @@ Some settings are locked for stability and can't be changed. Here's what’s pre
 | Navigator               | Mask          | System requirement    |
 | Screen Resolution       | Mask          | Must be configured    |
 
-**📈 Recommended for Best Masking**
+**📈 Recommended values**
 
 | Setting                 | Recommended Value |
 | ----------------------- | ----------------- |
@@ -91,8 +90,8 @@ Indigo X has two browser engines to choose from, depending on your tasks:
 
 | Browser          | ✨ Features                                                                |
 | ---------------- | ------------------------------------------------------------------------- |
-| **Mimic X**      | Based on Chromium. Imitates real-user behavior. Versatile.                |
-| **Stealthfox X** | Based on Firefox. Stronger detection resistance. Ideal for sensitive ops. |
+| **Mimic X**      | Based on Chromium. |
+| **Stealthfox X** | Based on Firefox.  |
 
 ***
 
@@ -100,7 +99,7 @@ Indigo X has two browser engines to choose from, depending on your tasks:
 
 Indigo X Agent is a helper app that runs in the background and handles launching browser profiles.
 
-ℹ️ Without the agent, you can create, edit, and move profiles—but not launch them.
+ℹ️ Without the agent, you can create, edit, and move profiles but not launch them.
 
 #### 🔌 Connecting the Agent
 
@@ -131,7 +130,7 @@ Indigo X Agent is a helper app that runs in the background and handles launching
 1. Say you bought US residential proxies from GonzoProxy and received this line:
 
 ```
-pool.gonzoproxy.com:1000:Gonzoj9CiIi_c_US_sd_596_city_Denver_s_30410TGX_ttl_72h:RNW78Fm5
+connect.gonzoproxy.app:10000:Gonzoj9CiIi_c_US_sd_596_city_Denver_s_30410TGX_ttl_72h:RNW78Fm5
 ```
 
 Make sure the format is: `ip:port:username:password`
@@ -142,7 +141,7 @@ Make sure the format is: `ip:port:username:password`
 
 
 
-#### 2. In Indigo X, click “Create Profile” and enter:
+2. In Indigo X, click “Create Profile” and enter:
 
 | Field                   | Recommended Value                 |
 | ----------------------- | --------------------------------- |
@@ -167,26 +166,11 @@ Make sure the format is: `ip:port:username:password`
 | Port Scanning           | Mask                              |
 | Font Data               | Mask                              |
 
-#### After setup, you get:
-
-* A **unique**, realistic browser profile
-* **Stable access** to your target sites
-* **Complete fingerprint masking** and real geo-IP
-* **Strong protection** against anti-fraud systems
-
 ***
 
 ### 📆 Final thoughts
 
-**Indigo X + GonzoProxy = 🔒 a powerful anti-detect solution** for secure, stable, and flexible online work.
-
-Whether you’re into arbitrage, automation, marketing, or multi-accounting — this combo gives you:
-
-* **Effective fingerprint masking**
-* **Customizable profiles for any job**
-* **An uncompromising IP solution**
-
-**Start working safely today with Indigo X and GonzoProxy!**
+In Indigo X the GonzoProxy connection string goes into the Proxy field of a profile, in the `ip:port:username:password` format, with the protocol set to SOCKS5 or HTTPS.
 
 ***
 
@@ -201,4 +185,4 @@ Whether you’re into arbitrage, automation, marketing, or multi-accounting — 
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

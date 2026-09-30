@@ -1,8 +1,8 @@
 # 🔐 Setup Undetectable
 
-In today’s world of multitasking and multi-accounting, one of the biggest challenges is staying anonymous and protecting accounts from bans. Modern websites use powerful anti-fraud systems that can easily spot suspicious activity. That’s exactly where the [Undetectable anti-detect browser](https://undetectable.io/?utm_source=gonzoproxy\&utm_medium=affiliate) and high-quality residential proxies from GonzoProxy come to the rescue.
+The [Undetectable anti-detect browser](https://undetectable.io/?utm_source=gonzoproxy\&utm_medium=affiliate) keeps every account in its own browser profile with its own settings. This page shows how to set such a profile up with residential proxies from GonzoProxy.
 
-[**GonzoProxy residential proxies**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=undetectable) aren’t just ordinary proxy servers. They’re real IP addresses from real users’ devices, making them look completely natural to anti-fraud systems. Perfect for managing multiple accounts without getting caught.
+[**GonzoProxy residential proxies**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=undetectable) are entered into the profile as a connection string, see the **Proxies** section below.
 
 ***
 
@@ -10,7 +10,7 @@ In today’s world of multitasking and multi-accounting, one of the biggest chal
 
 ### 🔄 Sync manager
 
-This feature lets you control multiple browser profiles at the same time. When you hit the sync button, everything you do in the main window is repeated in the other profiles — typing, opening tabs, and more. A huge time-saver when handling many accounts.
+This feature lets you control multiple browser profiles at the same time. When you hit the sync button, everything you do in the main window is repeated in the other profiles, typing, opening tabs, and more. A huge time-saver when handling many accounts.
 
 
 
@@ -34,7 +34,7 @@ The extension manager lets you add, remove, or disable browser extensions across
 
 ### 🖥️ Browser fingerprints
 
-Undetectable makes your work easier with built-in basic configurations (fingerprints) of the most popular systems. These are regularly updated with real browser and device data. You can fine-tune the fingerprint for your specific task to avoid any mismatches and bypass anti-fraud systems.
+Undetectable makes your work easier with built-in basic configurations (fingerprints) of the most popular systems. These are regularly updated with real browser and device data. You can fine-tune the fingerprint for your specific task.
 
 
 
@@ -42,7 +42,7 @@ Undetectable makes your work easier with built-in basic configurations (fingerpr
 
 
 
-Fingerprints are masked at the browser core level, not just via JavaScript — this makes detection much harder.
+Fingerprints are masked at the browser core level, not just via JavaScript.
 
 ***
 
@@ -50,7 +50,7 @@ Fingerprints are masked at the browser core level, not just via JavaScript — t
 
 Undetectable’s built-in config store lets you search by detailed parameters: User Agent, WebGL, CPU cores, RAM, screen resolution, and more. Perfect for finding the exact config for your task.
 
-Each plan includes a limited number of free configs that are regularly refreshed. You can also buy additional ones for just $1, and they stay in your account forever. They’re personal, but you can share them with team members using API keys.
+Each plan includes a limited number of free configs that are regularly refreshed. Additional configs can be bought in the store. They’re personal, but you can share them with team members using API keys.
 
 
 
@@ -62,11 +62,9 @@ Each plan includes a limited number of free configs that are regularly refreshed
 
 ### 👥 Team collaboration
 
-The Undetectable team made sure it’s super easy to work together:
-
 * **User Roles**: Set up and manage roles with different permissions and access levels.
 * **Profile Groups**: Organize profiles into groups and give access to only specific segments.
-* **Cloud Web Panel**: Manage roles, groups, and profiles online — track profile statuses in real time.
+* **Cloud Web Panel**: Manage roles, groups, and profiles online: track profile statuses in real time.
 
 
 
@@ -80,7 +78,7 @@ Go to **Account → Cloud Dash** to access team settings, assign roles, manage g
 
 ### 🍪 Cookies Bot (profile warm-up)
 
-The Cookies Bot automates the process of filling profiles with cookies by mimicking a real user’s natural online behavior. A built-in popular site generator creates resource lists based on the selected location.
+The Cookies Bot fills profiles with cookies by opening sites automatically. A built-in popular site generator creates resource lists based on the selected location.
 
 
 
@@ -97,7 +95,7 @@ The Cookies Bot automates the process of filling profiles with cookies by mimick
    * Don't load images
    * Headless mode
 4. Set a random number of tabs.
-5. Set the timer to a random interval (30–90 seconds recommended for natural behavior).
+5. Set the timer to a random interval (30-90 seconds recommended).
 6. Enable extra actions: "Scroll, move, and click the mouse".
 7. Choose a proxy country, e.g. US residential proxy from GonzoProxy.
 8. Set the number of warm-up sites and launch.
@@ -109,12 +107,12 @@ The Cookies Bot automates the process of filling profiles with cookies by mimick
 | **Parameter**       | **Value**                                                                    |
 | ------------------- | ---------------------------------------------------------------------------- |
 | Name, Folder, Tag   | for easy sorting                                                             |
-| OS                  | Windows, macOS, Android, or iPhone (match your real system for best results) |
+| OS                  | Windows, macOS, Android, or iPhone (match your real system)                  |
 | Browser             | Chrome                                                                       |
 | Config              | Similar to your current system                                               |
 | User-Agent & Screen | Default                                                                      |
-| CPU                 | 2–4 cores (optimal for most tasks)                                           |
-| RAM                 | 2–4 GB to mimic a standard device                                            |
+| CPU                 | 2-4 cores                                                                    |
+| RAM                 | 2-4 GB                                                                       |
 | Languages           | Default                                                                      |
 
 ***
@@ -122,7 +120,7 @@ The Cookies Bot automates the process of filling profiles with cookies by mimick
 ### 🌐 Proxies
 
 Let’s say you bought US residential proxies from [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=undetectable) and got this string:\
-`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000`
+`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
 
 
@@ -132,11 +130,11 @@ Let’s say you bought US residential proxies from [GonzoProxy](https://gonzopro
 
 **Connection parameters:**
 
-* **Host**: `pool.gonzoproxy.com`
-* **Port**: `1000`
+* **Host**: `connect.gonzoproxy.app`
+* **Port**: `10000`
 * **Login**: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Password**: `RNW78Fm5`
-* **Supported protocols**: HTTPS and SOCKS5
+* **Supported protocols**: HTTP, HTTPS and SOCKS5
 
 
 
@@ -190,7 +188,7 @@ Let’s say you bought US residential proxies from [GonzoProxy](https://gonzopro
 
 ### 🎯 Final Thoughts
 
-[Undetectable ](https://undetectable.io/?utm_source=gonzoproxy\&utm_medium=affiliate)anti-detect browser, paired with [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=undetectable) residential proxies, is a powerful toolkit for managing multiple accounts while staying secure and undetected. Use its full potential to boost your efficiency and success!
+The [Undetectable ](https://undetectable.io/?utm_source=gonzoproxy\&utm_medium=affiliate)anti-detect browser holds the profiles; [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=undetectable) residential proxies supply the connection string for each of them. That is the whole setup.
 
 ***
 
@@ -205,4 +203,4 @@ Let’s say you bought US residential proxies from [GonzoProxy](https://gonzopro
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

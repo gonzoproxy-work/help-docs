@@ -1,16 +1,18 @@
 # 🔍 Setup AdsPower
 
-Imagine juggling multiple online accounts—be it for social media, e-commerce, or marketing—without the constant fear of getting them all banned. That's where **AdsPower** steps in. This anti-detect browser is a favorite among affiliate marketers, e-commerce pros, and anyone managing numerous accounts.
+AdsPower is an anti-detect browser that keeps each account in its own browser profile, and a proxy is what gives every profile a separate IP address. This page shows where to paste a GonzoProxy connection string.
 
 ***
 
-### 🧠 **Why AdsPower stands out**
+### 🧠 **AdsPower features**
 
-In a sea of browsers claiming "anonymity and security," **AdsPower** truly delivers. It's more than just a profile manager; it's a comprehensive platform catering to both beginners and seasoned teams. Here's why AdsPower is a game-changer:
+Besides the profile manager, AdsPower carries a few tools that come up in day-to-day work. Here is what each of them does.
 
-#### 1. **Mastering browser fingerprints** 🧬
+***
 
-Controlling browser fingerprints is fundamental for anti-detect browsers, and AdsPower takes it to the next level. You're not just tweaking headers or user agents; you're crafting an entire digital persona.
+#### 1. **Browser fingerprints** 🧬
+
+Fingerprint settings go further than headers and user agents: you set the parameters of the whole device profile.
 
 
 
@@ -18,19 +20,17 @@ Controlling browser fingerprints is fundamental for anti-detect browsers, and Ad
 
 
 
-**Key features:**
+**What you can set:**
 
-* **Mobile OS Fingerprints:** Supports not just desktop OS but also mobile ones like Android and iOS. This is crucial for platforms like TikTok and Instagram that prioritize mobile users.
-* **Dual Engine Support:** Work with both Chromium and Firefox. Most browsers stick to one engine, but AdsPower offers flexibility.
-* **Comprehensive Customization:** Adjust everything from GPU, WebGL, WebRTC, system language, fonts, device noise, screen resolution, and more. You can manually create a "digital fingerprint" that mirrors any user.
-
-📌 **Bottom Line:** AdsPower doesn't just hide your identity; it makes you appear as a completely different user to anti-fraud systems—seamlessly and without glitches.
+* **Mobile OS fingerprints:** desktop operating systems and mobile ones, Android and iOS.
+* **Dual engine support:** a profile runs on either Chromium or Firefox.
+* **Detailed customization:** GPU, WebGL, WebRTC, system language, fonts, device noise, screen resolution and other parameters. Each one can be set by hand.
 
 ***
 
 #### 2. **Code-free automation** ⚙️
 
-AdsPower comes equipped with RPA (Robotic Process Automation), allowing you to automate browser actions without any coding skills.
+AdsPower includes RPA (Robotic Process Automation), so browser actions can be automated without writing code.
 
 
 
@@ -40,19 +40,19 @@ AdsPower comes equipped with RPA (Robotic Process Automation), allowing you to a
 
 **Automation capabilities:**
 
-* **Script-Free Scenarios:** Launch automation sequences without writing a single line of code.
-* **User Actions:** Automate clicks, page navigations, text inputs, logins/logouts, and multi-account management.
-* **Templates:** Utilize pre-built templates to avoid starting from scratch.
+* **Script-free scenarios:** build an automation sequence without writing code.
+* **User actions:** clicks, page navigation, text input, logins and logouts, multi-account routines.
+* **Templates:** start from a pre-built template instead of from scratch.
 
-The entire setup is visual and intuitive, making it accessible even for those without a technical background.
+The scenario is assembled visually, step by step.
 
-📎 **Learn More:** [AdsPower RPA Guide](https://www.adspower.com/blog/step-by-step-instructions-for-using-rpa-automation-from-adspower)
+📎 **Learn more:** [AdsPower RPA Guide](https://www.adspower.com/blog/step-by-step-instructions-for-using-rpa-automation-from-adspower)
 
 ***
 
-#### 3. **Unique synchronizer tool** 🧩
+#### 3. **Synchronizer** 🧩
 
-AdsPower's Synchronizer is a standout feature you won't find elsewhere. It lets you perform the same action across multiple browser profiles simultaneously—no scripts, no plugins, no hassle.
+The Synchronizer repeats one action across several browser profiles at once, without scripts or extra plugins.
 
 
 
@@ -62,11 +62,11 @@ AdsPower's Synchronizer is a standout feature you won't find elsewhere. It lets 
 
 **Synchronizable actions:**
 
-* **Navigation:** Open links across profiles.
-* **Text Input:** Enter text fields simultaneously.
-* **Form Filling:** Complete forms in bulk.
-* **Clicks:** Click buttons across profiles.
-* **Extensions:** Install browser extensions en masse.
+* **Navigation:** open links across profiles.
+* **Text input:** type into fields simultaneously.
+* **Form filling:** complete forms in bulk.
+* **Clicks:** click buttons across profiles.
+* **Extensions:** install browser extensions in bulk.
 
 
 
@@ -74,15 +74,15 @@ AdsPower's Synchronizer is a standout feature you won't find elsewhere. It lets 
 
 
 
-Think of it as mirroring actions across tabs. One click, and it's replicated in 10, 50, or even 100 profiles. Ideal for managing account networks, duplicating tasks, or executing bulk actions—all without additional programming or paid add-ons.
+You act in the main window, and the action repeats in every profile connected to the session. Useful when the same task has to be done across a set of accounts.
 
-📎 **Discover More:** [AdsPower Synchronizer](https://www.adspower.com/blog/post/Synchronizer)
+📎 **Discover more:** [AdsPower Synchronizer](https://www.adspower.com/blog/post/Synchronizer)
 
 ***
 
-#### 4. **Streamlined team collaboration** 👥
+#### 4. **Team collaboration** 👥
 
-AdsPower excels in team management, offering more than just user additions. It's a full-fledged system for controlling access and actions within the browser.
+AdsPower has a built-in system for managing access and actions inside the browser.
 
 
 
@@ -92,11 +92,11 @@ AdsPower excels in team management, offering more than just user additions. It's
 
 **Team features:**
 
-* **Permission Levels:** Define who can view or edit specific profiles.
-* **Activity Logs:** Track who did what and when, making it easy to identify any issues.
-* **Task Assignment:** Delegate responsibilities like account farming, launching, or monitoring.
+* **Permission levels:** define who can view or edit specific profiles.
+* **Activity logs:** see who did what and when.
+* **Task assignment:** split responsibilities between team members.
 
-Perfect for agencies, affiliate teams, and partnerships where collaboration is key.
+Useful when several people work with the same set of profiles.
 
 ***
 
@@ -146,7 +146,7 @@ Perfect for agencies, affiliate teams, and partnerships where collaboration is k
 
 3. **Alternative Sign-Up:** You can also register using social accounts like Google, Facebook, or VK.
 
-Once registered, you'll access your dashboard to create and customize unique profiles.
+Once registered, you'll access your dashboard to create and customize profiles.
 
 ***
 
@@ -156,9 +156,9 @@ Setting up AdsPower involves four main components: **Profile**, **Proxy**, **Fin
 
 ***
 
-#### 1. **Profile setup: crafting a new identity**
+#### 1. **Profile setup**
 
-Each profile simulates a unique user environment, making it appear as if each account operates from a different device.
+Each profile keeps its own browser environment and its own proxy.
 
 
 
@@ -172,7 +172,7 @@ Each profile simulates a unique user environment, making it appear as if each ac
 * **Profile Name:** Choose a name like `fb_account_1` or `shop_test2`.
 * **Browser:** Select between Chrome or Firefox.
 * **Operating System:** Choose MacOS or Windows.
-* **User-Agent:** Let AdsPower auto-select for optimal results.
+* **User-Agent:** Leave the automatic value.
 * **Group:** Organize profiles into groups like "Google Ads Test."
 * **Cookies:** Skip for now; we'll address this later.
 * **Notes:** Add reminders like "Account for white-hat campaigns" or "For farming."
@@ -185,15 +185,15 @@ Each profile simulates a unique user environment, making it appear as if each ac
 
 ***
 
-#### 2. **Proxy integration: masking your IP**
+#### 2. **Adding a proxy**
 
-Proxies are essential for changing your IP address, giving each profile a distinct online presence.
+A proxy gives the profile a separate IP address.
 
 **Example:**
 
 You've purchased US residential proxies from [GonzoProxy ](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=anti-detekt-brauzer-adspower)and received the following:
 
-`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@pool.gonzoproxy.com:1000`
+`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
 
 
@@ -204,8 +204,8 @@ You've purchased US residential proxies from [GonzoProxy ](https://gonzoproxy.co
 **Configuration:**
 
 * **Proxy Type:** Select SOCKS5 or HTTPS.
-* **Host:** `pool.gonzoproxy.com`
-* **Port:** `1000`
+* **Host:** `connect.gonzoproxy.app`
+* **Port:** `10000`
 * **Username:** `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Password:** `RNW78Fm5`
 
@@ -221,11 +221,11 @@ You've purchased US residential proxies from [GonzoProxy ](https://gonzoproxy.co
 
 After entering the proxy details, click "Check Proxy."
 
-A green checkmark indicates:
+A green checkmark means:
 
-* **Active Proxy:** The proxy is functioning correctly.
-* **Live IP:** The IP address is valid.
-* **Ready to Use:** Safe to proceed with this configuration.
+* The proxy answered.
+* The IP address is live.
+* You can save the profile.
 
 
 
@@ -237,20 +237,20 @@ If the check fails, double-check for typos or incorrect entries.
 
 ***
 
-#### 4. **Fingerprint customization: fine-tuning your profile**
+#### 4. **Fingerprint settings**
 
-Adjust various settings to ensure each profile mimics a real user's environment:
+Set the fingerprint fields of the profile:
 
-* **WebRTC:** Disable to prevent IP leaks.
-* **Timezone:** Set based on IP to avoid discrepancies.
-* **Geolocation:** Align with IP address.
-* **Language:** Match system language to IP location.
-* **App Language:** Consistent with IP-based language.
-* **Screen Resolution:** Use predefined settings for authenticity.
-* **Fonts:** Stick to default to blend in.
-* **Hardware Noise:** Enable all to simulate real device behavior.
-* **WebGL Metadata:** Manually set to common values like "Google Inc." or "Apple."
-* **WebGPU:** Base on WebGL settings for consistency.
+* **WebRTC:** Disable
+* **Timezone:** Based on IP
+* **Geolocation:** Based on IP
+* **Language:** Based on IP
+* **App Language:** Based on IP
+* **Screen Resolution:** Predefined
+* **Fonts:** Default
+* **Hardware Noise:** Enable all
+* **WebGL Metadata:** Set manually
+* **WebGPU:** Based on WebGL
 
 
 
@@ -258,36 +258,13 @@ Adjust various settings to ensure each profile mimics a real user's environment:
 
 
 
-With these configurations, your profile will appear as a distinct user with a unique IP, device, language, and behavior.
+The profile is now configured.
 
 
 
 <figure><img src=".gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
 
 
-
-***
-
-### 💸 **Pricing plans**
-
-AdsPower offers flexible pricing to suit various needs:
-
-* **Free Plan:** Manage up to 5 profiles at no cost.
-* **Paid Plans:** Starting at $5.4 per month, depending on the number of profiles and team members.
-
-
-
-<figure><img src=".gitbook/assets/12.png" alt=""><figcaption></figcaption></figure>
-
-
-
-For users who want to try it before buying, there’s a **free 3-day trial**, after which the price is **$14 per month**.
-
-***
-
-**In Summary:**
-
-AdsPower is a robust tool designed for secure and efficient multi-account management. Whether you're an affiliate marketer, seller, trader, or anyone handling multiple online accounts, AdsPower provides the anonymity and control you need to operate safely and effectively.
 
 ***
 
@@ -298,4 +275,4 @@ AdsPower is a robust tool designed for secure and efficient multi-account manage
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

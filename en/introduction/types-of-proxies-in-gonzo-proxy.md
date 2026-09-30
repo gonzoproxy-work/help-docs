@@ -1,60 +1,50 @@
 # 🌍 Types of Proxies in Gonzo Proxy
 
-We offer two main types of proxies to ensure reliable and realistic performance online:
+This page describes the proxy types available in Gonzo Proxy: residential, mobile and datacenter. All three are rotating: the address changes on every request or holds for a sticky session. In every case you pay only for the traffic you use; there is no monthly subscription. All three types work through the same account, the same gateway and the same login format.
 
 ***
 
 ### 1️⃣ Dynamic Residential Proxies 🏠
 
-**What it is:** IP addresses from our unique P2P network of **20+ million real user devices** around the world.
+**What it is:** IP addresses of real user devices, issued from the residential pool.
 
 #### 🔧 How it works:
 
-* Uses a **sticky session** — one IP is held for up to **72 hours**
-* If the source device goes offline, the system **automatically assigns a new IP** based on your settings
-* Each proxy has a **unique address** — we recommend a **"1 proxy = 1 account"** setup
-* **Unlimited proxy creation** — you only **pay for the data used**
+* A **sticky session** keeps one IP while that address stays available. In our own test on 14 September 2026, 51 of 90 sessions (56.7%, interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes.
+* When the address drops out of the session, the next request goes out through a new IP with the same settings.
+* Residential traffic is spent from the residential balance, in gigabytes.
+* We recommend a **"1 proxy = 1 account"** setup.
 
 #### ✅ Key Benefits:
 
-* **Paid traffic never expires** — use your data anytime
-* **Precise geo-targeting** (country, city, ISP) at no extra cost
-* **Look like real users** to all anti-fraud systems
-* Ideal for **long-term use with ad accounts** and platforms with strict moderation
-
-💡 **Expert Tip:** For maximum account stability, set targeting by **city or ISP** — this ensures more consistent IPs if they are automatically rotated.
+* **Traffic does not expire: the gigabytes you buy stay on your balance until you use them**
+* **Precise targeting:** country, region, city and provider. The dashboard selector lists **198 countries** for the residential pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
 
 ***
 
-### 2️⃣ Unlimited Mobile Proxies 📱
+### 2️⃣ Mobile Proxies 📱
 
-**What it is:** Mobile IP addresses from telecom operators (3G/4G/5G) with **truly unlimited data usage**.
+**What it is:** IP addresses of mobile operators (3G/4G/5G).
 
 #### 🔧 How it works:
 
-* A single mobile proxy can be used for **multiple accounts**
-* Easily **change the IP** for each new account with one click in the dashboard
-* The system issues a **new, clean mobile IP** each time — fully independent from the previous one
-* **Unlimited IP changes** with no extra fees
-
-#### ✅ Key Benefits:
-
-* **Unlimited traffic** for a flat rate — **$45/month**
-* **Highest trust level** from social networks and financial platforms
-* **Cost-efficient** — one mobile proxy with IP rotation can replace dozens of static ones
-* **Flexible plans** available for 7 or 30 days, **no auto-renewal**
-
-#### ⚠️ Notes:
-
-* Currently available only in **Ukraine and Poland** (more countries coming soon)
-* **City and ISP targeting not available yet**
-* Perfect for cases where **IP quality matters more than precise geolocation**
-
-💡 **Expert Tip:** Mobile proxies are especially effective for **social media, financial services, and crypto projects**, where traditional proxies are often blocked.
+* Mobile traffic is spent from a separate **mobile balance**, shown in the dashboard as **Traffic Left**, in gigabytes
+* Traffic does not move between pools: the mobile balance is spent by mobile connections only
+* Targeting is by **country, region and mobile operator**
+* The dashboard selector lists **134 countries** for the mobile pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
 
 ***
 
-Would you like this content exported as a `.md` file or integrated into your GitBook structure directly?
+### 3️⃣ Datacenter Proxies 🖥️
+
+**What it is:** IP addresses of servers in data centers.
+
+#### 🔧 How it works:
+
+* As in the other two pools, the address changes on every request or holds for a sticky session
+* Datacenter traffic is spent from the separate balance of the datacenter pool, in gigabytes
+* The dashboard generator sets country, region, city and provider
+* The dashboard selector lists **112 countries** for the datacenter pool (read on 14 September 2026; this is the number of countries in the selector, not the size of the pool)
 
 ***
 
@@ -71,5 +61,4 @@ Would you like this content exported as a `.md` file or integrated into your Git
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
-
+💬 Our team is always here for you! Reach out anytime.

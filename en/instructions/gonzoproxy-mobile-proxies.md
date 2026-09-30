@@ -8,46 +8,27 @@
 
 
 
-Mobile proxies are IP addresses belonging to real subscribers of cellular carriers around the world. Each address is assigned by a carrier to a real person with a SIM card, which means it carries the full reputation of a genuine mobile connection.
+Mobile proxies are IP addresses that cellular carriers issue to their own subscribers. A request sent through one of them reaches the site from a carrier address.
 
-Websites and services simply cannot tell a request coming through a mobile proxy apart from an ordinary person scrolling their feed on the subway. That's exactly why mobile IPs get the highest trust level of any proxy type.
-
-***
-
-### ⚙️ Technology and network features
-
-**How it works:**
-
-* IP addresses are assigned directly by cellular carriers through their own networks (3G/4G/5G)
-* A single carrier IP is typically shared via NAT among thousands of real subscribers at once, so an IP-level block would affect real users too, which carriers and antifraud systems factor in
-* We connect through legitimate carrier traffic exchange points, so you get a genuine mobile address, not an imitation of one
-
-**Why mobile IPs are considered the cleanest:**
-
-* Carriers constantly reassign IPs between real subscribers, so each address has a living usage history
-* No signs of datacenter or server infrastructure
-* Websites see standard mobile traffic behavior, not a bot pattern
+The mobile pool is one of the three pools on the account, next to residential and datacenter. One account, one gateway and one login shape cover all three.
 
 ***
 
-### 🌍 Network parameters
+### 🔌 Connection
 
-* Pool of 5M+ IP addresses
-* Coverage in 100+ countries
-* Targeting by country, region, and carrier
-* Maximum website trust and the lowest block rate among all proxy types
-* Speed lower than residential and datacenter proxies due to the nature of mobile networks
-* Unlimited concurrent sessions
+* Gateway: `connect.gonzoproxy.app:10000`
+* Protocols working on that port: HTTP, HTTPS (real TLS to the proxy) and SOCKS5
+* SOCKS4 and SOCKS4a do not work
+
+Paste the connection string into the proxy field of the tool you work in. The tools our customers name most often are Octo Browser, then Dolphin Anty and AdsPower equally, then curl and Python requests.
 
 ***
 
-### ✅ What mobile proxies help with
+### 🌍 Choosing a country
 
-* Creating and warming up social media accounts without bans
-* Working with services that aggressively ban residential and datacenter IPs
-* Bypassing limits on the number of registrations from a single address
-* Testing mobile apps and ads under real-world conditions
-* Working with financial and crypto services where maximum trust matters most
+The country selector of the mobile pool listed 134 countries when we read the dashboard on 14 September 2026. That is a count of countries in the selector, not a count of addresses.
+
+Besides the country you can pick a region and an operator; the choice is written into the connection string. The mobile pool has no city selection.
 
 ***
 
@@ -55,35 +36,36 @@ Websites and services simply cannot tell a request coming through a mobile proxy
 
 Two modes are available:
 
-* **New IP per request** — a new IP is issued on every request
-* **Sticky session** — the IP stays fixed for a set period, up to 72 hours
+* **A new IP for every request**: the address changes on each request
+* **Sticky session**: the address is held for the length of the session, which can be set up to 7 days
 
-In sticky mode, the IP changes when the session period expires, when the session is recreated, or when the node drops off the network. This last case is especially relevant for mobile (and residential) proxies, since the IP is tied to a real device.
+This is what we measured on our own account on 14 September 2026. Over a horizon of 84 minutes, 51 sessions out of 90 kept the same IP, which is 56.7%, with a confidence interval of 46.4% to 66.4%. Half of the losses happened inside the first 35 minutes. Taken on its own the mobile pool gave 53.3%, but the per pool intervals overlap, so we do not claim that any pool holds an address better than another.
 
-***
+In a separate run of 7 to 10 September 2026 a single session changed its IP three times during the first 2.5 hours and then held the same address for about 69 hours. That is one session and an existence proof, not a rate to plan against.
 
-### 🧠 Expert tips
-
-**When to choose mobile over residential:** If a service is particularly aggressive about IP-based bans, or you've already run into blocks on residential addresses, mobile proxies give you extra headroom thanks to the carrier's NAT effect.
-
-**A note on rotation behavior:** Because of how mobile networks work, the IP can sometimes change before the sticky session time you set has expired. That's normal carrier behavior, not a fault on our end.
-
-**Speed and use cases:** For tasks where speed matters most (large-scale parsing, fast checkouts), residential or datacenter proxies are a better fit. Mobile proxies shine where website trust matters more than raw speed.
+Size a job against the measured retention: with 56.7% (51 of 90) still holding at minute 84, you open about 1.8 sessions for each one you need alive at that point, and about 2.2 if you plan against the lower bound of 46.4%.
 
 ***
 
-### 🛠️ Technical Highlights & Support
+### ⏱️ Speed
 
-* If a source device disconnects, the system will **automatically assign a similar IP** based on your settings.
-* You can create an **unlimited number of proxies for free** — you **only pay for the traffic you consume**.
-* **Fully compatible** with all popular tools, scrapers, and platforms.
-* **24/7 support** via Telegram: [@gonzoproxy\_bot](https://t.me/gonzoproxy_bot) — average response time is just a few minutes.
+In the same run of 14 September 2026 the median response time of the mobile pool was 1.60 s, against 1.33 s for residential and 1.44 s for datacenter. These are medians from a single run and we publish no interval for them. Where the speed of the request matters more than the kind of address, residential or datacenter is the better fit.
 
 ***
 
-### 🚀 Start Today
+### 💳 Traffic and payment
 
-Leverage the power of **GonzoProxy residential IPs** and say goodbye to bans, anti-fraud triggers, and restrictions.
+* Traffic is paid by the gigabyte. The mobile pool has its own per gigabyte price and its own balance (**Traffic Left**), which the other pools do not spend. The price depends on the purchase volume and is shown when you top up in the **Mobile Proxies** section.
+* Payment goes through Cryptomus, in cryptocurrency. Card payments have not worked since July 2026.
+* Traffic does not expire: the gigabytes you buy stay on your balance until you use them.
+
+***
+
+### ⚠️ What the product does not do yet
+
+* There are no per port, per geo or per subaccount usage statistics.
+* A working proxy is not proof of a funded balance: at a zero balance 35 requests out of 36 still went through.
+* When a limit is reached the connection closes silently: TCP is accepted and then closed with no SOCKS5 reply. In our run it took about 25 minutes before connections worked again.
 
 ***
 
@@ -98,4 +80,4 @@ Leverage the power of **GonzoProxy residential IPs** and say goodbye to bans, an
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.

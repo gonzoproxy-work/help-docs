@@ -1,8 +1,8 @@
 # 🚀 Setup BitBrowser
 
-If you’re working with **multiple accounts**, automating processes, or just want to stay **under the radar online**, a good anti-detect browser is a must. One of the top tools for that is [**BitBrowse**](https://www.bitbrowser.net/)**r**. And to make sure your traffic is as **secure and stable** as possible, pair it with proxy services from the trusted provider —[ **GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=bitbrowser\&utm_content=eng).
+If you work with **multiple accounts** or automate browser processes, an anti-detect browser is one of the working tools. One of them is [**BitBrowse**](https://www.bitbrowser.net/)**r**. This page shows where to paste a connection string from [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=bitbrowser\&utm_content=eng) into a BitBrowser profile.
 
-**BitBrowser** lets you create individual browser profiles with unique _fingerprints_, simulating different devices and environments. This makes tracking difficult and allows you to scale any web tasks safely.
+**BitBrowser** lets you create individual browser profiles with their own *fingerprint* settings, simulating different devices and environments.
 
 ***
 
@@ -10,7 +10,7 @@ If you’re working with **multiple accounts**, automating processes, or just wa
 
 ### 👥 Team collaboration
 
-BitBrowser is great for **team-based work**. Each team member uses a separate profile with a unique fingerprint, and all sessions are completely isolated. Profiles can be shared using the built-in export/import tool, making it easier to launch new workstations or transfer profiles between team members.
+BitBrowser is great for **team-based work**. Each team member uses a separate profile with a unique fingerprint, and sessions are isolated from each other. Profiles can be shared using the built-in export/import tool, making it easier to launch new workstations or transfer profiles between team members.
 
 
 
@@ -18,13 +18,13 @@ BitBrowser is great for **team-based work**. Each team member uses a separate pr
 
 
 
-It also features **centralized management** for profiles and scripts, plus a flexible **permission system** 🔐 — so you can define exactly who has access to what.
+It also features **centralized management** for profiles and scripts, plus a flexible **permission system** 🔐, so you can define exactly who has access to what.
 
 ***
 
 ### ⚙️ API
 
-BitBrowser supports **API interaction**, allowing you to connect it with external systems and **automate** essential processes. You can use the local API to control the app: open the browser, configure proxies, create and launch profiles, and more — all without manual input.
+BitBrowser supports **API interaction**, allowing you to connect it with external systems and **automate** essential processes. You can use the local API to control the app: open the browser, configure proxies, create and launch profiles, and more, all without manual input.
 
 
 
@@ -64,7 +64,7 @@ To handle repetitive tasks, BitBrowser includes a built-in **RPA tool**. You can
 
 
 
-Because RPA works with profiles, all automation happens in the correct environment — with the right fingerprints and network settings. That reduces errors and helps with **mass task execution**.
+Because RPA works with profiles, all automation happens in the correct environment, with the right fingerprints and network settings. That reduces errors and helps with **mass task execution**.
 
 > Full documentation is available [here](https://doc.bitbrowser.net/rpa/rpa-usage-guide).
 
@@ -146,7 +146,7 @@ In the **basic settings**, fill out:
 
 
 
-✅ **Proxies are working perfectly**
+✅ **The proxy check passed**
 
 In fingerprint settings, enable toggles for: **Language**, **Time Zone**, and **Location**.
 
@@ -156,7 +156,7 @@ Your profile is now ready to run using a **real mobile proxy**.
 
 ### 🔄 Cloud phone sync tool
 
-The sync tool lets you control **multiple Cloud Phone virtual devices** at once, syncing them with a main profile. Everything you do — mouse movements, keyboard input, app launches — is mirrored across all linked devices.
+The sync tool lets you control **multiple Cloud Phone virtual devices** at once, syncing them with a main profile. Everything you do, mouse movements, keyboard input, app launches, is mirrored across all linked devices.
 
 
 
@@ -169,8 +169,6 @@ The sync tool lets you control **multiple Cloud Phone virtual devices** at once,
 * Synchronized text input (same or different)
 * Bulk app install/removal
 * Batch file upload and environment restarts
-
-Switching between devices happens instantly — with **zero lag**.
 
 > _👉 You need at least two environments with the **same computing power and billing model** to use the sync tool._
 >
@@ -208,9 +206,9 @@ Get your residential proxy in the [**GonzoProxy Dashboard**](https://gonzoproxy.
 
 In BitBrowser, set the following:
 
-* **Method** — Manual
-* **Type** — Socks5
-* **IP** — IPv4
+* **Method**: Manual
+* **Type**: Socks5
+* **IP**: IPv4
 * Enter the details (host, port, username, password).
 * Click **Check Proxy**
 
@@ -220,7 +218,7 @@ In BitBrowser, set the following:
 
 
 
-✅ **Proxies work great**
+✅ **The proxy check passed**
 
 _If a proxy test fails, go to settings and select **"Do not use system proxy settings"**_
 
@@ -262,7 +260,7 @@ Other options can be left off by default.
 
 ***
 
-Use the [**BitBrowser**](https://www.bitbrowser.net/) **+** [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=bitbrowser\&utm_content=eng) combo to manage **hundreds of accounts**, automate processes, and stay **completely undetectable online**. It’s a powerful solution for business, marketing, traffic arbitrage, and any project where **privacy is essential**.&#x20;
+Use [**BitBrowser**](https://www.bitbrowser.net/) together with [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=bitbrowser\&utm_content=eng): the connection string from the dashboard goes into the proxy fields of a profile, and the profile works through it.
 
 ***
 
@@ -277,4 +275,4 @@ Use the [**BitBrowser**](https://www.bitbrowser.net/) **+** [**GonzoProxy**](htt
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
-💬 Our team is always here for you! Reach out anytime — we’ll solve any issue within minutes.
+💬 Our team is always here for you! Reach out anytime.
