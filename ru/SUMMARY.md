@@ -15,6 +15,21 @@
 * [⚙️ Серверные (датацентровые) прокси GonzoProxy](servernye-datacentrovye-proksi-gonzoproxy.md)
 * [🚀 Как найти HASH транзакции и какие бывают сети криптовалют?](kak-naiti-hash-tranzakcii-i-kakie-byvayut-seti-kriptovalyut.md)
 * [🔧 Очистка кэша и куки браузера](ochistka-kesha-i-kuki-brauzera.md)
+
+## ✍️ Другое
+
+* [Прокси перестал работать: почему так происходит и что делать?](drugoe/proksi-perestal-rabotat-pochemu-tak-proiskhodit-i-chto-delat.md)
+* [Оплата не зачислилась: почему так бывает и что делать?](drugoe/oplata-ne-zachislilas-pochemu-tak-byvaet-i-chto-delat.md)
+* [Почему скорость прокси разная?](drugoe/pochemu-skorost-proksi-raznaya.md)
+* [Как правильно выбирать GEO?](drugoe/kak-pravilno-vybirat-geo.md)
+* [Есть ли бесплатный тест?](drugoe/est-li-besplatnyi-test.md)
+* [Как восстановить пароль, если вы входили через Google?](drugoe/kak-vosstanovit-parol-esli-vy-vkhodili-cherez-google.md)
+* [Как оформить возврат средств?](drugoe/kak-oformit-vozvrat-sredstv.md)
+* [Сроки зачисления трафика: сколько ждать и что делать](drugoe/sroki-zachisleniya-trafika-skolko-zhdat-i-chto-delat.md)
+* [Какие сайты не работают через наши прокси](drugoe/kakie-saity-ne-rabotayut-cherez-nashi-proksi.md)
+
+***
+
 * [🥸 Анти-детект браузер Dolphin{anty}](anti-detekt-brauzer-dolphin-anty.md)
 * [🔍 Настройка AdsPower](nastroika-adspower.md)
 * [🐬 Настройка Dolphin{anty}](nastroika-dolphin-anty.md)
@@ -33,8 +48,6 @@
 * [🔑 Как активировать промокод на GonzoProxy](kak-aktivirovat-promokod-na-gonzoproxy.md)
 
 ## FAQ
-
-***
 
 * [🔁 Ротация IP](rotaciya-ip.md)
 * [💸 Тарификация в GonzoProxy](tarifikaciya-v-gonzoproxy.md)
