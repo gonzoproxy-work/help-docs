@@ -1,5 +1,5 @@
 ---
-icon: '7'
+icon: arrow-u-turn-up-left
 ---
 
 # How to Request a Refund

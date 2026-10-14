@@ -1,5 +1,5 @@
 ---
-icon: '6'
+icon: rotate
 ---
 
 # How to Recover Your Password If You Signed In with Google

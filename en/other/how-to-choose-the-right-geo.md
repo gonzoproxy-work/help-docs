@@ -1,5 +1,5 @@
 ---
-icon: '4'
+icon: house-lock
 ---
 
 # How to Choose the Right GEO

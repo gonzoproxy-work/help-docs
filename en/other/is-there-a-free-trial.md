@@ -1,5 +1,5 @@
 ---
-icon: '5'
+icon: arrows-minimize
 ---
 
 # Is There a Free Trial?

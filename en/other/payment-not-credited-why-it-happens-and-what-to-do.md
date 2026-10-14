@@ -1,5 +1,5 @@
 ---
-icon: '2'
+icon: dollar-sign
 ---
 
 # Payment Not Credited: Why It Happens and What to Do

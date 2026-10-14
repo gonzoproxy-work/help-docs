@@ -1,5 +1,5 @@
 ---
-icon: '9'
+icon: plane-landing-gear
 ---
 
 # Which Websites Don't Work Through Our Proxies

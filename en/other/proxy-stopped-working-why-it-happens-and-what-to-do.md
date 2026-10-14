@@ -1,5 +1,5 @@
 ---
-icon: '1'
+icon: toggle-off
 ---
 
 # Proxy Stopped Working: Why It Happens and What to Do
