@@ -24,7 +24,7 @@ This page describes the proxy types available in Gonzo Proxy: residential, mobil
 
 ### 2️⃣ Mobile Proxies 📱
 
-**What it is:** IP addresses of mobile operators (3G/4G/5G).
+**What it is:** IP addresses of mobile operators.
 
 #### 🔧 How it works:
 
