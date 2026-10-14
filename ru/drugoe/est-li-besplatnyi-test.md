@@ -1,5 +1,5 @@
 ---
-icon: '5'
+icon: arrows-minimize
 ---
 
 # Есть ли бесплатный тест?
