@@ -24,7 +24,8 @@ GoLogin is an anti-detect browser that keeps each account in its own profile, an
 
 #### 2. IP Rotation (for residential proxies)
 
-* **Sticky IP.** The session hold time is set in the dashboard, up to 7 days. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it. Used for social media, crypto and warm-up sessions.
+* **One IP for a set time.** The session hold time is set in the dashboard, up to 72 hours. If the device goes offline, a new IP is issued. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it. Used for social media, crypto and warm-up sessions.
+* **Keep IP.** The address does not change until the session ends, up to 72 hours. If the device goes offline, the proxy returns an error and no new IP is issued. The login carries the `_iphold_max` suffix. Used for social media, marketplace and ad accounts where an IP change in the middle of work triggers checks.
 * **Random IP.** A new address for every request. Used for scraping, parsing and automation.
 
 ***

@@ -79,8 +79,8 @@ Passed in the JSON request body.
 | `format`       | `string`  | Proxy string format in the response |
 | `login`        | `string`  | Custom login                        |
 | `password`     | `string`  | Custom password                     |
-| `rg_id`        | `string`  | Additional sticky-session parameter |
-| `session_rand` | `string`  | Random seed for sticky sessions     |
+| `rg_id`        | `string`  | Extra parameter of a one-IP session |
+| `session_rand` | `string`  | Random seed for one-IP sessions     |
 
 **Choosing the pool**
 
@@ -88,7 +88,7 @@ The pool a proxy is issued from (residential, mobile, datacenter) is set by a re
 
 **About `ttl`**
 
-`ttl` asks for a session lifetime of up to 7 days (for example `ttl=168` with `ttl_unit` in hours); it does not guarantee one. In our own run on 14 September 2026, 51 of 90 sessions (56.7%, Wilson interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes. Handle an address change in your code instead of assuming the session survives.
+`ttl` asks for a session lifetime of up to 72 hours (for example `ttl=72` with `ttl_unit` in hours); it does not guarantee one. In our own run on 14 September 2026, 51 of 90 sessions (56.7%, Wilson interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes. Handle an address change in your code instead of assuming the session survives.
 
 ### A.2 Reference lists for filters
 

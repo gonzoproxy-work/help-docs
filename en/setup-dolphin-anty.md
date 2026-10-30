@@ -62,7 +62,7 @@ The settings below are the ones that have to agree with the proxy you connect.
 
 
 * Set to **Auto** when using GonzoProxy, so that timezone, language and location follow the proxy address.
-* With a sticky IP you can also fix the location by hand.
+* If the IP is held for a session, you can also fix the location by hand.
 
 #### 6. Navigator (CPU, RAM, Fonts)
 
@@ -108,7 +108,7 @@ login:password@host:port
 
 ***
 
-### 🧭 Sticky or Randomize IP?
+### 🧭 Which IP mode to choose?
 
 
 
@@ -116,19 +116,33 @@ login:password@host:port
 
 
 
-GonzoProxy provides two types of IP rotation. Choose according to your task.
+GonzoProxy provides three IP modes. Choose according to your task. For the first two, the session hold time is set in the dashboard, up to 72 hours.
 
 ***
 
-#### 🔒 Sticky IP (fixed session)
+#### 🔒 One IP for a set time
 
-The session hold time is set in the dashboard, up to 7 days. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it.
+The address is held for the session. If the device behind it goes offline, the next request goes out through a new IP. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it.
 
 Use it for:
 
 * Facebook, TikTok, Google Ads (farming, warming, regular usage)
 * Crypto exchanges, wallets
 * Manual tasks, long-term projects
+
+***
+
+#### 📍 Keep IP (the IP does not change)
+
+The address does not change until the session ends. If the device behind it goes offline, the proxy returns an error and no new IP is issued: create a new proxy in the dashboard. In the login this mode is marked with `_iphold_max`:
+
+```
+Gonzoj9CiIi_c_US_sd_443_s_663698TEC_iphold_max_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
+```
+
+Use it for:
+
+* Social media, marketplace and ad accounts where an IP change in the middle of work triggers checks
 
 ***
 

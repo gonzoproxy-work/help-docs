@@ -10,6 +10,8 @@ When that happens, you see one of two things: the proxy stops responding because
 
 The more detailed your GEO settings are, the fewer devices match them. The provider filter narrows the choice the most: there may be very few devices from a specific operator in the region you need, and some of them are switched off at the moment. That is why the selected provider is most often the cause of the problem.
 
+If the proxy uses the **Keep IP** mode (the login contains `_iphold_max`), this is how the mode works: when the device goes offline, the connection returns an error and no new IP is issued. Create a new proxy, as in step 1 below.
+
 ### What to Do
 
 1. Create a new proxy. It will connect to a different device, and the problem tied to the old one will go away.

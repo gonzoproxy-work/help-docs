@@ -34,10 +34,13 @@ Besides the country you can pick a region and an operator; the choice is written
 
 ### 🔁 Rotation
 
-Two modes are available:
+Three modes are available:
 
 * **A new IP for every request**: the address changes on each request
-* **Sticky session**: the address is held for the length of the session, which can be set up to 7 days
+* **One IP for a set time**: the address is held for the length of the session, up to 72 hours. If the device goes offline, the system issues a new IP
+* **Keep IP**: the address is fixed for the length of the session, up to 72 hours, and does not change on its own. If the device goes offline, the connection returns an error and no new IP is issued. The login carries the `_iphold_max` suffix
+
+The generator does not let you set a session longer than 72 hours. Connection string examples for each mode are on the [IP Rotation](../ip-rotation.md) page.
 
 This is what we measured on our own account on 14 September 2026. Over a horizon of 84 minutes, 51 sessions out of 90 kept the same IP, which is 56.7%, with a confidence interval of 46.4% to 66.4%. Half of the losses happened inside the first 35 minutes. Taken on its own the mobile pool gave 53.3%, but the per pool intervals overlap, so we do not claim that any pool holds an address better than another.
 
