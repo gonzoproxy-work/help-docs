@@ -11,7 +11,7 @@ This page describes the proxy types available in Gonzo Proxy: residential, mobil
 #### 🔧 How it works:
 
 * A session with **one IP for a set time** holds the address while it stays available. In our own test on 14 September 2026, 51 of 90 sessions (56.7%, interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes.
-* When the address drops out of the session, the next request goes out through a new IP with the same settings. In the **Keep IP** mode the connection returns an error instead, and no new IP is issued.
+* When the address drops out of the session, the next request goes out through a new IP with the same settings. In the **Keep IP** mode the proxy stops working instead: the IP is not changed automatically.
 * Residential traffic is spent from the residential balance, in gigabytes.
 * We recommend a **"1 proxy = 1 account"** setup.
 

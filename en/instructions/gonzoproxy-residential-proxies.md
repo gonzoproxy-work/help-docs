@@ -80,19 +80,19 @@ Fill these fields from the top down: **country first, then region and city, and 
 * If the list comes back empty, remove the operator or pick another one. Devices leave the network, so a combination that returned addresses yesterday can return nothing today.
 * **ISP (Internet Service Provider)**: the company that provides internet access (e.g., *Comcast, AT\&T, Vodafone*)
 
-Everything you select is written into the login of the connection string. For example, `c_US` is the country, `sd_443` the region (California), `city_Los-Angeles` the city, `isp_74471` the provider. The rotation mode is written there too: `s_663698TEC` is the session ID, `ttl_72h` the session length, and `iphold_max` marks the Keep IP mode. A login without `s_` gives a new IP on every request.
+Everything you select is written into the login of the connection string. For example, `c_US` is the country, `sd_443` the region (California), `city_Los-Angeles` the city, `isp_74471` the provider. The rotation mode is written there too: `s_663698TEC` is the session ID, `ttl_72h` the session length, and `iphold_max` marks the Keep IP mode. A login without `s_` is the Random IP mode: a new IP on every request.
 
 ***
 
 ### 🔄 Rotation / IP Change Mode
 
-Decide how the IP address should behave. The **Rotation** and **Limit Session** fields appear after you click **Show All Settings**. By default the generator sets one IP for a set time, 72 hours.
+Decide how the IP address should behave. The **Rotation** and **Limit Session** fields appear after you click **Show All Settings**. In the **Rotation** list, One IP for a set time is the first item, Keep IP is shown as "Keep IP even if it dies", and Random IP has the same name. By default the generator sets one IP for a set time, 72 hours.
 
 #### • **One IP for a set time**
 
 * The system assigns you one address for the time set in **Limit Session** (up to 72 hours) and holds it while the source device stays online
 * If the device goes offline, the system issues a new IP with the same settings
-* **Best for:** work tied to a single account
+* **Best for:** work tied to a single account, when the job can continue from a new address
 * **What we measured on 14 September 2026:** over an 84-minute horizon, **51 of 90 sessions kept the same address, which is 56.7%** (Wilson interval 46.4% to 66.4%). Half of the losses happened inside the first 35 minutes.
 * In a separate 72-hour run from 7 to 10 September 2026, one session held the same address for about 69 hours. That is a single session, not a norm and not a promise.
 
@@ -102,16 +102,16 @@ Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:1000
 
 #### • **Keep IP**
 
-* The address does not change for the time set in **Limit Session** (up to 72 hours)
-* If the device goes offline, the connection returns an error and no new IP is issued. To continue, create a new proxy
-* **Best for:** social media, marketplace and ad accounts, where an IP change in the middle of work triggers checks
+* The address does not change on its own within the time set in **Limit Session** (up to 72 hours)
+* If the device goes offline, the proxy stops working: the IP is not changed automatically. To continue, create a new proxy
+* **Best for:** social media, marketplace and ad accounts, where an IP change in the middle of work triggers checks and it is better to stop than to continue from another address
 * The login carries the `_iphold_max` suffix, right after the session ID
 
 ```
 Gonzoj9CiIi_c_US_sd_443_s_663698TEC_iphold_max_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
-#### • **Randomize IP**
+#### • **Random IP**
 
 * Each request is made using a **new IP**
 * **Best for:** scraping and automation
@@ -137,7 +137,7 @@ Three protocols work on port **10000**:
 
 ### ⏳ Limit Session / Session Duration
 
-Sets how long one address stays assigned to you in the One IP for a set time and Keep IP modes. Set in seconds, minutes or hours, **up to 72 hours** (4320 minutes, 259,200 seconds). If you enter more, the generator shows "Max 72 hours." and does not create the proxy. In the Randomize IP mode the field is hidden.
+Sets how long one address stays assigned to you in the One IP for a set time and Keep IP modes. Set in seconds, minutes or hours, **up to 72 hours** (4320 minutes, 259,200 seconds). If you enter more, the generator shows "Max 72 hours." and does not create the proxy. In the Random IP mode the field is hidden.
 
 * With one IP for a set time, a new IP will be assigned after the time expires
 * The value is an upper bound, not a guarantee. The address can be lost earlier if the device goes offline. See the measured retention in the Rotation section above.
@@ -150,8 +150,6 @@ Selects the region of the gateway you connect through. The exit country is set b
 
 * **Standard**: the server is selected automatically
 * **Europe / Asia / USA**: choose the region nearest to you
-
-<figure><img src="../.gitbook/assets/6 (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 🔧 Example Configuration
 

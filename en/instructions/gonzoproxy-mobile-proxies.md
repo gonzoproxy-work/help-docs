@@ -36,17 +36,17 @@ Besides the country you can pick a region and an operator; the choice is written
 
 Three modes are available:
 
-* **A new IP for every request**: the address changes on each request
+* **Random IP**: the address changes on each request
 * **One IP for a set time**: the address is held for the length of the session, up to 72 hours. If the device goes offline, the system issues a new IP
-* **Keep IP**: the address is fixed for the length of the session, up to 72 hours, and does not change on its own. If the device goes offline, the connection returns an error and no new IP is issued. The login carries the `_iphold_max` suffix
+* **Keep IP**: the address does not change on its own within the session, up to 72 hours. If the device goes offline, the proxy stops working: the IP is not changed automatically. To continue, create a new proxy. The login carries the `_iphold_max` suffix
 
 The generator does not let you set a session longer than 72 hours. Connection string examples for each mode are on the [IP Rotation](../ip-rotation.md) page.
 
-This is what we measured on our own account on 14 September 2026. Over a horizon of 84 minutes, 51 sessions out of 90 kept the same IP, which is 56.7%, with a confidence interval of 46.4% to 66.4%. Half of the losses happened inside the first 35 minutes. Taken on its own the mobile pool gave 53.3%, but the per pool intervals overlap, so we do not claim that any pool holds an address better than another.
+This is what we measured with one IP for a set time on our own account on 14 September 2026. Over a horizon of 84 minutes, 51 sessions out of 90 kept the same IP, which is 56.7%, with a confidence interval of 46.4% to 66.4%. Half of the losses happened inside the first 35 minutes. Taken on its own the mobile pool gave 53.3%, but the per pool intervals overlap, so we do not claim that any pool holds an address better than another.
 
 In a separate run of 7 to 10 September 2026 a single session changed its IP three times during the first 2.5 hours and then held the same address for about 69 hours. That is one session and an existence proof, not a rate to plan against.
 
-Size a job against the measured retention: with 56.7% (51 of 90) still holding at minute 84, you open about 1.8 sessions for each one you need alive at that point, and about 2.2 if you plan against the lower bound of 46.4%.
+Size a job in this mode against the measured retention: with 56.7% (51 of 90) still holding at minute 84, you open about 1.8 sessions for each one you need alive at that point, and about 2.2 if you plan against the lower bound of 46.4%.
 
 ***
 

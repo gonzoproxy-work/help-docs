@@ -110,12 +110,6 @@ login:password@host:port
 
 ### 🧭 Which IP mode to choose?
 
-
-
-<figure><img src=".gitbook/assets/7 (3).png" alt=""><figcaption></figcaption></figure>
-
-
-
 GonzoProxy provides three IP modes. Choose according to your task. For the first two, the session hold time is set in the dashboard, up to 72 hours.
 
 ***
@@ -124,9 +118,9 @@ GonzoProxy provides three IP modes. Choose according to your task. For the first
 
 The address is held for the session. If the device behind it goes offline, the next request goes out through a new IP. In our own measurement on 14 September 2026, 51 of 90 sessions kept the same address over an 84-minute horizon, that is 56.7% (confidence interval 46.4% to 66.4%), and half of the losses happened inside the first 35 minutes. We have not measured retention beyond that horizon and do not promise it.
 
-Use it for:
+Use it when the job can continue from a new address:
 
-* Facebook, TikTok, Google Ads (farming, warming, regular usage)
+* Farming and warming up Facebook, TikTok and Google accounts
 * Crypto exchanges, wallets
 * Manual tasks, long-term projects
 
@@ -134,19 +128,19 @@ Use it for:
 
 #### 📍 Keep IP (the IP does not change)
 
-The address does not change until the session ends. If the device behind it goes offline, the proxy returns an error and no new IP is issued: create a new proxy in the dashboard. In the login this mode is marked with `_iphold_max`:
+The address does not change on its own until the session ends. If the device behind it goes offline, the proxy stops working: the IP is not changed automatically. To continue, create a new proxy in the dashboard. In the login this mode is marked with `_iphold_max`:
 
 ```
 Gonzoj9CiIi_c_US_sd_443_s_663698TEC_iphold_max_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000
 ```
 
-Use it for:
+Use it when it is better to stop than to continue from another address:
 
 * Social media, marketplace and ad accounts where an IP change in the middle of work triggers checks
 
 ***
 
-#### 🔄 Randomize IP (new IP every request)
+#### 🔄 Random IP (new IP on every request)
 
 The address changes on every connection or request.
 

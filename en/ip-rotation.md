@@ -3,15 +3,15 @@
 ## 🔁 What is IP rotation?
 
 **Rotation** is the frequency at which the IP address on your proxy changes.\
-**GonzoProxy** offers three modes, each suited for different tasks. The mode is selected in the **Rotation** field of the generator and is written into the login of the connection string.
+**GonzoProxy** offers three modes, each suited for different tasks. The mode is selected in the **Rotation** field of the generator and is written into the login of the connection string. In the drop-down list, One IP for a set time is the first item, Keep IP is shown as "Keep IP even if it dies", and Random IP has the same name as here.
 
 ***
 
 ### 1️⃣ One IP for a set time
 
-🔒 The gateway holds the same exit IP for the whole session instead of changing it on every request. The session length is set in the **Limit Session** field, up to 72 hours.
+🔒 A session in this mode asks the gateway to hold the same exit IP for the whole session instead of changing it on every request. The session length is set in the **Limit Session** field, up to 72 hours.
 
-If the device behind the address goes offline, the system issues a new IP with the same settings and the connection keeps working.
+If the device behind the address goes offline, the next request goes out through a new IP with the same settings.
 
 Connection string example:
 
@@ -23,7 +23,7 @@ Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:1000
 
 #### ✅ Ideal for:
 
-* 👥 Working with social media accounts
+* 👥 Account warm-up and regular account work, when the job can continue from a new address
 * 💰 Cryptocurrency-related tasks
 * ⚙️ Software usage where a stable session is important
 
@@ -35,7 +35,7 @@ Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:1000
 
 ### 2️⃣ Keep IP: the IP does not change
 
-📍 The IP is held for the whole session, up to 72 hours, and does not change on its own. If the device behind the address goes offline, the connection returns an error and no new IP is issued. To continue, create a new proxy in the generator: it will get a different address.
+📍 The IP does not change on its own within the time set in **Limit Session** (up to 72 hours). If the device behind the address goes offline, the proxy stops working: the IP is not changed automatically. To continue, create a new proxy in the generator: it will get a new session ID.
 
 In the login this mode is marked with the `_iphold_max` suffix. It goes right after the session ID and before `_ttl_`:
 
@@ -49,11 +49,11 @@ Gonzoj9CiIi_c_US_sd_443_s_663698TEC_iphold_max_ttl_72h:RNW78Fm5@connect.gonzopro
 * 🛒 Marketplace accounts
 * 📢 Ad accounts
 
-📌 Choose it when an IP change in the middle of work triggers checks on the platform, and it is better to stop than to continue from another address. A device can go offline at any moment, long before the session ends: keep a check in your job and create a new proxy when the connection returns an error.
+📌 Choose it when an IP change in the middle of work triggers checks on the platform, and it is better to stop than to continue from another address. A device can go offline at any moment, long before the session ends: keep a check in your job and create a new proxy when the current one stops responding.
 
 ***
 
-### 3️⃣ Randomize IP (New IP for each request)
+### 3️⃣ Random IP: a new IP for every request
 
 🔄 The IP address changes **with every connection**.
 
@@ -82,7 +82,7 @@ The **Limit Session** field sets the session length for the first two modes, in 
 ### ❓ Why isn’t the IP static and may change on its own?
 
 All **GonzoProxy residential proxies** work through real IP addresses from live users.\
-📱 When a device disconnects or goes offline, what happens next depends on the mode. With one IP for a set time, the system automatically assigns you a **new IP** to keep the connection active. In the Keep IP mode, the connection returns an error and no new IP is issued.
+📱 When a device disconnects or goes offline, what happens next depends on the mode. With one IP for a set time, the next request goes out through a **new IP** with the same settings. In the Keep IP mode, the proxy stops working: the IP is not changed automatically.
 
 This is **normal behaviour for a residential pool**: the address belongs to a real device, and it is the device, not the gateway, that decides when it goes offline.
 
