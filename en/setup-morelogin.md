@@ -13,11 +13,7 @@ This page shows how to set up a profile in MoreLogin and connect residential pro
 
 MoreLogin allows you to bulk-add browser extensions and assign them to specific profiles, while easily managing the status of each extension.
 
-
-
 <figure><img src=".gitbook/assets/1 (15).png" alt=""><figcaption></figcaption></figure>
-
-
 
 > Full documentation is available [here](https://support.morelogin.com/en/articles/10137583-browser-extension).
 
@@ -27,11 +23,7 @@ MoreLogin allows you to bulk-add browser extensions and assign them to specific 
 
 If you want necessary apps to automatically install on each new cloud phone, configure them once in advance. This saves time on repeated downloads and speeds up your workflow.
 
-
-
 <figure><img src=".gitbook/assets/2 (14).png" alt=""><figcaption></figcaption></figure>
-
-
 
 > Full documentation is available [here](https://support.morelogin.com/en/articles/10204340-cloud-phone-app).
 
@@ -44,11 +36,7 @@ Synchronize and manage multiple browser profiles simultaneously.
 \
 In the cloud phone, bulk operations, text input, and file uploads are available only for Model X.
 
-
-
 {% embed url="https://youtu.be/RIjkfp4ma9o" %}
-
-
 
 > Full documentation is available [here](https://support.morelogin.com/en/articles/10137626-browser-synchronizer).
 
@@ -58,11 +46,7 @@ In the cloud phone, bulk operations, text input, and file uploads are available 
 
 Automatically schedule video posts to TikTok, Instagram, Facebook Video, Facebook Reels, and YouTube. Configuring captions and publishing details saves significant time.
 
-
-
-<figure><img src=".gitbook/assets/3 (13).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/3 (12).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -76,8 +60,6 @@ The team collaboration feature lets you add members and assign them different ro
 | Super Administrator (RU) | Deleting data, creating and editing profiles, managing proxies, main profile settings, transferring profiles        | Authorization profiles, proxies, members, and other data |
 | Manager                  | Creating and editing profiles, managing proxies, team assignments, subscription settings (without profile deletion) | Authorization profiles, proxies, members, and other data |
 | Member                   | Access to authorized profiles only                                                                                  | Authorization profiles, proxies, members                 |
-
-
 
 > Full documentation is available [here](https://support.morelogin.com/en/articles/10137638-team-management).
 
@@ -104,17 +86,11 @@ The team collaboration feature lets you add members and assign them different ro
 
 `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-<figure><img src=".gitbook/assets/7 (7).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 * Enter the proxy credentials and test functionality
 
-
-
 <figure><img src=".gitbook/assets/4 (9).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **✅ Proxies successfully passed the test**
 
@@ -185,7 +161,7 @@ Set up the profile in [MoreLogin](https://www.morelogin.com/register/?from=GONZO
 ### 📱 Stay Connected
 
 * [Telegram Channel](https://t.me/GonzoProxy)
-* [Telegram Chat ](https://t.me/GonzoProxy_Chat)
+* [Telegram Chat](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 

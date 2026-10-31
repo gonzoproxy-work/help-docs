@@ -2,7 +2,7 @@
 
 [**Octo Browser**](https://octobrowser.net/) is an anti-detect browser that keeps each account in its own profile, and a proxy is what gives every profile a separate IP address.
 
-This guide shows how to put [**GonzoProxy**](/introduction.md) residential proxies into Octo Browser profiles.
+This guide shows how to put [**GonzoProxy**](../introduction.md) residential proxies into Octo Browser profiles.
 
 ***
 
@@ -19,11 +19,7 @@ The **"Paste as Human Typing"** feature pastes text character by character, simu
 * Or use the hotkey: **CTRL + SHIFT + E**.
 * Octo then types the text out at a variable speed.
 
-
-
 <figure><img src=".gitbook/assets/type_as_human2.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -31,11 +27,7 @@ The **"Paste as Human Typing"** feature pastes text character by character, simu
 
 Extensions are add-ons that expand the browser’s capabilities. You can install any Chrome extension in Octo Browser from the regular Chrome Web Store.
 
-
-
 {% embed url="https://youtu.be/1kgsAaRfU8I?si=-48uuoKqEDm3qUpR" %}
-
-
 
 ***
 
@@ -47,11 +39,7 @@ Deleted a profile by mistake? Octo Browser has a **Trash Bin** where deleted pro
 After 48 hours, profiles are permanently deleted and can’t be recovered.
 {% endhint %}
 
-
-
 {% embed url="https://youtu.be/Xv7vBpPxU9o?si=W771h-9FNLfI56X-" %}
-
-
 
 ***
 
@@ -65,11 +53,7 @@ The **Cookie Robot** in Octo Browser visits the URLs you provide and collects co
 * Once done, all collected cookies are saved to the profile.
 * You can view the collected cookies here: `chrome://settings/content/all`.
 
-
-
 {% embed url="https://youtu.be/Ne9SEnkmnrY?si=TEOX2xB_T_dDeWi8" %}
-
-
 
 ***
 
@@ -83,11 +67,7 @@ This feature replaces the webcam feed with a pre-recorded video. It is available
 * Codec: `h264`
 * Max size: **50 MB**
 
-
-
 {% embed url="https://youtu.be/FIKZQL0JLpg?si=prsVtIfiAVKVkqeM" %}
-
-
 
 ***
 
@@ -100,11 +80,7 @@ Octo Browser has a set of features for teamwork:
 * ✅ Track activity history for each team member
 * ✅ Create tasks, assign team members, and set deadlines
 
-
-
 {% embed url="https://youtu.be/ThAd0ylIkF8?si=FXuBnKnZuc-ZAJPN" %}
-
-
 
 ***
 
@@ -116,11 +92,7 @@ Octo Browser has a set of features for teamwork:
 * You can edit all profile settings except the selected operating system.
 * Templates are available with all subscription plans and can be password-protected.
 
-
-
 {% embed url="https://youtu.be/rhN3IZcX1HY?si=2TkdlNNJjlQMVPe4" %}
-
-
 
 ***
 
@@ -128,11 +100,7 @@ Octo Browser has a set of features for teamwork:
 
 ### 📍 Step 1: Prepare proxies in [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=octobrowser\&utm_content=eng)
 
-
-
 <figure><img src=".gitbook/assets/резиденсткие (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * Create **20 residential proxies** (for example, US-based).
 * Your proxy format will look like this:
@@ -149,11 +117,7 @@ socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10
 
 * Paste the proxies into Octo Browser.
 
-
-
 <figure><img src=".gitbook/assets/прокси (2).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -166,11 +130,7 @@ socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10
 * Set language, timezone, and geolocation to **"Based on IP."**
 * Install any required extensions.
 
-
-
 <figure><img src=".gitbook/assets/шаблон.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -178,27 +138,15 @@ socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10
 
 * Go to the **Bulk Profile Creation** mode.
 
-
-
 <figure><img src=".gitbook/assets/профили.png" alt=""><figcaption></figcaption></figure>
-
-
 
 * Set quantity: **20 profiles**. Click **"Add"** and save.
 
-
-
-<figure><img src=".gitbook/assets/профили 2 (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/профили 2.png" alt=""><figcaption></figcaption></figure>
 
 🎉 Done. The 20 profiles are created, each with its own proxy.
 
-
-
 <figure><img src=".gitbook/assets/профили 3.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -209,7 +157,7 @@ socks5://Gonzoj9CiIi_c_US_s_204976RWZ_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10
 ### 📱 Stay Connected
 
 * [Telegram Channel](https://t.me/GonzoProxy)
-* [Telegram Chat ](https://t.me/GonzoProxy_Chat)
+* [Telegram Chat](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 

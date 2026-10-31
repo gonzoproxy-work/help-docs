@@ -14,11 +14,7 @@ Besides the profile manager, AdsPower carries a few tools that come up in day-to
 
 Fingerprint settings go further than headers and user agents: you set the parameters of the whole device profile.
 
-
-
 <figure><img src=".gitbook/assets/01.png" alt=""><figcaption></figcaption></figure>
-
-
 
 **What you can set:**
 
@@ -32,11 +28,7 @@ Fingerprint settings go further than headers and user agents: you set the parame
 
 AdsPower includes RPA (Robotic Process Automation), so browser actions can be automated without writing code.
 
-
-
 <figure><img src=".gitbook/assets/02.png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Automation capabilities:**
 
@@ -54,11 +46,7 @@ The scenario is assembled visually, step by step.
 
 The Synchronizer repeats one action across several browser profiles at once, without scripts or extra plugins.
 
-
-
 <figure><img src=".gitbook/assets/03.png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Synchronizable actions:**
 
@@ -68,11 +56,7 @@ The Synchronizer repeats one action across several browser profiles at once, wit
 * **Clicks:** click buttons across profiles.
 * **Extensions:** install browser extensions in bulk.
 
-
-
 <figure><img src=".gitbook/assets/10.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 You act in the main window, and the action repeats in every profile connected to the session. Useful when the same task has to be done across a set of accounts.
 
@@ -84,11 +68,7 @@ You act in the main window, and the action repeats in every profile connected to
 
 AdsPower has a built-in system for managing access and actions inside the browser.
 
-
-
 <figure><img src=".gitbook/assets/04.png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Team features:**
 
@@ -106,19 +86,11 @@ Useful when several people work with the same set of profiles.
 
 1. **Download:** Visit the [official AdsPower website](https://www.adspower.com/) and click "Get Started."
 
-
-
 <figure><img src=".gitbook/assets/1 (7).png" alt=""><figcaption></figcaption></figure>
-
-
 
 2. **Choose OS:** Select the installer for your operating system (Windows or Mac).
 
-
-
 <figure><img src=".gitbook/assets/2 (6).png" alt=""><figcaption></figcaption></figure>
-
-
 
 3. **Install:** Open the downloaded file and follow the on-screen instructions. Mac users might need to grant installation permissions.
 
@@ -130,19 +102,11 @@ Useful when several people work with the same set of profiles.
 
 1. **Launch AdsPower:** Open the application and click on "Sign Up."
 
-
-
 <figure><img src=".gitbook/assets/3 (5).png" alt=""><figcaption></figcaption></figure>
-
-
 
 2. **Fill Details:** Enter your email, create a password, input the verification code, and click "Register."
 
-
-
 <figure><img src=".gitbook/assets/4 (4).png" alt=""><figcaption></figcaption></figure>
-
-
 
 3. **Alternative Sign-Up:** You can also register using social accounts like Google, Facebook, or VK.
 
@@ -160,11 +124,7 @@ Setting up AdsPower involves four main components: **Profile**, **Proxy**, **Fin
 
 Each profile keeps its own browser environment and its own proxy.
 
-
-
 <figure><img src=".gitbook/assets/5 (4).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Steps:**
 
@@ -177,11 +137,7 @@ Each profile keeps its own browser environment and its own proxy.
 * **Cookies:** Skip for now; we'll address this later.
 * **Notes:** Add reminders like "Account for white-hat campaigns" or "For farming."
 
-
-
 <figure><img src=".gitbook/assets/5.1.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -195,11 +151,7 @@ You've purchased US residential proxies from [GonzoProxy ](https://gonzoproxy.co
 
 `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-
-
-<figure><img src=".gitbook/assets/7 (4).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 **Configuration:**
 
@@ -209,11 +161,7 @@ You've purchased US residential proxies from [GonzoProxy ](https://gonzoproxy.co
 * **Username:** `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Password:** `RNW78Fm5`
 
-
-
 <figure><img src=".gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -227,11 +175,7 @@ A green checkmark means:
 * The IP address is live.
 * You can save the profile.
 
-
-
 <figure><img src=".gitbook/assets/9.png" alt=""><figcaption></figcaption></figure>
-
-
 
 If the check fails, double-check for typos or incorrect entries.
 
@@ -252,26 +196,18 @@ Set the fingerprint fields of the profile:
 * **WebGL Metadata:** Set manually
 * **WebGPU:** Based on WebGL
 
-
-
 <figure><img src=".gitbook/assets/10.png" alt=""><figcaption></figcaption></figure>
-
-
 
 The profile is now configured.
 
-
-
 <figure><img src=".gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
 ### 📱 Stay Connected
 
 * [Telegram Channel](https://t.me/GonzoProxy)
-* [Telegram Chat ](https://t.me/GonzoProxy_Chat)
+* [Telegram Chat](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 

@@ -12,11 +12,7 @@ The [Undetectable anti-detect browser](https://undetectable.io/?utm_source=gonzo
 
 This feature lets you control multiple browser profiles at the same time. When you hit the sync button, everything you do in the main window is repeated in the other profiles, typing, opening tabs, and more. A huge time-saver when handling many accounts.
 
-
-
 <figure><img src=".gitbook/assets/undetectable 7.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -24,11 +20,7 @@ This feature lets you control multiple browser profiles at the same time. When y
 
 The extension manager lets you add, remove, or disable browser extensions across all profiles in one go. Great for quickly changing setups when working with a lot of accounts.
 
-
-
 <figure><img src=".gitbook/assets/2 (13).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -36,11 +28,7 @@ The extension manager lets you add, remove, or disable browser extensions across
 
 Undetectable makes your work easier with built-in basic configurations (fingerprints) of the most popular systems. These are regularly updated with real browser and device data. You can fine-tune the fingerprint for your specific task.
 
-
-
 <figure><img src=".gitbook/assets/3 (11).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Fingerprints are masked at the browser core level, not just via JavaScript.
 
@@ -52,11 +40,7 @@ Undetectable’s built-in config store lets you search by detailed parameters: U
 
 Each plan includes a limited number of free configs that are regularly refreshed. Additional configs can be bought in the store. They’re personal, but you can share them with team members using API keys.
 
-
-
 <figure><img src=".gitbook/assets/4 (8).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -65,8 +49,6 @@ Each plan includes a limited number of free configs that are regularly refreshed
 * **User Roles**: Set up and manage roles with different permissions and access levels.
 * **Profile Groups**: Organize profiles into groups and give access to only specific segments.
 * **Cloud Web Panel**: Manage roles, groups, and profiles online: track profile statuses in real time.
-
-
 
 <figure><img src=".gitbook/assets/5 (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -80,11 +62,7 @@ Go to **Account → Cloud Dash** to access team settings, assign roles, manage g
 
 The Cookies Bot fills profiles with cookies by opening sites automatically. A built-in popular site generator creates resource lists based on the selected location.
 
-
-
 <figure><img src=".gitbook/assets/6 (4).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **How to warm up profiles:**
 
@@ -104,16 +82,16 @@ The Cookies Bot fills profiles with cookies by opening sites automatically. A bu
 
 ### ⚙️ General settings
 
-| **Parameter**       | **Value**                                                                    |
-| ------------------- | ---------------------------------------------------------------------------- |
-| Name, Folder, Tag   | for easy sorting                                                             |
-| OS                  | Windows, macOS, Android, or iPhone (match your real system)                  |
-| Browser             | Chrome                                                                       |
-| Config              | Similar to your current system                                               |
-| User-Agent & Screen | Default                                                                      |
-| CPU                 | 2-4 cores                                                                    |
-| RAM                 | 2-4 GB                                                                       |
-| Languages           | Default                                                                      |
+| **Parameter**       | **Value**                                                   |
+| ------------------- | ----------------------------------------------------------- |
+| Name, Folder, Tag   | for easy sorting                                            |
+| OS                  | Windows, macOS, Android, or iPhone (match your real system) |
+| Browser             | Chrome                                                      |
+| Config              | Similar to your current system                              |
+| User-Agent & Screen | Default                                                     |
+| CPU                 | 2-4 cores                                                   |
+| RAM                 | 2-4 GB                                                      |
+| Languages           | Default                                                     |
 
 ***
 
@@ -122,11 +100,7 @@ The Cookies Bot fills profiles with cookies by opening sites automatically. A bu
 Let’s say you bought US residential proxies from [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=eng\&utm_content=undetectable) and got this string:\
 `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-
-
-<figure><img src=".gitbook/assets/7 (6).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 **Connection parameters:**
 
@@ -135,8 +109,6 @@ Let’s say you bought US residential proxies from [GonzoProxy](https://gonzopro
 * **Login**: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * **Password**: `RNW78Fm5`
 * **Supported protocols**: HTTP, HTTPS and SOCKS5
-
-
 
 <figure><img src=".gitbook/assets/прокси 2 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -162,27 +134,15 @@ Let’s say you bought US residential proxies from [GonzoProxy](https://gonzopro
 
 ***
 
-
-
 * **Tab 4**: Import/export cookie files.
-
-
 
 <figure><img src=".gitbook/assets/8 (3).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ***
-
-
 
 * **Tab 5**: Manually add login/passwords or import/export account data.
 
-
-
 <figure><img src=".gitbook/assets/9 (2).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -199,7 +159,7 @@ The [Undetectable ](https://undetectable.io/?utm_source=gonzoproxy\&utm_medium=a
 ### 📱 Stay Connected
 
 * [Telegram Channel](https://t.me/GonzoProxy)
-* [Telegram Chat ](https://t.me/GonzoProxy_Chat)
+* [Telegram Chat](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
 * [24/7 Support](https://t.me/GonzoProxy_bot)
 
