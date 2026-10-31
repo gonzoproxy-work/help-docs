@@ -16,11 +16,7 @@
 
 **Использование:** ПКМ → _Paste as human typing_.
 
-
-
 {% embed url="https://youtu.be/d3tCNBRaWTQ" %}
-
-
 
 ***
 
@@ -32,11 +28,7 @@
 
 2️⃣ Вставляем куда нужно.
 
-
-
 {% embed url="https://youtu.be/5Ouzzfv2svA" %}
-
-
 
 ***
 
@@ -44,11 +36,7 @@
 
 В **Incogniton** можно спокойно ставить любые расширения. Это важно, потому что реальный пользователь обычно не сидит в пустом браузере.
 
-
-
 {% embed url="https://youtu.be/klmkUcMmieE" %}
-
-
 
 ***
 
@@ -56,11 +44,7 @@
 
 Если у вас десятки профилей, вручную повторять настройки, адская работа. **Синхронизатор** позволяет копировать действия и параметры с одного профиля на другие. Сильно экономит время.
 
-
-
 {% embed url="https://youtu.be/yUHCKBvo9IM" %}
-
-
 
 ***
 
@@ -74,11 +58,7 @@
 * давать разный уровень доступа по ролям
 * централизованно управлять всеми профилями
 
-
-
 {% embed url="https://youtu.be/HeoqykdcYQ4" %}
-
-
 
 ***
 
@@ -86,7 +66,7 @@
 
 ### 🚀 Шаг 1. Создаём профиль
 
-* Название профиля: любое (например, *US Ads Account*)
+* Название профиля: любое (например, _US Ads Account_)
 * Группа: по желанию
 * Операционная система: Windows / Mac OS / Linux
 * Версия ядра браузера: по умолчанию
@@ -99,13 +79,9 @@
 
 Берём резидентский прокси (например, **USA**) в личном кабинете [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=incognition). Получаем такие данные:
 
-`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`&#x20;
+`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-
-
-<figure><img src=".gitbook/assets/7 (8).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 Вводим в **Incogniton**:
 
@@ -114,15 +90,11 @@
 * Login - `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * Password - `RNW78Fm5`
 
-Ставим галочку, *Ротирующий прокси сервер*.
+Ставим галочку, _Ротирующий прокси сервер_.
 
 Проверяем прокси
 
-
-
 <figure><img src=".gitbook/assets/прокси (2).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Дополнительно:**
 
@@ -164,11 +136,7 @@
 
 **Импорт cookies** ускоряет прогрев профиля. **Incogniton** позволяет быстро импортировать cookies для нужных сайтов.
 
-
-
 {% embed url="https://youtu.be/SJVStaKWXOE" %}
-
-
 
 ***
 
@@ -184,9 +152,9 @@
 
 ### 📱 Мы на связи
 
-* [Telegram-канал ](https://t.me/GonzoProxy)
-* [Telegram-чат ](https://t.me/GonzoProxy_Chat)
+* [Telegram-канал](https://t.me/GonzoProxy)
+* [Telegram-чат](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
-* [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
+* [Поддержка 24/7](https://t.me/GonzoProxy_bot)
 
 💬 Наша команда всегда на связи! Обращайтесь в любое время суток.

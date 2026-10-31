@@ -31,15 +31,11 @@ GoLogin это антидетект-браузер, который держит 
 
 ### 📦 Как добавить прокси в GoLogin?
 
-Допустим ты купил резидентские прокси **США** от [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=anti-detekt-brauzer-adspower) и получил строку:&#x20;
+Допустим ты купил резидентские прокси **США** от [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=anti-detekt-brauzer-adspower) и получил строку:
 
 `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-
-
-<figure><img src=".gitbook/assets/7 (2).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 * Протоколы: `HTTPS` / `SOCKS5`
 * Хост: `connect.gonzoproxy.app`
@@ -49,19 +45,11 @@ GoLogin это антидетект-браузер, который держит 
 
 Вставляй эти данные в **антидетект браузер**
 
-
-
 <figure><img src=".gitbook/assets/0 (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 И нажимай **Check Proxy**
 
-
-
 <figure><img src=".gitbook/assets/00 (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ✅ Прокси успешно прошли проверку: **United States • US • Fresno**
 
@@ -71,11 +59,7 @@ GoLogin это антидетект-браузер, который держит 
 
 #### 🌍 WebRTC
 
-
-
 <figure><img src=".gitbook/assets/1 (10).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * Включаем и подменяем на IP прокси
 * Полностью не выключаем
@@ -84,11 +68,7 @@ GoLogin это антидетект-браузер, который держит 
 
 #### ⏰ Timezone
 
-
-
 <figure><img src=".gitbook/assets/2 (9).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * Автоопределение по IP: вкл.
 
@@ -96,53 +76,43 @@ GoLogin это антидетект-браузер, который держит 
 
 #### 📍 Геолокация
 
-
-
 <figure><img src=".gitbook/assets/3 (6).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * Разрешаем, если сайт просит
 
 ***
 
-#### 📋  "Другие надстройки" GoLogin
+#### 📋 "Другие надстройки" GoLogin
 
-| Параметр                                    | Рекомендуемые настройки                                     |
-| ------------------------------------------- | ----------------------------------------------------------- |
-| **User-Agent**                              | Под прокси (Android UA для моб., Windows/macOS, для рез.)   |
-| **Разрешение экрана**                       | 360×740 (моб.) / 1920×1080 (десктоп)                        |
-| **Языки**                                   | На основе IP (например, `fr-FR, en-US`)                     |
-| **Платформа**                               | `Android`, `Win32`, `MacIntel`                              |
-| **Потоки процессора (CPU)**                 | <p>Моб.: 4-8</p><p>Десктоп: 8-16</p>                        |
-| **ОЗУ (RAM)**                               | <p>Моб.: 3-6 ГБ</p><p>Десктоп: 8-16 ГБ</p>                  |
+| Параметр                                    | Рекомендуемые настройки                                             |
+| ------------------------------------------- | ------------------------------------------------------------------- |
+| **User-Agent**                              | Под прокси (Android UA для моб., Windows/macOS, для рез.)           |
+| **Разрешение экрана**                       | 360×740 (моб.) / 1920×1080 (десктоп)                                |
+| **Языки**                                   | На основе IP (например, `fr-FR, en-US`)                             |
+| **Платформа**                               | `Android`, `Win32`, `MacIntel`                                      |
+| **Потоки процессора (CPU)**                 | <p>Моб.: 4-8</p><p>Десктоп: 8-16</p>                                |
+| **ОЗУ (RAM)**                               | <p>Моб.: 3-6 ГБ</p><p>Десктоп: 8-16 ГБ</p>                          |
 | **Шрифты**                                  | <p>Включить маскировку</p><p>Roboto (моб.) / Segoe UI (десктоп)</p> |
-| **Маскировка медиа-устройств**              | Включить                                                    |
-| **Canvas**                                  | Включить шум                                                |
-| **ClientRects**                             | Включить шум                                                |
-| **AudioContext**                            | Включить шум                                                |
-| **WebGL Image**                             | Включить шум                                                |
-| **WebGL Провайдер**                         | `Qualcomm` (моб.) / `Intel`, `NVIDIA` (десктоп)             |
-| **Средство рендеринга WebGL**               | `Adreno 650`, `Mali-G78`, `Intel UHD`, `GT 1030` и т.п.     |
-| **Локальное хранилище**                     | Включить                                                    |
-| **Хранилище расширений**                    | Включить                                                    |
-| **Уязвимые плагины браузера**               | Отключить                                                   |
-| **Блокировка активных сессий**              | Включить                                                    |
-| **Сервисы Google**                          | Включить                                                    |
-| **Сохранять закладки/историю/пароли/сеанс** | Всё включить                                                |
-| **Системные расширения**                    | Отключить                                                   |
-
-
+| **Маскировка медиа-устройств**              | Включить                                                            |
+| **Canvas**                                  | Включить шум                                                        |
+| **ClientRects**                             | Включить шум                                                        |
+| **AudioContext**                            | Включить шум                                                        |
+| **WebGL Image**                             | Включить шум                                                        |
+| **WebGL Провайдер**                         | `Qualcomm` (моб.) / `Intel`, `NVIDIA` (десктоп)                     |
+| **Средство рендеринга WebGL**               | `Adreno 650`, `Mali-G78`, `Intel UHD`, `GT 1030` и т.п.             |
+| **Локальное хранилище**                     | Включить                                                            |
+| **Хранилище расширений**                    | Включить                                                            |
+| **Уязвимые плагины браузера**               | Отключить                                                           |
+| **Блокировка активных сессий**              | Включить                                                            |
+| **Сервисы Google**                          | Включить                                                            |
+| **Сохранять закладки/историю/пароли/сеанс** | Всё включить                                                        |
+| **Системные расширения**                    | Отключить                                                           |
 
 ***
 
 #### 🔌 Расширения
 
-
-
 <figure><img src=".gitbook/assets/4 (5).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Установи заранее, если для работы требуются расширения
 
@@ -154,9 +124,9 @@ GoLogin это антидетект-браузер, который держит 
 
 ### 📱 Мы на связи
 
-* [Telegram-канал ](https://t.me/GonzoProxy)
-* [Telegram-чат ](https://t.me/GonzoProxy_Chat)
+* [Telegram-канал](https://t.me/GonzoProxy)
+* [Telegram-чат](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
-* [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
+* [Поддержка 24/7](https://t.me/GonzoProxy_bot)
 
 💬 Наша команда всегда на связи! Обращайтесь в любое время суток.

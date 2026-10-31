@@ -1,4 +1,4 @@
-# ⚡️ Настройка GeeLark
+# ⚡ Настройка GeeLark
 
 **GeeLark** работает как облачный Android. На этой странице показано, куда в профиле GeeLark вписать данные подключения GonzoProxy.
 
@@ -8,11 +8,7 @@
 
 #### Шаг 1: Выбери страну и тип прокси в личном кабинете GonzoProxy
 
-
-
 <figure><img src=".gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Скопируй:
 
@@ -21,27 +17,15 @@
 * **Логин** - 31q6ug7d![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7)
 * **Пароль -** usq15\_w5h9
 
-
-
 <figure><img src=".gitbook/assets/2 (4).png" alt=""><figcaption></figcaption></figure>
-
-
 
 #### Шаг 2: Создай новый профиль в GeeLark
 
-
-
 <figure><img src=".gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Введи данные прокси, полученные в GonzoProxy и нажми Check proxy:
 
-
-
 <figure><img src=".gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
-
-
 
 Проверка прокси пройдена ✅
 
@@ -49,11 +33,7 @@
 
 #### Далее настрой параметры устройства под прокси:
 
-
-
 <figure><img src=".gitbook/assets/5 (3).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * **Операционная система**: Android / iOS
 * **Версия ОС**: выбрать нужную или актуальную
@@ -70,11 +50,7 @@
 
 #### 🔁 Synchronizer
 
-
-
 <figure><img src=".gitbook/assets/Pop-up_Synchroniser.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 Позволяет управлять несколькими облачными телефонами одновременно. Действия, выполняемые в основном профиле, автоматически реплицируются на все подключенные профили. Это значительно сокращает время, необходимое для выполнения одинаковых задач в нескольких аккаунтах.
 
@@ -84,11 +60,7 @@
 
 ### 🤖 Готовые шаблоны автоматизации
 
-
-
 <figure><img src=".gitbook/assets/6 (4).png" alt=""><figcaption></figcaption></figure>
-
-
 
 GeeLark предлагает готовые шаблоны автоматизации для популярных приложений, таких как **TikTok** и **Facebook**. Эти шаблоны могут автоматизировать:
 
@@ -105,11 +77,7 @@ GeeLark предлагает готовые шаблоны автоматиза�
 
 ### 🧠 GeeLark AI
 
-
-
 <figure><img src=".gitbook/assets/GeeLark_AI.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 В GeeLark теперь доступна помощь ИИ на базе DeepSeek. Эта помощь призвана помочь вам в создании контента и облегчить понимание и использование GeeLark. Кроме того, не стесняйся задавать ИИ GeeLark любые другие вопросы!
 
@@ -117,11 +85,7 @@ GeeLark предлагает готовые шаблоны автоматиза�
 
 ### 🧑‍🤝‍🧑 Функции для команд и агентств
 
-
-
 <figure><img src=".gitbook/assets/7 (6).png" alt=""><figcaption></figcaption></figure>
-
-
 
 В GeeLark можно создавать роли с разными уровнями доступа для каждого члена команды и легко делиться профилями с любым участником вашей команды, оптимизируя рабочий процесс.
 
@@ -133,9 +97,9 @@ GeeLark предлагает готовые шаблоны автоматиза�
 
 ### 📱 Мы на связи
 
-* [Telegram-канал ](https://t.me/GonzoProxy)
-* [Telegram-чат ](https://t.me/GonzoProxy_Chat)
+* [Telegram-канал](https://t.me/GonzoProxy)
+* [Telegram-чат](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
-* [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
+* [Поддержка 24/7](https://t.me/GonzoProxy_bot)
 
 💬 Наша команда всегда на связи! Обращайтесь в любое время суток.

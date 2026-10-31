@@ -13,11 +13,7 @@
 
 В MoreLogin можно массово добавлять расширения для браузеров и назначать их нужным профилям, а также легко контролировать статус каждого расширения.
 
-
-
 <figure><img src=".gitbook/assets/1 (14).png" alt=""><figcaption></figcaption></figure>
-
-
 
 > Полная документация доступна по [ссылке](https://support.morelogin.com/ru/articles/10137583-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%B0).
 
@@ -27,11 +23,7 @@
 
 Если вы хотите, чтобы нужные приложения автоматически устанавливались на каждый новый облачный телефон, настройте их предварительно один раз. Это сэкономит время на повторных загрузках и ускорит вашу работу.
 
-
-
 <figure><img src=".gitbook/assets/2 (12).png" alt=""><figcaption></figcaption></figure>
-
-
 
 > Полная документация доступна по [ссылке](https://support.morelogin.com/ru/articles/10204340-%D0%BE%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%B0).
 
@@ -44,11 +36,7 @@
 \
 В облачном телефоне - массовые операции, ввод текста и загрузка файлов доступны только для модели Model X.
 
-
-
 {% embed url="https://youtu.be/RIjkfp4ma9o" %}
-
-
 
 > Полная документация доступна по [ссылке](https://support.morelogin.com/ru/articles/10137626-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%82%D0%BE%D1%80-%D0%B1%D1%80%D0%B0%D1%83%D0%B7%D0%B5%D1%80%D0%BE%D0%B2).
 
@@ -58,11 +46,7 @@
 
 Автоматически планируйте публикации видео на TikTok, Instagram, Facebook Video, Facebook Reel и YouTube. Настройка подписей и деталей публикации существенно экономит ваше время.
 
-
-
 <figure><img src=".gitbook/assets/3 (10).png" alt=""><figcaption></figcaption></figure>
-
-
 
 > Полная документация доступна по [ссылке](https://support.morelogin.com/ru/articles/10326957-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE/).
 
@@ -100,22 +84,13 @@
 
 ### 🌐 Настройка прокси
 
-* Получаем резидентские прокси от [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=morelogin), допустим - **США.** Получаем строку:
-`Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
+* Получаем резидентские прокси от [GonzoProxy](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=ru\&utm_content=morelogin), допустим - **США.** Получаем строку: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-
-
-<figure><img src=".gitbook/assets/7 (9).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 * Вводим данные и проверяем работоспособность прокси
 
-
-
 <figure><img src=".gitbook/assets/4 (8).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ✅ **Прокси успешно прошли проверку**
 
@@ -185,9 +160,9 @@
 
 ### 📱 Мы на связи
 
-* [Telegram-канал ](https://t.me/GonzoProxy)
-* [Telegram-чат ](https://t.me/GonzoProxy_Chat)
+* [Telegram-канал](https://t.me/GonzoProxy)
+* [Telegram-чат](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
-* [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
+* [Поддержка 24/7](https://t.me/GonzoProxy_bot)
 
 💬 Наша команда всегда на связи! Обращайтесь в любое время суток.

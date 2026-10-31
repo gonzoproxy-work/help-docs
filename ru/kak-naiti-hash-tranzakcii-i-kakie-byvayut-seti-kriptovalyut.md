@@ -58,79 +58,43 @@
 
 ### 1️⃣ MetaMask 🦊
 
-
-
 * Откройте MetaMask → «Активность».
-
-
 
 <figure><img src=".gitbook/assets/мета1.png" alt=""><figcaption></figcaption></figure>
 
-
-
 * Кликните на транзакцию → «Скопировать ID транзакции».
-
-
 
 <figure><img src=".gitbook/assets/мета2.3.jpg" alt=""><figcaption></figcaption></figure>
 
-
-
 * Текущая сеть указана в MetaMask сверху.
-
-
 
 <figure><img src=".gitbook/assets/мета3.png" alt=""><figcaption></figcaption></figure>
 
 ### 2️⃣ Trust Wallet 📱
 
-
-
 * Откройте Trust Wallet → выберите историю.
-
-
 
 <figure><img src=".gitbook/assets/траст 1.png" alt=""><figcaption></figcaption></figure>
 
-
-
 * Нажмите на транзакцию.
-
-
 
 <figure><img src=".gitbook/assets/траст2.png" alt=""><figcaption></figcaption></figure>
 
-
-
 * Скопируйте hash транзакции.
-
-
 
 <figure><img src=".gitbook/assets/траст3.png" alt=""><figcaption></figcaption></figure>
 
-
-
 * Название сети отображается в самом конце.
-
-
 
 <figure><img src=".gitbook/assets/траст4.png" alt=""><figcaption></figcaption></figure>
 
 ### 3️⃣ Биржи (Binance, Bybit, OKX и др.) 💱
 
-
-
 * Войдите в раздел «История транзакций» или «Вывод средств».
-
-
 
 <figure><img src=".gitbook/assets/биржа.png" alt=""><figcaption></figcaption></figure>
 
-
-
 * Откройте транзакцию и найдите TxID и сеть, указанную для вывода.
-
-
 
 <figure><img src=".gitbook/assets/биржа2.png" alt=""><figcaption></figcaption></figure>
 
@@ -200,9 +164,7 @@
 `0xb4bc263278d3f77a652a8d73a6bfd8ec0ba1a63923bbb4f38147fb8a943da26d`\
 на [Etherscan.io](https://etherscan.io/) и получите подробную информацию.
 
-
-
-<figure><img src=".gitbook/assets/1 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/1 (3).png" alt=""><figcaption></figcaption></figure>
 
 * 📤 Адрес отправителя
 * 📥 Адрес получателя
@@ -227,9 +189,9 @@
 
 ### 📱 Мы на связи
 
-* [Telegram-канал ](https://t.me/GonzoProxy)
-* [Telegram-чат ](https://t.me/GonzoProxy_Chat)
+* [Telegram-канал](https://t.me/GonzoProxy)
+* [Telegram-чат](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
-* [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
+* [Поддержка 24/7](https://t.me/GonzoProxy_bot)
 
 💬 Наша команда на связи. Напишите нам, если что-то не получается.

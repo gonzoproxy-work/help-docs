@@ -12,18 +12,14 @@ AdsPower это антидетект-браузер, который держит
 
 #### **1. Контроль браузерных отпечатков** 🧬
 
-Отпечаток настраивается не только на уровне заголовков и *user-agent*: задаются параметры всего устройства.
-
-
+Отпечаток настраивается не только на уровне заголовков и _user-agent_: задаются параметры всего устройства.
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-
-
 **Что настраивается:**
 
-* Отпечатки не только десктопных ОС, но и мобильных, *Android* и *iOS*.
-* Работа на движке *Chromium* или *Firefox*, на выбор.
+* Отпечатки не только десктопных ОС, но и мобильных, _Android_ и _iOS_.
+* Работа на движке _Chromium_ или _Firefox_, на выбор.
 * Технические характеристики: видеокарта, WebGL, WebRTC, язык системы, шрифты, шум устройства, разрешение экрана и прочее. Каждый параметр можно выставить вручную.
 
 ***
@@ -32,11 +28,7 @@ AdsPower это антидетект-браузер, который держит
 
 В **AdsPower** встроена система автоматизации на базе **RPA (Robotic Process Automation)**. Действия внутри браузера настраиваются без написания скриптов.
 
-
-
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Что умеет автоматизация:**
 
@@ -55,11 +47,7 @@ AdsPower это антидетект-браузер, который держит
 
 Синхронизатор повторяет одно и то же действие сразу в нескольких браузерных профилях, без скриптов и дополнительных плагинов.
 
-
-
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Что можно синхронизировать:**
 
@@ -69,11 +57,7 @@ AdsPower это антидетект-браузер, который держит
 * Клики по кнопкам
 * Установку расширений
 
-
-
 <figure><img src=".gitbook/assets/image.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 Ты работаешь в основном окне, а действие повторяется во всех подключённых профилях. Удобно, когда одну и ту же задачу нужно выполнить в наборе аккаунтов.
 
@@ -85,11 +69,7 @@ AdsPower это антидетект-браузер, который держит
 
 В браузере есть система управления доступом и действиями сотрудников.
 
-
-
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Что есть:**
 
@@ -107,19 +87,11 @@ AdsPower это антидетект-браузер, который держит
 
 1. Перейдите на официальный сайт [AdsPower](https://www.adspower.com/) и нажмите кнопку «Скачать».
 
-
-
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
-
 
 2. Выберите установочный файл для вашей операционной системы (Windows или Mac).
 
-
-
 <figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
-
-
 
 3. После того как файл скачан, откройте его и следуйте инструкциям на экране. Для пользователей macOS может потребоваться разрешение на установку.
 
@@ -129,19 +101,11 @@ AdsPower это антидетект-браузер, который держит
 
 1. После установки откройте браузер и нажмите на кнопку «Регистрация».
 
-
-
 <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-
-
 
 2. Заполните форму: email, пароль, код подтверждения, и нажмите «Зарегистрироваться».
 
-
-
 <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-
-
 
 3. Можно зарегистрироваться через социальные сети, такие как Google, Facebook или VK.
 
@@ -159,11 +123,7 @@ AdsPower это антидетект-браузер, который держит
 
 Каждый профиль хранит своё окружение браузера и свой прокси.
 
-
-
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Что делаем:**
 
@@ -174,13 +134,9 @@ AdsPower это антидетект-браузер, который держит
 * User-Agent: лучше не трогай.
 * Группа: чтобы потом не искать в куче.
 * Cookies: пока пропускаем.
-* Заметки: можно оставить комментарий, например: *“под фарм”*.
-
-
+* Заметки: можно оставить комментарий, например: _“под фарм”_.
 
 <figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -188,11 +144,7 @@ AdsPower это антидетект-браузер, который держит
 
 Прокси задаёт профилю отдельный IP-адрес. Допустим, ты купил резидентские прокси **США** от [**GonzoProxy**](https://gonzoproxy.com/?utm_source=gitbook\&utm_medium=anti-detekt-brauzer-adspower) и получил строку: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h:RNW78Fm5@connect.gonzoproxy.app:10000`
 
-
-
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src=".gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
 
 **Разбиваем и вставляем:**
 
@@ -202,13 +154,7 @@ AdsPower это антидетект-браузер, который держит
 * Логин: `Gonzoj9CiIi_c_US_sd_443_s_663698TEC_ttl_72h`
 * Пароль: `RNW78Fm5`
 
-
-
 <figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
 
 ***
 
@@ -220,11 +166,7 @@ AdsPower это антидетект-браузер, который держит
 * IP живой
 * Профиль можно сохранять
 
-
-
 <figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Если галки нет, проверь внимательно: может быть лишний пробел, не тот порт или ошибка в логине.
 
@@ -245,29 +187,19 @@ AdsPower это антидетект-браузер, который держит
 * **Метаданные WebGL** → _Настроить вручную_
 * **WebGPU** → _На основе WebGL_
 
-
-
 <figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Готово. Профиль настроен.
 
-
-
 <figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
-
-
-
 
 ***
 
 ### 📱 Мы на связи
 
-* [Telegram-канал ](https://t.me/GonzoProxy)
-* [Telegram-чат ](https://t.me/GonzoProxy_Chat)
+* [Telegram-канал](https://t.me/GonzoProxy)
+* [Telegram-чат](https://t.me/GonzoProxy_Chat)
 * [Instagram](https://www.instagram.com/gonzoproxy)
-* [Поддержка 24/7 ](https://t.me/GonzoProxy_bot)
+* [Поддержка 24/7](https://t.me/GonzoProxy_bot)
 
 💬 Наша команда всегда на связи! Обращайтесь в любое время суток.
