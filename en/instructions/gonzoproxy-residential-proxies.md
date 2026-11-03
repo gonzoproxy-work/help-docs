@@ -40,7 +40,7 @@ Unlike **datacenter proxies**, whose addresses belong to hosting providers, thes
 * Traffic does not expire: the gigabytes you buy stay on your balance until you use them
 
 💲 Price per 1 GB depends on the purchase volume:\
-&#x20;      **from $6.50 per GB when you buy 1 GB down to $2.50 per GB at 1 TB**
+&#x20;      **from $6.50 per GB (minimum purchase 2 GB for $13) down to $2.50 per GB at 1 TB**
 
 <figure><img src="../.gitbook/assets/image_2025-04-21_11-44-48.png" alt=""><figcaption></figcaption></figure>
 
