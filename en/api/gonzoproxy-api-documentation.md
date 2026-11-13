@@ -27,6 +27,8 @@ Content-Type: application/json
 3. Create a new key.
 4. Use it in all API requests.
 
+An account has one API key. If you already have one, the dashboard asks you to confirm: the new key replaces the old one right away, and the old one stops working. Update it in every script and integration that uses it.
+
 Do not pass the API key in the URL or as a query parameter. Use the HTTP header only.
 
 ### Units
