@@ -93,11 +93,11 @@ The pool is set by the `product` parameter:
 | `mobile`         | Mobile                                          |
 | `server_dynamic` | Datacenter                                      |
 
-Send the value exactly as shown in the table. A value that is not in the table may not be rejected with an error: in that case the string comes from the residential pool. Before you move a string into production, check which pool it belongs to.
+For the datacenter pool the API also accepts `datacenter` and `dc`. The value is not case-sensitive. If the API does not recognize the value, for example because of a typo, or the value is empty, you get no error: the API returns HTTP 200 and a string from the residential pool. So before you move a string into production, check that `product` is spelled correctly.
 
 #### Response
 
-Example of a successful response with `format` set to `username:password@ip:port`. The `ip` part is the connection address and can be a host name, shown here as `<host>`.
+Example of a successful response with `format` set to `username:password@ip:port`. In place of `ip`, the string contains the connection address, usually a host name, shown here as `<host>`.
 
 ```json
 {
@@ -106,7 +106,7 @@ Example of a successful response with `format` set to `username:password@ip:port
 }
 ```
 
-`proxies` holds as many strings as you asked for in `count`. The order of the parts and the separators in each string are set by `format`. The API accepts these templates: `ip:port:username:password`, `username:password:ip:port`, `ip:port@username:password`, `username:password@ip:port`. An unsupported template returns HTTP 400 with `Unsupported format`.
+`proxies` holds as many strings as you asked for in `count`. The order of the parts and the separators in each string are set by `format`. The API accepts these templates: `ip:port:username:password`, `username:password:ip:port`, `ip:port@username:password`, `username:password@ip:port`. An unsupported template returns HTTP 400 with `Unsupported format`, and a value longer than 32 characters returns HTTP 400 with `format too long (max 32 chars)`.
 
 **About `ttl`**
 
