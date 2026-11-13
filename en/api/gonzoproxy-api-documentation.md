@@ -67,6 +67,7 @@ Passed in the JSON request body.
 
 | Parameter      | Type      | Description                         |
 | -------------- | --------- | ----------------------------------- |
+| `product`      | `string`  | Proxy pool, see "Choosing the pool" |
 | `state`        | `string`  | State or region                     |
 | `city`         | `string`  | City                                |
 | `zip`          | `string`  | ZIP code                            |
@@ -84,7 +85,28 @@ Passed in the JSON request body.
 
 **Choosing the pool**
 
-The pool a proxy is issued from (residential, mobile, datacenter) is set by a request parameter. If that parameter is not sent, `/generate` still returns a working connection string, but it can belong to a different pool than the one you need: the string connects, and the product behind it is not the one you asked for. Check which pool the returned string belongs to before you move it into production.
+The pool is set by the `product` parameter:
+
+| Value            | Pool                                            |
+| ---------------- | ----------------------------------------------- |
+| `residential`    | Residential. Also used when `product` is not sent |
+| `mobile`         | Mobile                                          |
+| `server_dynamic` | Datacenter                                      |
+
+Send the value exactly as shown in the table. A value that is not in the table may not be rejected with an error: in that case the string comes from the residential pool. Before you move a string into production, check which pool it belongs to.
+
+#### Response
+
+Example of a successful response with `format` set to `username:password@ip:port`. The `ip` part is the connection address and can be a host name, shown here as `<host>`.
+
+```json
+{
+  "success": true,
+  "proxies": ["<username>:<password>@<host>:<port>"]
+}
+```
+
+`proxies` holds as many strings as you asked for in `count`. The order of the parts and the separators in each string are set by `format`. The API accepts these templates: `ip:port:username:password`, `username:password:ip:port`, `ip:port@username:password`, `username:password@ip:port`. An unsupported template returns HTTP 400 with `Unsupported format`.
 
 **About `ttl`**
 
