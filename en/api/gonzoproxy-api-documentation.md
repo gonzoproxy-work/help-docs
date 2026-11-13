@@ -413,7 +413,7 @@ Supported operations: `set_traffic`, `activate`, `deactivate`
 
 #### B.4.1 Set sub-account traffic
 
-`target_traffic_bytes` is the sub-account's final traffic balance, not the amount to add.
+`target_traffic_bytes` is the sub-account's final traffic balance, not the amount to add. When the sub-account's traffic balance is increased, the difference is deducted from the main account's residential balance.
 
 If a sub-account currently has `1 GB` and you want it to have `5 GB`, pass `5000000000`.
 
@@ -461,7 +461,7 @@ curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/sub-account-adjust" \
 
 #### B.4.3 Deactivate sub-account
 
-When deactivated, the sub-account's remaining traffic is returned to the main account.
+When deactivated, the sub-account's remaining traffic is returned to the main account's residential balance.
 
 ```json
 {
