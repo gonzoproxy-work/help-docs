@@ -17,7 +17,7 @@ You **pay only for traffic**, not for the number of proxies created.
 📉 The larger the purchase, the lower the price per gigabyte:
 
 ```
-• Start        1 GB       $6.50     ($6.50 / GB)
+• Start        2 GB       $13       ($6.50 / GB)
 • Specialist   25 GB      $137      ($5.50 / GB)
 • Team Lead    50 GB      $225      ($4.50 / GB)
 • Team         500 GB     $1375     ($2.75 / GB)

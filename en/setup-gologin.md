@@ -8,7 +8,7 @@ GoLogin is an anti-detect browser that keeps each account in its own profile, an
 
 #### 1. Choose Your Proxy Type
 
-**Mobile IPs (3G/4G):**
+**Mobile IPs:**
 
 * Account registration
 * Mobile apps and behavior emulation
