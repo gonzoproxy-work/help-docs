@@ -37,3 +37,7 @@ Financial websites require special care. Our proxies run on the devices of real 
 ### What to Know Right Now
 
 Since July 2026, under a temporary company decision, we are not opening such sites for anyone, including those who have already completed KYC. You can still submit a request, but there will be no positive answer for now.
+
+### Closed Ports
+
+Port 22 (SSH) and the mail ports 25, 465 and 587 (SMTP) are closed on our proxies. Ports 80 and 443, which websites use, are open.
