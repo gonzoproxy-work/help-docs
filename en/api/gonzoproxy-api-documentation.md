@@ -67,16 +67,18 @@ Passed in the JSON request body.
 
 | Parameter      | Type      | Description                         |
 | -------------- | --------- | ----------------------------------- |
+| `product`      | `string`  | Proxy pool, see "Choosing the pool" |
 | `state`        | `string`  | State or region                     |
 | `city`         | `string`  | City                                |
 | `zip`          | `string`  | ZIP code                            |
 | `isp`          | `string`  | Internet service provider name      |
 | `sd_code`      | `number`  | Subdivision code                    |
 | `count`        | `number`  | Number of proxies to generate       |
-| `rotation`     | `boolean` | IP rotation type                    |
-| `ttl`          | `number`  | Session lifetime                    |
-| `ttl_unit`     | `string`  | TTL unit of measurement             |
-| `format`       | `string`  | Proxy string format in the response |
+| `rotation`     | `boolean` | `true`: rotating IP. `false` or not sent: sticky session, see "Sticky session" |
+| `ttl`          | `number`  | Requested sticky-session lifetime, up to 72 hours |
+| `ttl_unit`     | `string`  | `hours` (default), `minutes` or `seconds` |
+| `ip_hold`      | `boolean` | Keep the same IP: the connection fails instead of moving to a new IP. Sticky session only |
+| `format`       | `string`  | Proxy string format in the response, see "Response" |
 | `login`        | `string`  | Custom login                        |
 | `password`     | `string`  | Custom password                     |
 | `rg_id`        | `string`  | Additional sticky-session parameter |
@@ -84,11 +86,49 @@ Passed in the JSON request body.
 
 **Choosing the pool**
 
-The pool a proxy is issued from (residential, mobile, datacenter) is set by a request parameter. If that parameter is not sent, `/generate` still returns a working connection string, but it can belong to a different pool than the one you need: the string connects, and the product behind it is not the one you asked for. Check which pool the returned string belongs to before you move it into production.
+The pool is set by the `product` parameter:
 
-**About `ttl`**
+| Value            | Pool                                            |
+| ---------------- | ----------------------------------------------- |
+| `residential`    | Residential. Also used when `product` is not sent |
+| `mobile`         | Mobile                                          |
+| `server_dynamic` | Datacenter                                      |
 
-`ttl` asks for a session lifetime of up to 7 days (for example `ttl=168` with `ttl_unit` in hours); it does not guarantee one. In our own run on 14 September 2026, 51 of 90 sessions (56.7%, Wilson interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes. Handle an address change in your code instead of assuming the session survives.
+For the datacenter pool the API also accepts `datacenter` and `dc`. The value is not case-sensitive. An empty value is treated as `residential`. Any other value the API does not recognize, for example a typo, returns HTTP 400 with `product must be one of: "residential", "mobile", "server_dynamic"`.
+
+In `POST /generate` the pool goes in the JSON body. In GET requests (the reference lists in A.2 and `GET /traffic` in A.3) it goes in the query string, for example `/countries?product=mobile`. Without it, GET requests use `residential`; in GET requests an unrecognized value is not an error and is treated as `residential` too.
+
+#### Response
+
+Example of a successful response with `format` set to `username:password@ip:port`. In place of `ip`, the string contains the connection address, usually a host name, shown here as `<host>`.
+
+```json
+{
+  "success": true,
+  "proxies": ["<username>:<password>@<host>:<port>"]
+}
+```
+
+`proxies` holds as many strings as you asked for in `count`. The order of the parts and the separators in each string are set by `format`:
+
+| `format`                           | String                    |
+| ---------------------------------- | ------------------------- |
+| not sent, or `user:pass@ip:port`   | `user:pass@ip:port` (default) |
+| `1` or `ip:port:user:pass`         | `ip:port:user:pass`       |
+| `2` or `user:pass:ip:port`         | `user:pass:ip:port`       |
+| `3` or `ip:port@user:pass`         | `ip:port@user:pass`       |
+
+The same templates written with `username:password` instead of `user:pass` are accepted too. An unsupported template returns HTTP 400 with `Unsupported format`, and a value longer than 32 characters returns HTTP 400 with `format too long (max 32 chars)`.
+
+**Sticky session: `rotation`, `ttl`, `ttl_unit`, `ip_hold`**
+
+* `rotation: true` gives a rotating IP. `ttl` and `ip_hold` are ignored in this mode.
+* `rotation: false`, or `rotation` not sent, gives a sticky session: the string keeps the same IP for as long as it can.
+* `ttl` is the requested lifetime of a sticky session. `ttl_unit` sets its unit: `hours` (default), `minutes` or `seconds`; `h`, `m` and `s` are accepted too. Any other unit returns HTTP 400 with `ttl_unit must be one of: "hours", "minutes", "seconds"`.
+* The maximum is 72 hours. A larger value is cut to 72 hours in the same unit, without an error: `ttl: 500` in hours becomes 72 hours, `ttl: 5000` in minutes becomes 4320 minutes.
+* `ip_hold: true` works only with `rotation: false`. If the IP of the session drops, the connection fails instead of moving to a new IP, and the session does not get a new address. To continue, request a new string. With `ip_hold` the login in the string contains `_iphold_max`.
+
+`ttl` is a requested lifetime, not a guarantee: the IP can change earlier, for example when the device behind it goes offline. In our own run on 14 September 2026, 51 of 90 sessions (56.7%, Wilson interval 46.4% to 66.4%) still held the same IP after 84 minutes, and half of the losses happened inside the first 35 minutes. Handle an address change in your code instead of assuming the session survives.
 
 ### A.2 Reference lists for filters
 
@@ -140,6 +180,37 @@ Example response:
   ]
 }
 ```
+
+### A.3 Traffic balance
+
+**Method:** `GET` **Path:** `/traffic` **Optional parameter:** `product` (see "Choosing the pool", default `residential`)
+
+Returns traffic used and the remaining traffic of the account the API key belongs to, for one pool. All values are in bytes.
+
+```bash
+curl -sS "https://api.gonzoproxy.app/functions/v1/proxy-api/traffic?product=residential" \
+  -H "x-api-key: <your_api_key>"
+```
+
+Example response:
+
+```json
+{
+  "traffic_used_day": 125000000,
+  "traffic_used_7d": 870000000,
+  "traffic_used_month": 3100000000,
+  "traffic_used_total": 12400000000,
+  "traffic_remaining": 1875000000
+}
+```
+
+| Field                | Description                       |
+| -------------------- | --------------------------------- |
+| `traffic_used_day`   | Traffic used over the last day    |
+| `traffic_used_7d`    | Traffic used over the last 7 days |
+| `traffic_used_month` | Traffic used over the last month  |
+| `traffic_used_total` | Traffic used in total             |
+| `traffic_remaining`  | Remaining traffic                 |
 
 ***
 
@@ -391,7 +462,7 @@ Supported operations: `set_traffic`, `activate`, `deactivate`
 
 #### B.4.1 Set sub-account traffic
 
-`target_traffic_bytes` is the sub-account's final traffic balance, not the amount to add.
+`target_traffic_bytes` is the sub-account's final traffic balance, not the amount to add. When the sub-account's traffic balance is increased, the difference is deducted from the main account's balance of the same pool: residential unless `product` is sent.
 
 If a sub-account currently has `1 GB` and you want it to have `5 GB`, pass `5000000000`.
 
@@ -439,7 +510,7 @@ curl -sS -X POST "https://api.gonzoproxy.app/functions/v1/sub-account-adjust" \
 
 #### B.4.3 Deactivate sub-account
 
-When deactivated, the sub-account's remaining traffic is returned to the main account.
+When deactivated, the sub-account's remaining traffic is returned to the main account's balance of the same pool: residential unless `product` is sent.
 
 ```json
 {
